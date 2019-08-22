@@ -1,0 +1,75 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +24V_PWR
+D Power symbol creates a global label with name "+24V_PWR"
+K power-flag
+$ENDCMP
+#
+$CMP +3.3V_MCU
+D Power symbol creates a global label with name "+3.3V_MCU"
+K power-flag
+$ENDCMP
+#
+$CMP +5V_USB1
+D Power symbol creates a global label with name "+5V_USB1"
+K power-flag
+$ENDCMP
+#
+$CMP +5V_USB2
+D Power symbol creates a global label with name "+5V_USB2"
+K power-flag
+$ENDCMP
+#
+$CMP 60817-096
+D PCB HANDLE A
+$ENDCMP
+#
+$CMP 744233121
+D WE-CNSW-HF SMD CommonMode Line Filter (High Frequency)
+$ENDCMP
+#
+$CMP 749010012A
+D 10/100 Base-T 1-port LAN Transformer with ferrite base, Cu-Ni-Sn contact plating, SMD mount.
+$ENDCMP
+#
+$CMP 824011
+D TVS Diode Array WE-TVS
+$ENDCMP
+#
+$CMP LAN8742
+D LAN8742 Ethernet PHY with RMII interface
+K ETH PHY RMII
+F http://ww1.microchip.com/downloads/en/DeviceDoc/8720a.pdf
+$ENDCMP
+#
+$CMP LC03-3.3
+D ESD Suppressors / TVS Diodes TVS ARRAY, SRFC MNT, 3.3V 750W
+$ENDCMP
+#
+$CMP MAX5902
+D +72V, SOT23/TDFN, Simple Swapper Hot-Swap Controllers
+$ENDCMP
+#
+$CMP SR3.3
+D Low Capacitance TVS Diode Array
+$ENDCMP
+#
+$CMP V_USB1
+D Power symbol creates a global label with name "V_USB1"
+K power-flag
+$ENDCMP
+#
+$CMP V_USB2
+D Power symbol creates a global label with name "V_USB2"
+K power-flag
+$ENDCMP
+#
+$CMP iCE40HX1K-TQ144
+D The iCE40 LP/HX family of ultra-low power, non-volatile FPGAs has five devices with densities ranging from 384 to 7,680 Look-Up Tables (LUTs).
+$ENDCMP
+#
+$CMP iCE40HX4K-TQ144
+D The iCE40 LP/HX family of ultra-low power, non-volatile FPGAs has five devices with densities ranging from 384 to 7,680 Look-Up Tables (LUTs).
+$ENDCMP
+#
+#End Doc Library
