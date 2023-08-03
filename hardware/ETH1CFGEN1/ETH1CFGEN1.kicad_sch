@@ -1,0 +1,82 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 44bc1157-6d68-4ab3-afc0-b8d9f089cc50)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 194.31 118.11) (size 40.64 26.035) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 064703a1-ee1f-4a0b-949a-89ec1ae8066a)
+    (property "Sheetname" "Trigger" (at 194.31 117.3984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Trigger.kicad_sch" (at 194.31 144.7296 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "ETH1CFGEN1"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 135.89 68.58) (size 50.165 36.83) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 0e8f13bd-11da-4db3-a6ae-17e7f8eb7d6a)
+    (property "Sheetname" "MCU" (at 135.89 67.8684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "MCU.kicad_sch" (at 135.89 105.9946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "ETH1CFGEN1"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 80.01 67.945) (size 48.895 36.83) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 8dbb67a1-c452-43a5-a871-9d0d2562a561)
+    (property "Sheetname" "FPGA" (at 80.01 67.2334 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "FPGA.kicad_sch" (at 80.01 105.3596 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "ETH1CFGEN1"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 193.04 69.215) (size 43.18 36.195) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid f728c2e9-6dbe-48ee-a101-d5c9093d4b3e)
+    (property "Sheetname" "Ethernet" (at 193.04 68.5034 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Ethernet.kicad_sch" (at 193.04 105.9946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "ETH1CFGEN1"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50" (page "3"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name ETH1C14FGEN)(type Legacy)(uri /home/grzegorz/git/ETH1C14FGEN/hardware/lib/sch/ETH1C14FGEN.lib)(options "")(descr ""))
-)
