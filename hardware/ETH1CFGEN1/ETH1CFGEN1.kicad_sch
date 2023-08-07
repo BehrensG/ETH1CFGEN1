@@ -42,6 +42,40 @@
     )
   )
 
+  (sheet (at 134.62 121.285) (size 33.655 26.67) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 61e965c1-e946-4500-a63b-fb711a3a2ae7)
+    (property "Sheetname" "Power" (at 134.62 120.5734 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Power.kicad_sch" (at 134.62 148.5396 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "ETH1CFGEN1"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50" (page "7"))
+      )
+    )
+  )
+
+  (sheet (at 70.485 33.02) (size 59.055 26.035) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 65154eec-ce5a-4811-9dd8-c4e538832f4c)
+    (property "Sheetname" "Waveform DAC" (at 70.485 32.3084 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "WaveformDAC.kicad_sch" (at 70.485 59.6396 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "ETH1CFGEN1"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50" (page "6"))
+      )
+    )
+  )
+
   (sheet (at 80.01 67.945) (size 48.895 36.83) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))

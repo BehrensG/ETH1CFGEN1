@@ -342,6 +342,14 @@
     [
       "8dbb67a1-c452-43a5-a871-9d0d2562a561",
       "FPGA"
+    ],
+    [
+      "65154eec-ce5a-4811-9dd8-c4e538832f4c",
+      "Waveform DAC"
+    ],
+    [
+      "61e965c1-e946-4500-a63b-fb711a3a2ae7",
+      "Power"
     ]
   ],
   "text_variables": {}

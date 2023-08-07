@@ -43,12 +43,11 @@
  */
 
 
+#include <scpi_def.h>
+#include <scpi_server.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-#include "SCPI_Def.h"
-#include "SCPI_Server.h"
 
 #include "scpi/scpi.h"
 #include "lwip/tcpip.h"

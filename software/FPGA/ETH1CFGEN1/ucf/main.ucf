@@ -1,0 +1,26 @@
+
+
+NET "clk_in" IOSTANDARD = LVCMOS33;
+NET "clk_IO" IOSTANDARD = LVCMOS33;
+
+
+
+
+
+
+NET "lock" LOC = T9;
+
+
+NET "lock" IOSTANDARD = LVCMOS33;
+
+
+
+
+NET "clk_in" LOC = V10;
+
+
+NET "clk_IO" LOC = V9;
+
+# PlanAhead Generated IO constraints 
+
+NET "clk_IO" SLEW = QUIETIO;

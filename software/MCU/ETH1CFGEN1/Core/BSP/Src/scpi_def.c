@@ -34,15 +34,16 @@
  *
  */
 
+#include <scpi_def.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#include "SCPI_Def.h"
 #include "scpi/scpi.h"
-
 #include "stm32h7xx_hal.h"
 
+#include "scpi_system.h"
+#include "scpi_output.h"
 
 extern struct bsp_t bsp;
 
@@ -239,7 +240,67 @@ const scpi_command_t scpi_commands[] = {
     {.pattern = "SYSTem:ERRor:COUNt?", .callback = SCPI_SystemErrorCountQ,},
     {.pattern = "SYSTem:VERSion?", .callback = SCPI_SystemVersionQ,},
 
+	// scpi_system.c
+	{.pattern = "SYSTem:COMMunicate:LAN:IPADdress", .callback = SCPI_SystemCommunicateLANIPAddress,},
+	{.pattern = "SYSTem:COMMunicate:LAN:IPADdress?", .callback = SCPI_SystemCommunicateLANIPAddressQ,},
+	{.pattern = "SYSTem:COMMunicate:LAN:SMASk", .callback = SCPI_SystemCommunicateLANIPSmask,},
+	{.pattern = "SYSTem:COMMunicate:LAN:SMASk?", .callback = SCPI_SystemCommunicateLANIPSmaskQ,},
+	{.pattern = "SYSTem:COMMunicate:LAN:GATEway", .callback = SCPI_SystemCommunicateLANGateway,},
+	{.pattern = "SYSTem:COMMunicate:LAN:GATEway?", .callback = SCPI_SystemCommunicateLANGatewayQ,},
+	{.pattern = "SYSTem:COMMunicate:LAN:MAC", .callback = SCPI_SystemCommunicateLANMAC,},
+	{.pattern = "SYSTem:COMMunicate:LAN:MAC?", .callback = SCPI_SystemCommunicateLANMACQ,},
+	{.pattern = "SYSTem:COMMunicate:LAN:PORT", .callback = SCPI_SystemCommunicateLANPort,},
+	{.pattern = "SYSTem:COMMunicate:LAN:PORT?", .callback = SCPI_SystemCommunicateLANPortQ,},
+	{.pattern = "SYSTem:COMMunication:LAN:UPDate", .callback = SCPI_SystemCommunicationLanUpdate,},
+	{.pattern = "SYSTem:SERVice:EEPROM", .callback = SCPI_SystemServiceEEPROM,},
+	{.pattern = "SYSTem:SERVice:ID", .callback = SCPI_SystemServiceID,},
+	{.pattern = "SYSTem:SECure:STATe", .callback = SCPI_SystemSecureState,},
+	{.pattern = "SYSTem:SECure:STATe?", .callback = SCPI_SystemSecureStateQ,},
+	{.pattern = "SYSTem:TEMPerature?", .callback = SCPI_SystemTemperatureQ,},
+	{.pattern = "SYSTem:TEMPerature:UNIT", .callback = SCPI_SystemTemperatureUnit,},
+	{.pattern = "SYSTem:TEMPerature:UNIT?", .callback = SCPI_SystemTemperatureUnitQ,},
+	{.pattern = "SYSTem:HUMIdity?", .callback = SCPI_SystemHumidityQ,},
 
+	// scpi_output.c
+	{.pattern = "FUNCtion", .callback = SCPI_Function,}, //{SINusoid|SQUare|RAMP|PULSe|NOISe|DC|USER}
+	{.pattern = "FUNCtion?", .callback = SCPI_FunctionQ,},
+	{.pattern = "FREQuency", .callback = SCPI_Frequency,}, //  {<frequency>|MINimum|MAXimum}
+	{.pattern = "FREQuency?", .callback = SCPI_FrequencyQ,},
+	{.pattern = "VOLTage", .callback = SCPI_Voltage,}, //  {<amplitude>|MINimum|MAXimum}
+	{.pattern = "VOLTage?", .callback = SCPI_VoltageQ,},
+	{.pattern = "VOLTage:OFFSet", .callback = SCPI_VoltageOffset,}, // {<offset>|MINimum|MAXimum}
+	{.pattern = "VOLTage:OFFSet?", .callback = SCPI_VoltageOffsetQ,},
+	{.pattern = "VOLTage:UNIT", .callback = SCPI_VoltageUnit,}, // {VPP|VRMS|DBM}
+	{.pattern = "VOLTage:UNIT?", .callback = SCPI_VoltageUnitQ,},
+	{.pattern = "FUNCtion:SQUare:DCYCle", .callback = SCPI_FunctionSquareDutyCycle,}, // {<percent>|MINimum|MAXimum}
+	{.pattern = "FUNCtion:SQUare:DCYCle?", .callback = SCPI_FunctionSquareDutyCycleQ,},
+	{.pattern = "FUNCtion:RAMP:SYMMetry", .callback = SCPI_FunctionRampSymmetry,}, //  {<percent>|MINimum|MAXimum}
+	{.pattern = "FUNCtion:RAMP:SYMMetry?", .callback = SCPI_FunctionRampSymmetryQ,},
+	{.pattern = "OUTPut", .callback = SCPI_Output,},
+	{.pattern = "OUTPut?", .callback = SCPI_OutputQ,},
+	{.pattern = "OUTPut:LOAD", .callback = SCPI_OutputLoad,}, //  {<ohms>|INFinity|MINimum|MAXimum}
+	{.pattern = "OUTPut:LOAD?", .callback = SCPI_OutputLoadQ,},
+	{.pattern = "OUTPut:POLarirty", .callback = SCPI_OutputPolarity,}, //  {NORMal|INVerted}
+	{.pattern = "OUTPut:POLarirty?", .callback = SCPI_OutputPolarityQ,},
+	{.pattern = "PULSe:PERiod", .callback = SCPI_PulsePeriod,}, //  {<seconds>|MINimum|MAXimum}
+	{.pattern = "PULSe:PERiod?", .callback = SCPI_PulsePeriodQ,},
+	{.pattern = "FUNCtion:PULSe:HOLD", .callback = SCPI_FunctionPulseHold,}, //  {WIDTh|DCYCle}
+	{.pattern = "FUNCtion:PULSe:HOLD?", .callback = SCPI_FunctionPulseHoldQ,},
+	{.pattern = "FUNCtion:PULSe:WIDTh", .callback = SCPI_FunctionPulseWidth,}, // {<seconds>|MINimum|MAXimum}
+	{.pattern = "FUNCtion:PULSe:WIDTh?", .callback = SCPI_FunctionPulseWidthQ,},
+	{.pattern = "FUNCtion:PULSe:DCYCLe", .callback = SCPI_FunctionPulseDutyCycle,}, //  {<percent>|MINimum|MAXimum}
+	{.pattern = "FUNCtion:PULSe:DCYCLe?", .callback = SCPI_FunctionPulseDutyCycleQ,},
+	{.pattern = "FUNCtion:PULSe:TRANsition", .callback = SCPI_FunctionPulseTransition,}, //  {<seconds>|MINimum|MAXimum}
+	{.pattern = "FUNCtion:PULSe:TRANsition?", .callback = SCPI_FunctionPulseTransitionQ,},
+
+	// scpi_modulation.c
+	//{.pattern = "AM:INTernal:FUNCtion", .callback = SCPI_AMInternalFunction,}, // {SINusoid|SQUare|RAMP|NRAMp|TRIangle|NOISe|USER}
+	//{.pattern = "AM:INTernal:FUNCtion?", .callback = SCPI_AMInternalFunctionQ,},
+	//{.pattern = "AM:INTernal:FREQuency", .callback = SCPI_AMInternalFrequency,}, // {< frequency>|MINimum|MAXimum}
+	//{.pattern = "AM:INTernal:FREQuency?", .callback = SCPI_AMInternalFrequencyQ,},
+	//{.pattern = "AM:DEPTh", .callback = SCPI_AMDepth,}, // {<depth in percent>|MINimum|MAXimum}
+	//{.pattern = "AM:DEPTh?", .callback = SCPI_AMDepthQ,},
+	//{.pattern = "AM:DEPTh", .callback = SCPI_AMDepth,},
 
 	{.pattern = "TS", .callback = SCPI_TS,},
 
