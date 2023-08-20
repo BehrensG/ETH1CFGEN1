@@ -68,15 +68,15 @@ module clk_wiz_v3_6_exdes
   // High bits of counters driven by clocks
   output        COUNT,
   // Status and control signals
-  output        LOCKED
+  input         RESET
  );
 
   // Parameters for the counters
   //-------------------------------
   // Counter width
   localparam    C_W       = 16;
-  // When the clock goes out of lock, reset the counters
-  wire          reset_int = !LOCKED || COUNTER_RESET;
+  // Create reset for the counters
+  wire          reset_int = RESET || COUNTER_RESET;
 
    reg rst_sync;
    reg rst_sync_int;
@@ -99,7 +99,7 @@ module clk_wiz_v3_6_exdes
     // Clock out ports
     .CLK_300MHz           (clk_int),
     // Status and control signals
-    .LOCKED             (LOCKED));
+    .RESET              (RESET));
 
   assign clk_n = ~clk;
 

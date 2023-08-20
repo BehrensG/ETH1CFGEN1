@@ -73,5 +73,5 @@
     // Clock out ports
     .CLK_300MHz(CLK_300MHz),     // OUT
     // Status and control signals
-    .LOCKED(LOCKED));      // OUT
+    .RESET(RESET));       // IN
 // INST_TAG_END ------ End INSTANTIATION Template ---------

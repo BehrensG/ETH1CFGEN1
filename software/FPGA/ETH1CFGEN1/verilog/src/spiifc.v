@@ -42,6 +42,7 @@ module spiifc(
 //
 parameter AddrBits = 12;
 parameter RegAddrBits = 4;
+parameter DataSize = 16;
 
 //
 // Defines
@@ -76,18 +77,18 @@ input                    SPI_MOSI;     // incoming (from respect of this module)
 input                    SPI_SS;
 
 output [AddrBits-1:0]    txMemAddr;    // outgoing data
-input           [7:0]    txMemData;
+input  [DataSize-1:0]    txMemData;
 output [AddrBits-1:0]    rcMemAddr;    // incoming data
-output          [7:0]    rcMemData;
+output [DataSize-1:0]    rcMemData;
 output                   rcMemWE;
 
 output [RegAddrBits-1:0] regAddr;       // Register read address (combinational)
-input             [31:0] regReadData;   // Result of register read
+input  [DataSize-1:0] regReadData;   // Result of register read
 output                   regWriteEn;    // Enable write to register, otherwise read
-output            [31:0] regWriteData;  // Register write data
+output [DataSize-1:0] regWriteData;  // Register write data
 
 
-output          [7:0] debug_out;
+output [DataSize-1:0] debug_out;
 
 //
 // Registers
@@ -99,15 +100,15 @@ reg                   SPI_MOSI_reg;   // Stabalized version of SPI_MOSI
 reg                   prev_spiClk;    // Value of SPI_CLK during last SysClk cycle
 reg                   prev_spiSS;     // Value of SPI_SS during last SysClk cycle
 reg             [7:0] state_reg;      // Register backing the 'state' wire
-reg             [7:0] rcByte_reg;     // Register backing 'rcByte'
-reg             [2:0] rcBitIndex_reg; // Register backing 'rcBitIndex'
+reg    [DataSize-1:0] rcByte_reg;     // Register backing 'rcByte'
+reg             [3:0] rcBitIndex_reg; // Register backing 'rcBitIndex'
 reg    [AddrBits-1:0] rcMemAddr_reg;  // Byte addr to write MOSI data to
-reg             [7:0] debug_reg;      // register backing debug_out signal
-reg             [2:0] txBitIndex_reg; // Register backing txBitIndex
+reg    [DataSize-1:0] debug_reg;      // register backing debug_out signal
+reg             [3:0] txBitIndex_reg; // Register backing txBitIndex
 reg    [AddrBits-1:0] txMemAddr_reg;  // Register backing txAddr
 
 reg             [7:0] command;        // Command being handled
-reg            [31:0] rcWord;         // Incoming word being built
+reg    [DataSize-1:0] rcWord;         // Incoming word being built
 reg             [1:0] rcWordByteId;   // Which byte the in the rcWord to map to
 reg [RegAddrBits-1:0] regAddr_reg;    // Address of register to read/write to
 
@@ -118,9 +119,9 @@ wire                  risingSpiClk;       // Did the SPI_CLK rise since last Sys
 wire                  validSpiBit;        // Are the SPI MOSI/MISO bits new and valid?
 reg             [7:0] state;              // Current state in the module's state machine (always @* effectively wire)
 wire                  rcByteValid;        // rcByte is valid and new
-wire            [7:0] rcByte;             // Byte received from master
-wire            [2:0] rcBitIndex;         // Bit of rcByte to write to next
-reg             [2:0] txBitIndex;         // bit of txByte to send to master next
+wire   [DataSize-1:0] rcByte;             // Byte received from master
+wire            [3:0] rcBitIndex;         // Bit of rcByte to write to next
+reg             [3:0] txBitIndex;         // bit of txByte to send to master next
 reg    [AddrBits-1:0] txMemAddr_oreg;     // Wirereg piped to txMemAddr output
 reg             [7:0] regReadByte_oreg;   // Which byte of the reg word we're reading out master
 
@@ -148,13 +149,13 @@ assign packetStart = prev_spiSS & (~SPI_SS_reg);
 always @(posedge SysClk) begin
   if (validSpiBit) begin
     rcByte_reg[rcBitIndex] <= SPI_MOSI_reg;
-    rcBitIndex_reg <= (rcBitIndex > 0 ? rcBitIndex - 1 : 7);
+    rcBitIndex_reg <= (rcBitIndex > 0 ? rcBitIndex - 1 : DataSize-1);
   end else begin
     rcBitIndex_reg <= rcBitIndex;
   end
 end
-assign rcBitIndex = (Reset || packetStart ? 7 : rcBitIndex_reg); 
-assign rcByte = {rcByte_reg[7:1], SPI_MOSI_reg};
+assign rcBitIndex = (Reset || packetStart ? DataSize-1 : rcBitIndex_reg); 
+assign rcByte = {rcByte_reg[DataSize-1:1], SPI_MOSI_reg};
 assign rcByteValid = (validSpiBit && rcBitIndex == 0 ? 1 : 0);
 
 // Incoming MOSI data buffer management
@@ -177,7 +178,7 @@ always @(*) begin
                   (rcByte == `CMD_WRITE_START || 
                    rcByte[`CMD_REG_BIT:`CMD_REG_WE_BIT] == 2'b11)
                 )) begin
-    txBitIndex <= 3'd7;
+    txBitIndex <= 4'd15;
     txMemAddr_oreg <= 0;
   end else begin
     txBitIndex <= txBitIndex_reg;
@@ -194,7 +195,7 @@ always @(*) begin
 end
 always @(posedge SysClk) begin
   if (validSpiBit && (state == `STATE_WRITING || state == `STATE_SEND_WORD)) begin
-    txBitIndex_reg <= (txBitIndex == 0 ? 7 : txBitIndex - 1);
+    txBitIndex_reg <= (txBitIndex == 0 ? DataSize-1 : txBitIndex - 1);
   end else begin
     txBitIndex_reg <= txBitIndex;
   end
@@ -232,29 +233,17 @@ always @(posedge SysClk) begin
       state_reg <= `STATE_WRITING;
     end else if (rcByte[`CMD_REG_BIT] != 0) begin
       // Register access
-      rcWordByteId <= 0;
       command <= `CMD_REG_BASE;               // Write reg           Read reg
       state_reg <= (rcByte[`CMD_REG_WE_BIT] ? `STATE_BUILD_WORD : `STATE_SEND_WORD);      
     end else if (`CMD_INTERRUPT == rcByte) begin
       // TODO: NYI
     end
   end else if (`STATE_BUILD_WORD == state && rcByteValid) begin
-    if (0 == rcWordByteId) begin
-      rcWord[31:24] <= rcByte;
-      rcWordByteId <= 1;
-    end else if (1 == rcWordByteId) begin
-      rcWord[23:16] <= rcByte;
-      rcWordByteId <= 2;
-    end else if (2 == rcWordByteId) begin
-      rcWord[15:8] <= rcByte;
-      rcWordByteId <= 3;
-    end else if (3 == rcWordByteId) begin
-      rcWord[7:0] <= rcByte;
-      state_reg <= `STATE_GET_CMD;
-    end
+    rcWord <= rcByte;
+    state_reg <= `STATE_GET_CMD;
   end else if (`STATE_SEND_WORD == state && rcByteValid) begin
-    rcWordByteId <= rcWordByteId + 1;
-    state_reg <= (rcWordByteId == 3 ? `STATE_GET_CMD : `STATE_SEND_WORD);
+   // rcWordByteId <= rcWordByteId + 1;
+    state_reg <= `STATE_SEND_WORD;
       
   end else begin
     state_reg <= state;
@@ -264,17 +253,12 @@ end
 // Register logic
 assign regAddr = (`STATE_GET_CMD == state && rcByteValid && rcByte[`CMD_REG_BIT] ? (rcByte & `CMD_REG_ID_MASK) : regAddr_reg);
 assign regWriteEn = (`STATE_BUILD_WORD == state && rcByteValid && 3 == rcWordByteId ? 1 : 0);
-assign regWriteData = {rcWord[31:8], rcByte};
+assign regWriteData = rcByte;
 always @(posedge SysClk) begin
   regAddr_reg <= regAddr;
 end
 always @(*) begin
-  case (rcWordByteId)
-    0: regReadByte_oreg <= regReadData[31:24];
-    1: regReadByte_oreg <= regReadData[23:16];
-    2: regReadByte_oreg <= regReadData[15:8];
-    3: regReadByte_oreg <= regReadData[7:0];
-  endcase
+  regReadByte_oreg <= regReadData;
 end
 
 // Debugging

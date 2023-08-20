@@ -51,7 +51,7 @@ onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /clk_wiz_v3_6_tb/CLK_IN1
 add wave -noupdate /clk_wiz_v3_6_tb/COUNT
-add wave -noupdate /clk_wiz_v3_6_tb/LOCKED
+add wave -noupdate /clk_wiz_v3_6_tb/RESET
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {3223025 ps} 0}
 configure wave -namecolwidth 238

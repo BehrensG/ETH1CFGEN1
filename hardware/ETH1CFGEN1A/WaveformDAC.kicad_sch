@@ -4772,7 +4772,7 @@
   (symbol (lib_id "Analog_DAC:AD9744") (at 58.42 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 05ebaf48-52e0-47f3-8426-23021906727b)
-    (property "Reference" "U601" (at 60.6141 64.77 0)
+    (property "Reference" "U602" (at 60.6141 64.77 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "AD9744" (at 60.6141 67.31 0)
@@ -4813,7 +4813,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "U601") (unit 1)
+          (reference "U602") (unit 1)
         )
       )
     )
@@ -5681,7 +5681,7 @@
   (symbol (lib_id "power:GNDA") (at 48.895 166.37 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1cb235be-7787-4819-8547-b8d6ae508a80)
-    (property "Reference" "#PWR0606" (at 55.245 166.37 0)
+    (property "Reference" "#PWR0608" (at 55.245 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 52.07 166.37 90)
@@ -5697,7 +5697,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0606") (unit 1)
+          (reference "#PWR0608") (unit 1)
         )
       )
     )
@@ -5914,7 +5914,7 @@
   (symbol (lib_id "Amplifier_Operational:TL072") (at 38.735 232.41 0) (unit 3)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 24440d09-702a-4482-a666-341f7cf0216d)
-    (property "Reference" "U602" (at 37.465 231.14 0)
+    (property "Reference" "U601" (at 37.465 231.14 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TL072CD" (at 37.465 233.68 0)
@@ -5937,7 +5937,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "U602") (unit 3)
+          (reference "U601") (unit 3)
         )
       )
     )
@@ -6108,7 +6108,7 @@
   (symbol (lib_id "power:+3.3V") (at 81.28 238.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2d36e4c6-724a-44a0-923f-34324f7dc380)
-    (property "Reference" "#PWR0614" (at 81.28 242.57 0)
+    (property "Reference" "#PWR0616" (at 81.28 242.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 81.28 234.315 0)
@@ -6124,7 +6124,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0614") (unit 1)
+          (reference "#PWR0616") (unit 1)
         )
       )
     )
@@ -6234,7 +6234,7 @@
   (symbol (lib_id "power:+3.3V") (at 90.17 265.43 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 300c836c-d937-4f9b-bf0c-81a847646605)
-    (property "Reference" "#PWR0617" (at 90.17 269.24 0)
+    (property "Reference" "#PWR0619" (at 90.17 269.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 90.17 260.35 0)
@@ -6250,7 +6250,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0617") (unit 1)
+          (reference "#PWR0619") (unit 1)
         )
       )
     )
@@ -6517,7 +6517,7 @@
   (symbol (lib_id "ETH1CFGEN1:+3V3_WFD2") (at 49.53 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3f94b733-199b-486a-a943-9b2b1ad632bb)
-    (property "Reference" "#PWR0607" (at 49.53 64.77 0)
+    (property "Reference" "#PWR0609" (at 49.53 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3_WFD2" (at 49.53 56.515 0)
@@ -6533,7 +6533,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0607") (unit 1)
+          (reference "#PWR0609") (unit 1)
         )
       )
     )
@@ -6542,7 +6542,7 @@
   (symbol (lib_id "ETH1CFGEN1:-15V_WFD1") (at 85.09 139.065 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3fb22001-f769-42fc-8d54-fcafe5824593)
-    (property "Reference" "#PWR0616" (at 85.09 142.875 0)
+    (property "Reference" "#PWR0618" (at 85.09 142.875 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-15V_WFD1" (at 85.09 134.62 0)
@@ -6558,7 +6558,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0616") (unit 1)
+          (reference "#PWR0618") (unit 1)
         )
       )
     )
@@ -6669,7 +6669,7 @@
   (symbol (lib_id "power:GNDA") (at 79.375 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 46f31a2f-ad13-46a1-a953-38173ffc633d)
-    (property "Reference" "#PWR0613" (at 79.375 114.3 0)
+    (property "Reference" "#PWR0615" (at 79.375 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 79.375 112.395 0)
@@ -6685,7 +6685,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0613") (unit 1)
+          (reference "#PWR0615") (unit 1)
         )
       )
     )
@@ -6694,7 +6694,7 @@
   (symbol (lib_id "ETH1CFGEN1:+3V3_WFD1") (at 41.275 126.365 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 485bbe84-6ace-455e-b3e3-493aa9c4b86e)
-    (property "Reference" "#PWR0605" (at 45.085 126.365 0)
+    (property "Reference" "#PWR0607" (at 45.085 126.365 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3_WFD1" (at 33.02 126.365 90)
@@ -6710,7 +6710,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0605") (unit 1)
+          (reference "#PWR0607") (unit 1)
         )
       )
     )
@@ -6873,7 +6873,7 @@
   (symbol (lib_id "ETH1CFGEN1:+3V3_WFD2") (at 79.375 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4b91e9a8-5c0e-4213-8831-a552acb01ef7)
-    (property "Reference" "#PWR0612" (at 79.375 64.77 0)
+    (property "Reference" "#PWR0614" (at 79.375 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3_WFD2" (at 79.375 56.515 0)
@@ -6889,7 +6889,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0612") (unit 1)
+          (reference "#PWR0614") (unit 1)
         )
       )
     )
@@ -7825,7 +7825,7 @@
   (symbol (lib_id "Amplifier_Operational:TL072") (at 269.24 181.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7e92a506-3c6b-41e3-8f91-498b1c398b24)
-    (property "Reference" "U602" (at 269.24 172.085 0)
+    (property "Reference" "U601" (at 269.24 172.085 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TL072CD" (at 269.24 174.625 0)
@@ -7848,7 +7848,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "U602") (unit 1)
+          (reference "U601") (unit 1)
         )
       )
     )
@@ -7857,7 +7857,7 @@
   (symbol (lib_id "power:GNDA") (at 36.195 276.225 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7ffc29e4-6a3f-4028-85df-21285d3e8ef3)
-    (property "Reference" "#PWR0604" (at 36.195 282.575 0)
+    (property "Reference" "#PWR0606" (at 36.195 282.575 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 36.195 280.67 0)
@@ -7873,7 +7873,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0604") (unit 1)
+          (reference "#PWR0606") (unit 1)
         )
       )
     )
@@ -8196,7 +8196,7 @@
   (symbol (lib_id "power:+3.3V") (at 36.195 256.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8f2e3d2f-ebcf-44ef-8dde-802c4b628c37)
-    (property "Reference" "#PWR0603" (at 36.195 260.35 0)
+    (property "Reference" "#PWR0605" (at 36.195 260.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 36.195 252.095 0)
@@ -8212,7 +8212,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0603") (unit 1)
+          (reference "#PWR0605") (unit 1)
         )
       )
     )
@@ -8454,7 +8454,7 @@
   (symbol (lib_id "ETH1CFGEN1:+15V_WFD1") (at 36.195 224.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 96d51e08-9bd0-4e56-b13e-be89911fea1d)
-    (property "Reference" "#PWR0619" (at 36.195 228.6 0)
+    (property "Reference" "#PWR0603" (at 36.195 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+15V_WFD1" (at 36.195 220.345 0)
@@ -8470,7 +8470,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0619") (unit 1)
+          (reference "#PWR0603") (unit 1)
         )
       )
     )
@@ -8609,7 +8609,7 @@
   (symbol (lib_id "power:GNDD") (at 61.595 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a03bfe83-1382-49ac-8386-4f276136c524)
-    (property "Reference" "#PWR0610" (at 61.595 125.73 0)
+    (property "Reference" "#PWR0612" (at 61.595 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 61.595 123.825 0)
@@ -8625,7 +8625,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0610") (unit 1)
+          (reference "#PWR0612") (unit 1)
         )
       )
     )
@@ -8712,7 +8712,7 @@
   (symbol (lib_id "power:GNDA") (at 52.705 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a4a5f658-bd5e-4a58-b56b-39df9777c23a)
-    (property "Reference" "#PWR0608" (at 52.705 125.73 0)
+    (property "Reference" "#PWR0610" (at 52.705 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 52.705 123.825 0)
@@ -8728,7 +8728,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0608") (unit 1)
+          (reference "#PWR0610") (unit 1)
         )
       )
     )
@@ -9021,7 +9021,7 @@
   (symbol (lib_id "ETH1CFGEN1:-15V_WFD1") (at 36.195 240.03 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bb135348-0d37-4004-93b0-7f6cfe27fbcc)
-    (property "Reference" "#PWR0620" (at 36.195 236.22 0)
+    (property "Reference" "#PWR0604" (at 36.195 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-15V_WFD1" (at 36.195 244.475 0)
@@ -9037,7 +9037,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0620") (unit 1)
+          (reference "#PWR0604") (unit 1)
         )
       )
     )
@@ -9282,7 +9282,7 @@
   (symbol (lib_id "power:GNDA") (at 93.98 93.345 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c6bd1cc7-1081-4dd7-9a4f-6ced236a71c1)
-    (property "Reference" "#PWR0618" (at 93.98 99.695 0)
+    (property "Reference" "#PWR0620" (at 93.98 99.695 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 93.98 97.79 0)
@@ -9298,7 +9298,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0618") (unit 1)
+          (reference "#PWR0620") (unit 1)
         )
       )
     )
@@ -9383,7 +9383,7 @@
   (symbol (lib_id "power:GNDA") (at 54.61 141.605 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ca9cae9d-e172-40a0-9976-7aaa6a4ddf2e)
-    (property "Reference" "#PWR0609" (at 48.26 141.605 0)
+    (property "Reference" "#PWR0611" (at 48.26 141.605 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 51.435 141.605 90)
@@ -9399,7 +9399,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0609") (unit 1)
+          (reference "#PWR0611") (unit 1)
         )
       )
     )
@@ -9648,7 +9648,7 @@
   (symbol (lib_id "Amplifier_Operational:TL072") (at 62.23 144.145 0) (unit 2)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d7d74e9f-c494-4e53-a0bf-1fcdaf9a0336)
-    (property "Reference" "U602" (at 62.23 134.62 0)
+    (property "Reference" "U601" (at 62.23 134.62 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TL072CD" (at 62.23 137.16 0)
@@ -9671,7 +9671,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "U602") (unit 2)
+          (reference "U601") (unit 2)
         )
       )
     )
@@ -10401,7 +10401,7 @@
   (symbol (lib_id "power:GNDA") (at 83.185 93.345 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f76ffb39-baa6-4077-8290-1b6d22bab2f9)
-    (property "Reference" "#PWR0615" (at 83.185 99.695 0)
+    (property "Reference" "#PWR0617" (at 83.185 99.695 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 83.185 97.79 0)
@@ -10417,7 +10417,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0615") (unit 1)
+          (reference "#PWR0617") (unit 1)
         )
       )
     )
@@ -10681,7 +10681,7 @@
   (symbol (lib_id "ETH1CFGEN1:+3V3_WFD1") (at 62.865 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fea82ce5-cab1-47e6-9058-f5a137ae3144)
-    (property "Reference" "#PWR0611" (at 62.865 64.77 0)
+    (property "Reference" "#PWR0613" (at 62.865 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3_WFD1" (at 62.865 56.515 0)
@@ -10697,7 +10697,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/65154eec-ce5a-4811-9dd8-c4e538832f4c"
-          (reference "#PWR0611") (unit 1)
+          (reference "#PWR0613") (unit 1)
         )
       )
     )

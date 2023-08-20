@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Mon Aug  7 15:58:19 2023
+# Date: Sat Aug 12 14:01:33 2023
 #
 ##############################################################
 #
@@ -43,7 +43,7 @@ CSET calc_done=DONE
 CSET clk_in_sel_port=CLK_IN_SEL
 CSET clk_out1_port=CLK_300MHz
 CSET clk_out1_use_fine_ps_gui=false
-CSET clk_out2_port=CLK_OUT2
+CSET clk_out2_port=CLK_50MHz
 CSET clk_out2_use_fine_ps_gui=false
 CSET clk_out3_port=CLK_OUT3
 CSET clk_out3_use_fine_ps_gui=false
@@ -74,7 +74,7 @@ CSET clkout1_requested_out_freq=300.000
 CSET clkout1_requested_phase=0.000
 CSET clkout2_drives=BUFG
 CSET clkout2_requested_duty_cycle=50.000
-CSET clkout2_requested_out_freq=100.000
+CSET clkout2_requested_out_freq=50.000
 CSET clkout2_requested_phase=0.000
 CSET clkout2_used=false
 CSET clkout3_drives=BUFG
@@ -108,7 +108,7 @@ CSET daddr_port=DADDR
 CSET dclk_port=DCLK
 CSET dcm_clk_feedback=1X
 CSET dcm_clk_out1_port=CLKFX
-CSET dcm_clk_out2_port=CLK0
+CSET dcm_clk_out2_port=CLKDV
 CSET dcm_clk_out3_port=CLK0
 CSET dcm_clk_out4_port=CLK0
 CSET dcm_clk_out5_port=CLK0
@@ -251,13 +251,13 @@ CSET use_freeze=false
 CSET use_freq_synth=true
 CSET use_inclk_stopped=false
 CSET use_inclk_switchover=false
-CSET use_locked=true
+CSET use_locked=false
 CSET use_max_i_jitter=false
 CSET use_min_o_jitter=false
 CSET use_min_power=false
 CSET use_phase_alignment=true
 CSET use_power_down=false
-CSET use_reset=false
+CSET use_reset=true
 CSET use_spread_spectrum=false
 CSET use_spread_spectrum_1=false
 CSET use_status=false
@@ -266,4 +266,4 @@ CSET use_status=false
 MISC pkg_timestamp=2012-05-10T12:44:55Z
 # END Extra information
 GENERATE
-# CRC: af29c53b
+# CRC:  dccb0a4

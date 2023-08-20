@@ -247,7 +247,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "ETH1CFGEN1.kicad_pro",
+    "filename": "ETH1CFGEN1A.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -340,16 +340,20 @@
       "Trigger"
     ],
     [
-      "8dbb67a1-c452-43a5-a871-9d0d2562a561",
-      "FPGA"
+      "2e0f9c08-3e61-422b-89e0-77554374b56d",
+      "Connector"
     ],
     [
-      "65154eec-ce5a-4811-9dd8-c4e538832f4c",
-      "Waveform DAC"
+      "2b043485-ed83-4448-a591-edaf95c93460",
+      "Module"
     ],
     [
       "61e965c1-e946-4500-a63b-fb711a3a2ae7",
       "Power"
+    ],
+    [
+      "d2e4c506-e6e2-410e-aca6-f51d5adfe086",
+      "Self test"
     ]
   ],
   "text_variables": {}

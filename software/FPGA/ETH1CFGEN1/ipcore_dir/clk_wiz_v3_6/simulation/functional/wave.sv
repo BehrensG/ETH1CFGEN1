@@ -105,8 +105,7 @@ group set -comment {}
 group clear 0 end
 
 group insert \
-   {nc::clk_wiz_v3_6_tb.LOCKED}
-
+   {nc::clk_wiz_v3_6_tb.RESET}  \ 
 
 set id [waveform add -signals [list {nc::clk_wiz_v3_6_tb.COUNT} ]]
 

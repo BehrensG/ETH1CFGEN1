@@ -1,0 +1,29 @@
+Command line:
+   spiifc_tb2_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52731
+
+Thu Aug 17 20:14:09 2023
+
+
+ Elaboration Time: 0.21 sec
+
+ Current Memory Usage: 196.776 Meg
+
+ Total Signals          : 41
+ Total Nets             : 153
+ Total Signal Drivers   : 26
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 43
+ Total Traceable Variables  : 56
+ Total Scalar Nets and Variables : 778
+Total Line Count : 141
+
+ Total Simulation Time: 0.43 sec
+
+ Current Memory Usage: 272.278 Meg
+
+Thu Aug 17 20:18:51 2023
+

@@ -9,7 +9,7 @@ gui_sg_addsignal -group clk_wiz_v3_6_group {{Output_clocks}} -divider
 gui_sg_addsignal -group clk_wiz_v3_6_group {clk_wiz_v3_6_tb.dut.clk}
 gui_list_expand -id Wave.1 clk_wiz_v3_6_tb.dut.clk
 gui_sg_addsignal -group clk_wiz_v3_6_group {{Status_control}} -divider
-gui_sg_addsignal -group clk_wiz_v3_6_group {clk_wiz_v3_6_tb.LOCKED}
+gui_sg_addsignal -group clk_wiz_v3_6_group {clk_wiz_v3_6_tb.RESET}
 gui_sg_addsignal -group clk_wiz_v3_6_group {{Counters}} -divider
 gui_sg_addsignal -group clk_wiz_v3_6_group {clk_wiz_v3_6_tb.COUNT}
 gui_sg_addsignal -group clk_wiz_v3_6_group {clk_wiz_v3_6_tb.dut.counter}

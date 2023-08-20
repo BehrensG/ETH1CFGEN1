@@ -57,7 +57,7 @@
 
 `timescale 1ps/1ps
 
-`define wait_lock @(posedge LOCKED)
+`define wait_lock @(posedge dut.clknetwork.dcm_sp_inst.LOCKED)
 
 module clk_wiz_v3_6_tb ();
 
@@ -81,7 +81,7 @@ module clk_wiz_v3_6_tb ();
   // The high bit of the sampling counter
   wire        COUNT;
   // Status and control signals
-  wire        LOCKED;
+  reg         RESET      = 0;
   reg         COUNTER_RESET = 0;
 wire [1:1] CLK_OUT;
 //Freq Check using the M & D values setting and actual Frequency generated
@@ -100,6 +100,10 @@ wire [1:1] CLK_OUT;
     // Set up any display statements using time to be readable
     $timeformat(-12, 2, "ps", 10);
     COUNTER_RESET = 0;
+    test_phase = "reset";
+    RESET = 1;
+    #(PER1*6);
+    RESET = 0;
     test_phase = "wait lock";
     `wait_lock;
     #(PER1*6);
@@ -130,7 +134,7 @@ wire [1:1] CLK_OUT;
     // High bits of the counters
     .COUNT              (COUNT),
     // Status and control signals
-    .LOCKED             (LOCKED));
+    .RESET              (RESET));
 
 // Freq Check 
 
