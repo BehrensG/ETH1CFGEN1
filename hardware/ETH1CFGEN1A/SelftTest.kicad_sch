@@ -227,91 +227,91 @@
         )
       )
     )
-    (symbol "ETH3CDAQ1:TLA2528" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at 10.16 20.32 0)
+    (symbol "ETH1CFGEN1:TLA2528" (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at 10.795 21.59 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "TLA2528" (at 10.16 17.78 0)
+      (property "Value" "TLA2528" (at 10.795 19.05 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "" (at -13.97 11.43 0)
+      (property "Footprint" "" (at 0 1.27 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "" (at -13.97 11.43 0)
+      (property "Datasheet" "" (at 0 1.27 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "TLA2528_0_1"
-        (rectangle (start -13.97 16.51) (end 13.97 -16.51)
+        (rectangle (start -13.97 17.78) (end 13.97 -15.24)
           (stroke (width 0) (type default))
           (fill (type background))
         )
       )
       (symbol "TLA2528_1_1"
-        (pin bidirectional line (at -16.51 2.54 0) (length 2.54)
+        (pin bidirectional line (at -16.51 3.81 0) (length 2.54)
           (name "AIN2/GPIO2" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 0 19.05 270) (length 2.54)
+        (pin passive line (at 0 20.32 270) (length 2.54)
           (name "DVDD" (effects (font (size 1.27 1.27))))
           (number "10" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at 16.51 7.62 180) (length 2.54)
+        (pin input line (at 16.51 8.89 180) (length 2.54)
           (name "ADDR" (effects (font (size 1.27 1.27))))
           (number "11" (effects (font (size 1.27 1.27))))
         )
-        (pin no_connect non_logic (at 0 -45.72 0) (length 0) hide
+        (pin no_connect non_logic (at 13.97 3.175 180) (length 0) hide
           (name "NC" (effects (font (size 1.27 1.27))))
           (number "12" (effects (font (size 1.27 1.27))))
         )
-        (pin bidirectional line (at 16.51 -2.54 180) (length 2.54)
+        (pin bidirectional line (at 16.51 0 180) (length 2.54)
           (name "SCL" (effects (font (size 1.27 1.27))))
           (number "13" (effects (font (size 1.27 1.27))))
         )
-        (pin bidirectional line (at 16.51 -5.08 180) (length 2.54)
+        (pin bidirectional line (at 16.51 -2.54 180) (length 2.54)
           (name "SDA" (effects (font (size 1.27 1.27))))
           (number "14" (effects (font (size 1.27 1.27))))
         )
-        (pin bidirectional line (at -16.51 7.62 0) (length 2.54)
+        (pin bidirectional line (at -16.51 8.89 0) (length 2.54)
           (name "AIN0/GPIO0" (effects (font (size 1.27 1.27))))
           (number "15" (effects (font (size 1.27 1.27))))
         )
-        (pin bidirectional line (at -16.51 5.08 0) (length 2.54)
+        (pin bidirectional line (at -16.51 6.35 0) (length 2.54)
           (name "AIN1/GPIO1" (effects (font (size 1.27 1.27))))
           (number "16" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 5.08 -19.05 90) (length 2.54)
+        (pin passive line (at 5.08 -17.78 90) (length 2.54)
           (name "PAD" (effects (font (size 1.27 1.27))))
           (number "17" (effects (font (size 1.27 1.27))))
         )
-        (pin bidirectional line (at -16.51 0 0) (length 2.54)
+        (pin bidirectional line (at -16.51 1.27 0) (length 2.54)
           (name "AIN3/GPIO3" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
-        (pin bidirectional line (at -16.51 -2.54 0) (length 2.54)
+        (pin bidirectional line (at -16.51 -1.27 0) (length 2.54)
           (name "AIN4/GPIO4" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
         )
-        (pin bidirectional line (at -16.51 -5.08 0) (length 2.54)
+        (pin bidirectional line (at -16.51 -3.81 0) (length 2.54)
           (name "AIN5/GPIO5" (effects (font (size 1.27 1.27))))
           (number "4" (effects (font (size 1.27 1.27))))
         )
-        (pin bidirectional line (at -16.51 -7.62 0) (length 2.54)
+        (pin bidirectional line (at -16.51 -6.35 0) (length 2.54)
           (name "AIN6/GPIO6" (effects (font (size 1.27 1.27))))
           (number "5" (effects (font (size 1.27 1.27))))
         )
-        (pin bidirectional line (at -16.51 -10.16 0) (length 2.54)
+        (pin bidirectional line (at -16.51 -8.89 0) (length 2.54)
           (name "AIN7/GPIO7" (effects (font (size 1.27 1.27))))
           (number "6" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -5.08 19.05 270) (length 2.54)
+        (pin passive line (at -5.08 20.32 270) (length 2.54)
           (name "AVDD" (effects (font (size 1.27 1.27))))
           (number "7" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 5.08 19.05 270) (length 2.54)
+        (pin passive line (at 5.08 20.32 270) (length 2.54)
           (name "DECAP" (effects (font (size 1.27 1.27))))
           (number "8" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -5.08 -19.05 90) (length 2.54)
+        (pin passive line (at -5.08 -17.78 90) (length 2.54)
           (name "GND" (effects (font (size 1.27 1.27))))
           (number "9" (effects (font (size 1.27 1.27))))
         )
@@ -382,7 +382,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
@@ -416,7 +416,7 @@
       )
       (symbol "+3.3V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3V3" (effects (font (size 1.27 1.27))))
+          (name "+3.3V" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -434,7 +434,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0)
@@ -665,7 +665,7 @@
   (junction (at 120.65 100.965) (diameter 0) (color 0 0 0 0)
     (uuid 3d3fd225-b0aa-4e69-a307-46aa2954d12b)
   )
-  (junction (at 243.84 112.395) (diameter 0) (color 0 0 0 0)
+  (junction (at 243.84 111.125) (diameter 0) (color 0 0 0 0)
     (uuid 51d628ff-e52a-4f56-8225-61f38c476386)
   )
   (junction (at 138.43 123.825) (diameter 0) (color 0 0 0 0)
@@ -698,19 +698,20 @@
   (junction (at 193.675 53.975) (diameter 0) (color 0 0 0 0)
     (uuid b34d2048-c834-45eb-ab7c-be842488c2b9)
   )
-  (junction (at 240.03 95.885) (diameter 0) (color 0 0 0 0)
+  (junction (at 240.03 94.615) (diameter 0) (color 0 0 0 0)
     (uuid b821f3c6-bc81-4c75-9a8b-94bb24fea118)
   )
   (junction (at 110.49 144.145) (diameter 0) (color 0 0 0 0)
     (uuid f378bdf7-b0cc-4a9c-ad11-2014e722f387)
   )
-  (junction (at 234.95 109.855) (diameter 0) (color 0 0 0 0)
+  (junction (at 234.95 108.585) (diameter 0) (color 0 0 0 0)
     (uuid f9f14ea1-8501-4022-922d-9b5788128fc4)
   )
   (junction (at 138.43 80.645) (diameter 0) (color 0 0 0 0)
     (uuid fe255eee-d37e-4b97-bd3e-2768700b6a97)
   )
 
+  (no_connect (at 181.61 114.935) (uuid 39df2c67-639c-4844-9814-d811efa8a97a))
   (no_connect (at 181.61 117.475) (uuid 9ec791a8-19c6-4b73-8068-f6f9d40c12d3))
 
   (wire (pts (xy 110.49 144.145) (xy 111.76 144.145))
@@ -745,7 +746,7 @@
     (stroke (width 0) (type default))
     (uuid 1bdeb687-efbd-4a88-a57e-e50bd46b022a)
   )
-  (wire (pts (xy 214.63 109.855) (xy 234.95 109.855))
+  (wire (pts (xy 214.63 108.585) (xy 234.95 108.585))
     (stroke (width 0) (type default))
     (uuid 1f747043-91fc-460f-b6d9-1f28a8f6a207)
   )
@@ -761,7 +762,7 @@
     (stroke (width 0) (type default))
     (uuid 25e3247f-be49-4f05-9efc-30024b2b2899)
   )
-  (wire (pts (xy 234.95 109.855) (xy 234.95 104.775))
+  (wire (pts (xy 234.95 108.585) (xy 234.95 103.505))
     (stroke (width 0) (type default))
     (uuid 276cb227-1e32-453e-a672-f014a81df38a)
   )
@@ -825,7 +826,7 @@
     (stroke (width 0) (type default))
     (uuid 5afc7908-3f4f-4f20-9630-547cb6039a06)
   )
-  (wire (pts (xy 234.95 109.855) (xy 252.73 109.855))
+  (wire (pts (xy 234.95 108.585) (xy 252.73 108.585))
     (stroke (width 0) (type default))
     (uuid 5e07353d-f710-4191-9caf-b67bc91ecc35)
   )
@@ -833,7 +834,7 @@
     (stroke (width 0) (type default))
     (uuid 5f697630-1550-49f1-9403-3a906ea0e69d)
   )
-  (wire (pts (xy 234.95 95.885) (xy 240.03 95.885))
+  (wire (pts (xy 234.95 94.615) (xy 240.03 94.615))
     (stroke (width 0) (type default))
     (uuid 60a3651c-e574-469a-84fa-678a5b6a3885)
   )
@@ -849,7 +850,7 @@
     (stroke (width 0) (type default))
     (uuid 70775fa4-892e-4a55-8f51-39ae78d73246)
   )
-  (wire (pts (xy 214.63 112.395) (xy 243.84 112.395))
+  (wire (pts (xy 214.63 111.125) (xy 243.84 111.125))
     (stroke (width 0) (type default))
     (uuid 71ee650c-4909-454c-8534-90af80f9614b)
   )
@@ -865,7 +866,7 @@
     (stroke (width 0) (type default))
     (uuid 74eb1652-499e-4758-bb08-9eae1c8658b0)
   )
-  (wire (pts (xy 240.03 95.885) (xy 243.84 95.885))
+  (wire (pts (xy 240.03 94.615) (xy 243.84 94.615))
     (stroke (width 0) (type default))
     (uuid 7590512a-88a8-4b4b-b85c-3009d7a6e29c)
   )
@@ -877,11 +878,11 @@
     (stroke (width 0) (type default))
     (uuid 784a1abb-e2fd-4635-9311-53244e233eda)
   )
-  (wire (pts (xy 243.84 112.395) (xy 252.73 112.395))
+  (wire (pts (xy 243.84 111.125) (xy 252.73 111.125))
     (stroke (width 0) (type default))
     (uuid 7a3ab674-5808-4ceb-ac06-821fc55afe15)
   )
-  (wire (pts (xy 234.95 97.155) (xy 234.95 95.885))
+  (wire (pts (xy 234.95 95.885) (xy 234.95 94.615))
     (stroke (width 0) (type default))
     (uuid 7b831ce4-c1f1-4cdf-9d58-4f8c6e92284f)
   )
@@ -973,10 +974,6 @@
     (stroke (width 0) (type default))
     (uuid a33d10d0-496d-4c4f-930a-563d76ae34a4)
   )
-  (wire (pts (xy 181.61 114.935) (xy 176.53 114.935))
-    (stroke (width 0) (type default))
-    (uuid ab0d4e5f-83fc-4711-a977-c8dfbc31c5c6)
-  )
   (wire (pts (xy 92.71 146.685) (xy 92.71 151.765))
     (stroke (width 0) (type default))
     (uuid adc28cbd-6400-4267-b15c-e0c41238ad98)
@@ -985,7 +982,7 @@
     (stroke (width 0) (type default))
     (uuid b15ecfba-962a-472b-8094-5582a2d8f08c)
   )
-  (wire (pts (xy 243.84 95.885) (xy 243.84 97.155))
+  (wire (pts (xy 243.84 94.615) (xy 243.84 95.885))
     (stroke (width 0) (type default))
     (uuid b1cc88de-c173-4a72-a5cc-8cd289876485)
   )
@@ -1000,10 +997,6 @@
   (wire (pts (xy 193.675 53.975) (xy 192.405 53.975))
     (stroke (width 0) (type default))
     (uuid bdf21459-60ab-48f9-b609-0e57ad03d3d4)
-  )
-  (wire (pts (xy 174.625 24.765) (xy 177.165 24.765))
-    (stroke (width 0) (type default))
-    (uuid be274bc4-61ff-4225-8f24-23628085cd83)
   )
   (wire (pts (xy 120.65 126.365) (xy 121.92 126.365))
     (stroke (width 0) (type default))
@@ -1065,7 +1058,7 @@
     (stroke (width 0) (type default))
     (uuid d1e9630b-d1e5-4cff-afe5-b59facf9710f)
   )
-  (wire (pts (xy 240.03 94.615) (xy 240.03 95.885))
+  (wire (pts (xy 240.03 93.345) (xy 240.03 94.615))
     (stroke (width 0) (type default))
     (uuid d281a9ba-3bcf-4e6d-9e1a-e08d452f5896)
   )
@@ -1105,7 +1098,7 @@
     (stroke (width 0) (type default))
     (uuid f1fd84e3-b3e6-49d4-a0fd-874c3a9c4e20)
   )
-  (wire (pts (xy 243.84 104.775) (xy 243.84 112.395))
+  (wire (pts (xy 243.84 103.505) (xy 243.84 111.125))
     (stroke (width 0) (type default))
     (uuid f941f9f4-05a9-44df-9527-6adcf1d67fe4)
   )
@@ -1142,10 +1135,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6ebc8e33-2ac6-4859-8c53-e90dce8b9007)
   )
-  (label "AIN6" (at 176.53 114.935 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 7d7eeefa-3892-4d16-95e7-b22b56dd1ec8)
-  )
   (label "AIN0" (at 198.755 27.305 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 7e3d2cf0-9579-4ffc-a172-20bfb6691845)
@@ -1179,11 +1168,11 @@
     (uuid fe878178-cc9f-4e59-a7e6-3c6e6720cd89)
   )
 
-  (hierarchical_label "ADC_SDA" (shape bidirectional) (at 252.73 112.395 0) (fields_autoplaced)
+  (hierarchical_label "I2C_SDA" (shape bidirectional) (at 252.73 111.125 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 4fa8ae93-1f16-4a9c-bf5b-ea852ecb5437)
   )
-  (hierarchical_label "ADC_SCL" (shape bidirectional) (at 252.73 109.855 0) (fields_autoplaced)
+  (hierarchical_label "I2C_SCL" (shape bidirectional) (at 252.73 108.585 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 786d09be-e224-4037-b74a-e975a6fe8197)
   )
@@ -1281,6 +1270,31 @@
     )
   )
 
+  (symbol (lib_id "power:+3.3V") (at 240.03 93.345 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 0787f233-0ed7-4f28-aa58-615204e47cad)
+    (property "Reference" "#PWR0839" (at 240.03 97.155 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 240.03 89.789 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 240.03 93.345 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 240.03 93.345 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f5395297-6c6f-47b0-b3b6-8907eda553c6))
+    (instances
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
+          (reference "#PWR0839") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:C") (at 135.89 179.705 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0b1aa316-20f2-4eb0-b616-1240ab621dd9)
@@ -1346,7 +1360,7 @@
   (symbol (lib_id "power:GNDA") (at 198.12 128.905 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 108d7179-7f4a-44c0-8240-d6c7dff81cae)
-    (property "Reference" "#PWR?" (at 198.12 135.255 0)
+    (property "Reference" "#PWR0836" (at 198.12 135.255 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 198.12 132.715 0)
@@ -1362,7 +1376,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0836") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -1407,10 +1421,10 @@
   (symbol (lib_id "power:+5V") (at 124.46 175.895 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 123fdb67-48f4-44a5-bc5f-b4f13410b6a3)
-    (property "Reference" "#PWR0829" (at 124.46 179.705 0)
+    (property "Reference" "#PWR0827" (at 124.46 179.705 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (at 124.46 171.45 0)
+    (property "Value" "+5V" (at 124.46 172.339 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 124.46 175.895 0)
@@ -1423,7 +1437,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0829") (unit 1)
+          (reference "#PWR0827") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -1437,7 +1451,7 @@
   (symbol (lib_id "power:GNDA") (at 113.03 61.595 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1645786d-5e32-4480-a34e-c1893b6f9f8c)
-    (property "Reference" "#PWR?" (at 113.03 67.945 0)
+    (property "Reference" "#PWR0824" (at 113.03 67.945 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 113.03 65.405 0)
@@ -1453,7 +1467,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0824") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -1489,7 +1503,7 @@
           (reference "#PWR0606") (unit 1)
         )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0827") (unit 1)
+          (reference "#PWR0831") (unit 1)
         )
       )
     )
@@ -1521,66 +1535,6 @@
       (project "ETH3CDAQ1A.kicad_pro"
         (path "/5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7/00000000-0000-0000-0000-00005fccc26e"
           (reference "C705") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 240.03 94.615 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 2532f9b7-c0fd-4e39-9729-f0aff1ce10cd)
-    (property "Reference" "#PWR0839" (at 240.03 98.425 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 240.03 90.805 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 240.03 94.615 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 240.03 94.615 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 176ab98d-889d-4b13-9641-ce3b79aa40a7))
-    (instances
-      (project "ETH1CFGEN1A"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0839") (unit 1)
-        )
-      )
-      (project "ETH3CDAQ1A.kicad_pro"
-        (path "/5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7/00000000-0000-0000-0000-00005fccc26e"
-          (reference "#PWR0743") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 174.625 24.765 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 26be6ef4-6379-461e-88bd-f64e83d5e4cc)
-    (property "Reference" "#PWR0831" (at 178.435 24.765 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 170.815 24.765 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 174.625 24.765 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 174.625 24.765 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 82d1e8cb-4325-44b0-9838-6fc6192a30d8))
-    (instances
-      (project "ETH1CFGEN1A"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0831") (unit 1)
-        )
-      )
-      (project "ETH3CDAQ1A.kicad_pro"
-        (path "/5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7/00000000-0000-0000-0000-00005fccc26e"
-          (reference "#PWR0733") (unit 1)
         )
       )
     )
@@ -1620,7 +1574,7 @@
   (symbol (lib_id "power:GNDA") (at 113.03 34.925 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 300e4246-4aca-4278-a973-045bbf3727c2)
-    (property "Reference" "#PWR?" (at 113.03 41.275 0)
+    (property "Reference" "#PWR0823" (at 113.03 41.275 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 113.03 38.735 0)
@@ -1636,7 +1590,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0823") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -1650,7 +1604,7 @@
   (symbol (lib_id "power:GNDA") (at 85.09 108.585 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 30acbe19-4580-4f30-b1b4-af683f4928e8)
-    (property "Reference" "#PWR?" (at 85.09 114.935 0)
+    (property "Reference" "#PWR0813" (at 85.09 114.935 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 85.09 112.395 0)
@@ -1666,7 +1620,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0813") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -1702,7 +1656,7 @@
           (reference "#PWR0605") (unit 1)
         )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0802") (unit 1)
+          (reference "#PWR0801") (unit 1)
         )
       )
     )
@@ -1773,7 +1727,7 @@
   (symbol (lib_id "power:GNDA") (at 168.275 61.595 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3f78f7bf-ee10-409a-80d9-dad09aa0a8f2)
-    (property "Reference" "#PWR?" (at 168.275 67.945 0)
+    (property "Reference" "#PWR0832" (at 168.275 67.945 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 168.275 65.405 0)
@@ -1789,7 +1743,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0832") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -1825,7 +1779,7 @@
           (reference "#PWR0605") (unit 1)
         )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0806") (unit 1)
+          (reference "#PWR0803") (unit 1)
         )
       )
     )
@@ -1856,7 +1810,7 @@
           (reference "#PWR0609") (unit 1)
         )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0801") (unit 1)
+          (reference "#PWR0802") (unit 1)
         )
       )
     )
@@ -1865,7 +1819,7 @@
   (symbol (lib_id "power:GNDA") (at 121.92 78.105 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 43e89a4a-1333-4c9a-80b2-f7057efa5348)
-    (property "Reference" "#PWR?" (at 115.57 78.105 0)
+    (property "Reference" "#PWR0825" (at 115.57 78.105 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 116.205 78.105 90)
@@ -1881,7 +1835,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0825") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -1917,7 +1871,7 @@
           (reference "#PWR0605") (unit 1)
         )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0808") (unit 1)
+          (reference "#PWR0811") (unit 1)
         )
       )
     )
@@ -1948,7 +1902,7 @@
           (reference "#PWR0605") (unit 1)
         )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0807") (unit 1)
+          (reference "#PWR0805") (unit 1)
         )
       )
     )
@@ -2022,7 +1976,7 @@
           (reference "#PWR0609") (unit 1)
         )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0804") (unit 1)
+          (reference "#PWR0810") (unit 1)
         )
       )
     )
@@ -2031,7 +1985,7 @@
   (symbol (lib_id "power:GNDA") (at 224.79 99.695 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4f75983d-9c0d-40c6-8f18-3c47519ca6e4)
-    (property "Reference" "#PWR?" (at 231.14 99.695 0)
+    (property "Reference" "#PWR0838" (at 231.14 99.695 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 228.6 99.695 0)
@@ -2047,7 +2001,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0838") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -2061,7 +2015,7 @@
   (symbol (lib_id "power:GNDA") (at 88.9 183.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 534dca29-b30e-4601-9aad-471db2575924)
-    (property "Reference" "#PWR?" (at 88.9 189.865 0)
+    (property "Reference" "#PWR0816" (at 88.9 189.865 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 88.9 187.325 0)
@@ -2077,7 +2031,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0816") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -2199,7 +2153,7 @@
           (reference "#PWR0609") (unit 1)
         )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0810") (unit 1)
+          (reference "#PWR0807") (unit 1)
         )
       )
     )
@@ -2208,7 +2162,7 @@
   (symbol (lib_id "power:GNDA") (at 224.79 83.185 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5c0eada5-c351-4937-8196-bc04cd6e04f6)
-    (property "Reference" "#PWR?" (at 231.14 83.185 0)
+    (property "Reference" "#PWR0837" (at 231.14 83.185 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 228.6 83.185 0)
@@ -2224,7 +2178,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0837") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -2291,7 +2245,7 @@
           (reference "#PWR0607") (unit 1)
         )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0803") (unit 1)
+          (reference "#PWR0809") (unit 1)
         )
       )
     )
@@ -2300,7 +2254,7 @@
   (symbol (lib_id "power:GNDA") (at 121.92 121.285 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 695bcef9-5454-43eb-bee5-87d65839fa40)
-    (property "Reference" "#PWR?" (at 115.57 121.285 0)
+    (property "Reference" "#PWR0826" (at 115.57 121.285 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 116.205 121.285 90)
@@ -2316,12 +2270,37 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0826") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
         (path "/5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7/00000000-0000-0000-0000-00005fccc26e"
           (reference "#PWR0720") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3.3V") (at 135.89 175.895 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 6c4b8148-6173-4dbe-841a-bcf6706d7807)
+    (property "Reference" "#PWR0829" (at 135.89 179.705 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 135.89 172.339 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 135.89 175.895 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 135.89 175.895 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4f464a8e-9963-4aab-8ab6-603a341c5266))
+    (instances
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
+          (reference "#PWR0829") (unit 1)
         )
       )
     )
@@ -2373,7 +2352,7 @@
   (symbol (lib_id "power:GNDA") (at 53.34 183.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 758108c0-7279-4b26-b8e4-abe75dc53fcc)
-    (property "Reference" "#PWR?" (at 53.34 189.865 0)
+    (property "Reference" "#PWR0806" (at 53.34 189.865 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 53.34 187.325 0)
@@ -2389,7 +2368,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0806") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -2465,7 +2444,7 @@
   (symbol (lib_id "power:GNDA") (at 111.76 183.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8d80aa3e-defe-44a6-b5f3-8cb7e184f09f)
-    (property "Reference" "#PWR?" (at 111.76 189.865 0)
+    (property "Reference" "#PWR0822" (at 111.76 189.865 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 111.76 187.325 0)
@@ -2481,7 +2460,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0822") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -2517,7 +2496,7 @@
           (reference "#PWR0605") (unit 1)
         )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0812") (unit 1)
+          (reference "#PWR0820") (unit 1)
         )
       )
     )
@@ -2557,11 +2536,11 @@
   (symbol (lib_id "power:+5V") (at 104.14 24.765 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 973c0e95-36b1-4e69-b664-4a5d8bbe7b48)
-    (property "Reference" "#PWR0811" (at 107.95 24.765 0)
+    (property "Reference" "#PWR0819" (at 107.95 24.765 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (at 100.33 24.765 90)
-      (effects (font (size 1.27 1.27)) (justify left))
+    (property "Value" "+5V" (at 100.584 24.765 0)
+      (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 104.14 24.765 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2573,7 +2552,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0811") (unit 1)
+          (reference "#PWR0819") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -2646,10 +2625,35 @@
     )
   )
 
+  (symbol (lib_id "power:+3.3V") (at 198.12 88.265 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 9b73d87b-f43f-45d5-9f3d-a8de9f21b59b)
+    (property "Reference" "#PWR0835" (at 198.12 92.075 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 198.12 84.709 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 198.12 88.265 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 198.12 88.265 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 13718242-81da-4578-9f50-7831027b2646))
+    (instances
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
+          (reference "#PWR0835") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GNDA") (at 85.09 151.765 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9c60e78d-3a01-4cd5-84ee-896d655ce14b)
-    (property "Reference" "#PWR?" (at 85.09 158.115 0)
+    (property "Reference" "#PWR0814" (at 85.09 158.115 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 85.09 155.575 0)
@@ -2665,7 +2669,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0814") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -2750,6 +2754,31 @@
     )
   )
 
+  (symbol (lib_id "power:+3.3V") (at 177.165 24.765 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid a41c01f4-2e39-4080-b22b-7aa8e8a05db5)
+    (property "Reference" "#PWR0833" (at 180.975 24.765 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 173.609 24.765 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 177.165 24.765 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 177.165 24.765 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 45d8876d-7ea1-4c55-858e-0500b9a79768))
+    (instances
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
+          (reference "#PWR0833") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Amplifier_Operational:TL074") (at 40.64 179.705 0) (unit 5)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a8dfae5b-f293-4eb6-933c-b1016d8079c3)
@@ -2793,65 +2822,19 @@
     )
   )
 
-  (symbol (lib_id "ETH3CDAQ1:TLA2528") (at 198.12 107.315 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid ac41d1bb-b5d9-4d42-a5de-a406b004275c)
-    (property "Reference" "U803" (at 208.28 86.995 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "TLA2528" (at 208.28 89.535 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm_ThermalVias" (at 184.15 95.885 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf" (at 184.15 95.885 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8a330ce1-a2b5-46f5-8621-a97442b277ed))
-    (pin "10" (uuid b63f94c9-b1d8-4b46-b068-69478e159367))
-    (pin "11" (uuid 94869ad6-31e7-4a3b-82d0-522d86a5984b))
-    (pin "12" (uuid 2753f8ae-2a5e-46a7-90ba-b641a5739d2c))
-    (pin "13" (uuid 0dec14c7-8eb1-4041-a003-838bb149e702))
-    (pin "14" (uuid 2609bcab-757f-4150-8e75-cfe429fc8169))
-    (pin "15" (uuid 03758cc4-1bd2-4a0d-b204-35460548372c))
-    (pin "16" (uuid 3d2536b6-aa88-47ec-866c-513adc283bd5))
-    (pin "17" (uuid 470f7632-46ad-457e-8b7f-70f720fafdc0))
-    (pin "2" (uuid 41b2a57b-d41d-4c8d-8f29-ed387eb9d699))
-    (pin "3" (uuid 99e8573f-1773-4cf0-af2b-7da41adf7f16))
-    (pin "4" (uuid 58e81db5-5dac-4c55-b787-a1437a31b481))
-    (pin "5" (uuid 495d98b9-b84a-4429-91f6-3331014d330c))
-    (pin "6" (uuid 759bdf10-4d20-430d-b3ce-ec406727efc3))
-    (pin "7" (uuid 9b37a18d-62f7-4fc8-ac8c-0ee9cfb01ebf))
-    (pin "8" (uuid 1d47d716-64fc-4fb5-bc88-3290289b34f5))
-    (pin "9" (uuid 76fccc4f-e77d-4f1b-b864-f29cbe40e87e))
-    (instances
-      (project "ETH1CFGEN1A"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "U803") (unit 1)
-        )
-      )
-      (project "ETH3CDAQ1A.kicad_pro"
-        (path "/5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7/00000000-0000-0000-0000-00005fccc26e"
-          (reference "U704") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 234.95 100.965 0) (unit 1)
+  (symbol (lib_id "Device:R") (at 234.95 99.695 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ace5d5f3-7313-433c-a9d3-e0cc53da350d)
-    (property "Reference" "R817" (at 236.728 99.7966 0)
+    (property "Reference" "R817" (at 236.728 98.5266 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "4k7" (at 236.728 102.108 0)
+    (property "Value" "4k7" (at 236.728 100.838 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 233.172 100.965 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 233.172 99.695 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 234.95 100.965 0)
+    (property "Datasheet" "~" (at 234.95 99.695 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 4ebf2244-c321-4248-bcb3-ef2b38c1fc32))
@@ -2944,6 +2927,47 @@
     )
   )
 
+  (symbol (lib_id "ETH1CFGEN1:TLA2528") (at 198.12 108.585 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid aea09c07-a096-4201-a784-91aaae374f07)
+    (property "Reference" "U803" (at 208.915 86.995 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "TLA2528" (at 208.915 89.535 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 198.12 107.315 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 198.12 107.315 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 218512cf-7012-4299-a8c0-70fce06bcb41))
+    (pin "10" (uuid 3b8e559e-979b-41cc-910e-9d47143e1b64))
+    (pin "11" (uuid 6d817784-79f5-4d37-8d27-5ad74222b38f))
+    (pin "12" (uuid 3f19d0ef-e4c6-4376-b6d3-3b410a11f417))
+    (pin "13" (uuid 26998286-94bd-4e38-8973-a1aa5af72328))
+    (pin "14" (uuid 3ec67610-3818-4563-b575-9618d8f72fe7))
+    (pin "15" (uuid 8136b24d-0224-4dc2-96ff-fc883f7721eb))
+    (pin "16" (uuid 55683124-5b11-40af-b4e4-5c6518f6e500))
+    (pin "17" (uuid dde995f8-371f-4811-827f-f3d8105d9a9b))
+    (pin "2" (uuid 4bd9a595-1949-419c-ba22-739c136f9669))
+    (pin "3" (uuid 9f49b847-53b0-4139-8257-3eca1e50f6b8))
+    (pin "4" (uuid e9ffb126-a244-41ec-92e5-9862d5d51da6))
+    (pin "5" (uuid fbe30e63-ebda-4d2e-9016-24ca70291807))
+    (pin "6" (uuid 82bc0ae7-18d2-4e50-8f83-2b5a672e1e5f))
+    (pin "7" (uuid b96b2297-9dd7-4549-b2af-8d1f265ed6cf))
+    (pin "8" (uuid 5eef3b53-1531-422d-b789-ae5f2eb2bbe1))
+    (pin "9" (uuid 31273d61-b761-4d61-b510-50c215eabfb9))
+    (instances
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
+          (reference "U803") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R") (at 80.01 98.425 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid af298fe3-2a53-41ee-86a6-30b50fdb75af)
@@ -2970,36 +2994,6 @@
       (project "ETH3CDAQ1A.kicad_pro"
         (path "/5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7/00000000-0000-0000-0000-00005fccc26e"
           (reference "R701") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 135.89 175.895 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid b2c6cf11-72a3-4bf5-96ba-8e81e204c372)
-    (property "Reference" "#PWR0832" (at 135.89 179.705 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 135.89 171.45 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 135.89 175.895 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 135.89 175.895 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 743264cd-7185-461f-b0b0-c4efd371d867))
-    (instances
-      (project "ETH1CFGEN1A"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0832") (unit 1)
-        )
-      )
-      (project "ETH3CDAQ1A.kicad_pro"
-        (path "/5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7/00000000-0000-0000-0000-00005fccc26e"
-          (reference "#PWR0736") (unit 1)
         )
       )
     )
@@ -3061,7 +3055,7 @@
           (reference "#PWR0609") (unit 1)
         )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0813") (unit 1)
+          (reference "#PWR0815") (unit 1)
         )
       )
     )
@@ -3110,19 +3104,19 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 243.84 100.965 0) (unit 1)
+  (symbol (lib_id "Device:R") (at 243.84 99.695 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c78555f6-d3e6-48f5-b98b-a305afa47707)
-    (property "Reference" "R818" (at 245.618 99.7966 0)
+    (property "Reference" "R818" (at 245.618 98.5266 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "4k7" (at 245.618 102.108 0)
+    (property "Value" "4k7" (at 245.618 100.838 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 242.062 100.965 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 242.062 99.695 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 243.84 100.965 0)
+    (property "Datasheet" "~" (at 243.84 99.695 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1415bcb0-a63e-48e3-983f-b30b7db57df1))
@@ -3144,7 +3138,7 @@
   (symbol (lib_id "power:GNDA") (at 100.33 183.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c9096777-e115-4c51-ab65-7e645900a482)
-    (property "Reference" "#PWR?" (at 100.33 189.865 0)
+    (property "Reference" "#PWR0818" (at 100.33 189.865 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 100.33 187.325 0)
@@ -3160,7 +3154,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0818") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -3174,7 +3168,7 @@
   (symbol (lib_id "power:GNDA") (at 77.47 183.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cc1e1959-0783-4ff1-8161-a334c94acd7f)
-    (property "Reference" "#PWR?" (at 77.47 189.865 0)
+    (property "Reference" "#PWR0812" (at 77.47 189.865 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 77.47 187.325 0)
@@ -3190,42 +3184,12 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0812") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
         (path "/5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7/00000000-0000-0000-0000-00005fccc26e"
           (reference "#PWR0718") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 198.12 88.265 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid cd0ac461-919b-4732-bb90-52adc0d44d78)
-    (property "Reference" "#PWR0835" (at 198.12 92.075 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 198.12 84.455 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 198.12 88.265 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 198.12 88.265 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f017b89b-893a-4085-91a2-189118938edf))
-    (instances
-      (project "ETH1CFGEN1A"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0835") (unit 1)
-        )
-      )
-      (project "ETH3CDAQ1A.kicad_pro"
-        (path "/5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7/00000000-0000-0000-0000-00005fccc26e"
-          (reference "#PWR0739") (unit 1)
         )
       )
     )
@@ -3265,7 +3229,7 @@
   (symbol (lib_id "power:GNDA") (at 124.46 183.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d2057c72-e28e-48e2-a9cb-5b85936f25de)
-    (property "Reference" "#PWR?" (at 124.46 189.865 0)
+    (property "Reference" "#PWR0828" (at 124.46 189.865 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 124.46 187.325 0)
@@ -3281,7 +3245,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0828") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -3379,7 +3343,7 @@
           (reference "#PWR0609") (unit 1)
         )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0814") (unit 1)
+          (reference "#PWR0821") (unit 1)
         )
       )
     )
@@ -3391,7 +3355,7 @@
     (property "Reference" "#PWR0834" (at 193.04 92.075 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (at 193.04 84.455 0)
+    (property "Value" "+5V" (at 193.04 84.709 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 193.04 88.265 0)
@@ -3492,7 +3456,7 @@
   (symbol (lib_id "power:GNDA") (at 66.04 183.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f1b380eb-1b35-47fa-ac66-9fb8a1b183bc)
-    (property "Reference" "#PWR?" (at 66.04 189.865 0)
+    (property "Reference" "#PWR0808" (at 66.04 189.865 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 66.04 187.325 0)
@@ -3508,7 +3472,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0808") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -3618,7 +3582,7 @@
           (reference "#PWR0605") (unit 1)
         )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0809") (unit 1)
+          (reference "#PWR0817") (unit 1)
         )
       )
     )
@@ -3627,7 +3591,7 @@
   (symbol (lib_id "power:GNDA") (at 135.89 183.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fd8a98e3-60e9-468f-8e2f-5696bf85c27f)
-    (property "Reference" "#PWR?" (at 135.89 189.865 0)
+    (property "Reference" "#PWR0830" (at 135.89 189.865 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 135.89 187.325 0)
@@ -3643,7 +3607,7 @@
     (instances
       (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0830") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -3679,7 +3643,7 @@
           (reference "#PWR0609") (unit 1)
         )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0805") (unit 1)
+          (reference "#PWR0804") (unit 1)
         )
       )
     )
