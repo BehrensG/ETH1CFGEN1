@@ -2710,10 +2710,10 @@
     (property "Reference" "C522" (at 190.5 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 190.5 273.685 0)
+    (property "Value" "100n" (at 190.5 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 188.2902 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 188.2902 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 187.325 272.415 0)
@@ -2722,9 +2722,9 @@
     (pin "1" (uuid dc88fbb7-d7f8-496a-9911-cedc3479d981))
     (pin "2" (uuid 9cc2b18f-45e2-4cc2-b11b-aabcdb379562))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C522") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C922") (unit 1)
         )
       )
     )
@@ -2747,9 +2747,9 @@
     )
     (pin "1" (uuid cfbf8900-2fea-407d-98df-cafb8df6aecf))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0530") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0930") (unit 1)
         )
       )
     )
@@ -2764,7 +2764,7 @@
     (property "Value" "10k" (at 347.98 164.465 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 347.98 166.243 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 347.98 166.243 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 347.98 164.465 0)
@@ -2773,24 +2773,24 @@
     (pin "1" (uuid db8ddaf3-aa91-406a-af41-82ac78660aa6))
     (pin "2" (uuid 9b5bb203-3546-4a10-b297-d921038fb252))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "R509") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "R909") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:C") (at 214.63 272.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 0b218d2d-ec6e-41f3-a26e-bd36e624a9ce)
     (property "Reference" "C524" (at 217.805 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 217.805 273.685 0)
+    (property "Value" "100n" (at 217.805 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 215.5952 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 215.5952 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 214.63 272.415 0)
@@ -2799,9 +2799,9 @@
     (pin "1" (uuid 77f78d1b-52a8-49de-8212-42f8ce686a19))
     (pin "2" (uuid 78695a53-c05e-4b42-ae5d-6036e9287ba9))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C524") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C924") (unit 1)
         )
       )
     )
@@ -2810,13 +2810,13 @@
   (symbol (lib_id "Device:R") (at 226.06 110.49 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0deb6a04-613a-41f7-b084-939143b79c98)
-    (property "Reference" "R504" (at 226.06 107.95 90)
+    (property "Reference" "R504" (at 226.06 106.045 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "4k7" (at 226.06 110.49 90)
+    (property "Value" "4k7" (at 226.06 107.95 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 226.06 112.268 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 226.06 112.268 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 226.06 110.49 0)
@@ -2825,9 +2825,9 @@
     (pin "1" (uuid 397bac3f-fe34-4adb-99a6-513ed55684c4))
     (pin "2" (uuid de0e00fe-7b2e-4ff8-8216-6f2387c6b0ac))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "R504") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "R904") (unit 1)
         )
       )
     )
@@ -2850,9 +2850,9 @@
     )
     (pin "1" (uuid 5ab81b6d-c62c-40b0-8237-dc3639c95b93))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0536") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0936") (unit 1)
         )
       )
     )
@@ -2876,9 +2876,9 @@
     (pin "1" (uuid 2b2c9910-2942-4914-b4a1-6467dd7846cd))
     (pin "2" (uuid d662bacb-79b3-4d3a-a6f4-edc602f30fbb))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C506") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C906") (unit 1)
         )
       )
     )
@@ -2901,24 +2901,24 @@
     )
     (pin "1" (uuid bb2089d6-bd7c-45c5-82d6-234c77f3be85))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0522") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0922") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:C") (at 73.66 272.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 186205cc-a175-4107-8a60-13c29a23cd0f)
     (property "Reference" "C509" (at 76.835 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 76.835 273.685 0)
+    (property "Value" "100n" (at 76.835 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 74.6252 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 74.6252 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 73.66 272.415 0)
@@ -2927,9 +2927,9 @@
     (pin "1" (uuid 3535f584-0218-4c77-b5b3-ab9a76de59a7))
     (pin "2" (uuid 8e7970ff-c938-4934-ae11-b4997874a2a4))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C509") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C909") (unit 1)
         )
       )
     )
@@ -2952,9 +2952,9 @@
     )
     (pin "1" (uuid 86b0ed01-4ff5-459a-923e-005eea73b5b5))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0535") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0935") (unit 1)
         )
       )
     )
@@ -2977,9 +2977,9 @@
     )
     (pin "1" (uuid eaaabfd1-7af3-4d00-9c62-aaefb1e134fa))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0505") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0905") (unit 1)
         )
       )
     )
@@ -3002,9 +3002,9 @@
     )
     (pin "1" (uuid 4c79c38d-c075-48e4-8f58-a1aa45381072))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0520") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0920") (unit 1)
         )
       )
     )
@@ -3019,7 +3019,7 @@
     (property "Value" "BLUE" (at 355.6 148.59 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 355.6 151.765 0)
+    (property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (at 355.6 151.765 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 355.6 151.765 0)
@@ -3028,9 +3028,9 @@
     (pin "1" (uuid 8a149b4b-0134-46bd-a150-83ef39c0a938))
     (pin "2" (uuid 4c1fd46b-38c8-4cc2-8fc6-b4645810f433))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "D501") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "D901") (unit 1)
         )
       )
     )
@@ -3060,24 +3060,24 @@
     (pin "7" (uuid 0ca9b75a-2852-4d15-a6bf-a5a53a3f3a23))
     (pin "8" (uuid 6166e626-7901-4982-a35e-39034f346005))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "U504") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "U904") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:C") (at 164.465 272.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 2ec73b2f-11f0-40d3-b319-50802130eb7b)
     (property "Reference" "C520" (at 167.64 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 167.64 273.685 0)
+    (property "Value" "100n" (at 167.64 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 165.4302 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 165.4302 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 164.465 272.415 0)
@@ -3086,24 +3086,24 @@
     (pin "1" (uuid 72c68e18-85ba-40aa-975a-8ec1f24c3cc0))
     (pin "2" (uuid 5a63bb0c-ccdc-4a00-adba-f34e09c3e7e5))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C520") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C920") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:C") (at 85.09 272.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 34ed84e7-c8f8-4ac5-8b92-f8ff46bc57cd)
     (property "Reference" "C511" (at 88.265 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 88.265 273.685 0)
+    (property "Value" "100n" (at 88.265 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 86.0552 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 86.0552 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 85.09 272.415 0)
@@ -3112,9 +3112,9 @@
     (pin "1" (uuid 043375f0-de2e-466e-869f-0826c532251e))
     (pin "2" (uuid 081e5347-fe70-4c29-b5b9-111de81a7111))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C511") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C911") (unit 1)
         )
       )
     )
@@ -3137,9 +3137,9 @@
     )
     (pin "1" (uuid a9b6761e-e113-4a96-bc93-f0703b05544e))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0529") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0929") (unit 1)
         )
       )
     )
@@ -3167,9 +3167,9 @@
     (pin "5" (uuid fb9e127e-db92-4fbf-86b1-b121fe5a6ce0))
     (pin "6" (uuid c477797e-492a-4318-9b89-75aef2231066))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "J501") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "J901") (unit 1)
         )
       )
     )
@@ -3181,10 +3181,10 @@
     (property "Reference" "C515" (at 121.92 233.68 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 121.92 236.22 0)
+    (property "Value" "100n" (at 121.92 236.22 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 119.7102 238.76 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 119.7102 238.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 118.745 234.95 0)
@@ -3193,9 +3193,9 @@
     (pin "1" (uuid fad3c3ba-6791-4260-a5f6-c5412b9bba14))
     (pin "2" (uuid 72c4f5c3-cdb0-448f-a3c2-a1724825dcbb))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C515") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C915") (unit 1)
         )
       )
     )
@@ -3210,7 +3210,7 @@
     (property "Value" "4k7" (at 347.98 158.115 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 347.98 159.893 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 347.98 159.893 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 347.98 158.115 0)
@@ -3219,9 +3219,9 @@
     (pin "1" (uuid 51418473-9129-44b6-b416-3cdd58c0e6a7))
     (pin "2" (uuid 084525b7-adac-446d-b6e1-7753b052525a))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "R508") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "R908") (unit 1)
         )
       )
     )
@@ -3233,10 +3233,10 @@
     (property "Reference" "C503" (at 35.56 233.68 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 35.56 236.22 0)
+    (property "Value" "100n" (at 35.56 236.22 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 33.3502 238.76 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 33.3502 238.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 32.385 234.95 0)
@@ -3245,9 +3245,9 @@
     (pin "1" (uuid ec29b6b5-144b-4bab-b0b1-ce631cbff804))
     (pin "2" (uuid 64b03579-e0a9-45da-aaae-308de22895fe))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C503") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C903") (unit 1)
         )
       )
     )
@@ -3270,9 +3270,9 @@
     )
     (pin "1" (uuid 5a679c4c-7052-4c5d-bf81-68f02f7f38cf))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0506") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0906") (unit 1)
         )
       )
     )
@@ -3287,7 +3287,7 @@
     (property "Value" "10k" (at 189.865 206.375 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 186.182 205.105 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 186.182 205.105 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 187.96 205.105 0)
@@ -3296,9 +3296,9 @@
     (pin "1" (uuid 9606c3d7-a9da-44a6-be8c-d6d2ff0244e3))
     (pin "2" (uuid 29a696b7-a004-40fb-bb44-f6fb3ecd63da))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "R501") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "R901") (unit 1)
         )
       )
     )
@@ -3310,10 +3310,10 @@
     (property "Reference" "U503" (at 130.175 118.11 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "XC6SLX9-TQG144" (at 130.175 120.65 0)
+    (property "Value" "XC6SLX9-3TQG144I" (at 130.175 120.65 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 130.175 72.39 0)
+    (property "Footprint" "ETH1CFGEN1:TQFP-144_20x20mm_P0.5mm" (at 130.175 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 130.175 72.39 0)
@@ -3464,9 +3464,9 @@
     (pin "91" (uuid 82fc3a82-c3d9-42cd-877d-9f692d698f40))
     (pin "96" (uuid 2def4b28-3f27-4c2c-bfaf-077efd092c27))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "U503") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "U903") (unit 1)
         )
       )
     )
@@ -3489,9 +3489,9 @@
     )
     (pin "1" (uuid d5831d17-3101-438d-b708-487855ba0ea2))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0502") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0902") (unit 1)
         )
       )
     )
@@ -3503,10 +3503,10 @@
     (property "Reference" "C527" (at 251.46 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 251.46 273.685 0)
+    (property "Value" "100n" (at 251.46 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 249.2502 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 249.2502 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 248.285 272.415 0)
@@ -3515,9 +3515,9 @@
     (pin "1" (uuid 06748001-e672-4143-b6a6-9231df84ee2d))
     (pin "2" (uuid 35c2e082-d87a-4252-9ad5-16124fa10e84))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C527") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C927") (unit 1)
         )
       )
     )
@@ -3540,9 +3540,9 @@
     )
     (pin "1" (uuid 9864b10e-7714-4a13-9d25-17f776930bc8))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0516") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0916") (unit 1)
         )
       )
     )
@@ -3565,24 +3565,24 @@
     )
     (pin "1" (uuid 852228e6-ef46-4e2a-a55b-a4fe08131b0c))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0521") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0921") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:C") (at 39.37 272.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 5d8deb30-f701-4824-841c-45eb72fdd5b7)
     (property "Reference" "C504" (at 42.545 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 42.545 273.685 0)
+    (property "Value" "100n" (at 42.545 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 40.3352 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 40.3352 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 39.37 272.415 0)
@@ -3591,24 +3591,24 @@
     (pin "1" (uuid 6ab8a522-b9ec-4f07-b189-1ca82a5efd6f))
     (pin "2" (uuid 758e87d0-95d9-401e-a5f3-148c0b53d8c7))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C504") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C904") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:C") (at 203.2 272.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 61bf47b9-3eea-4655-a071-5bef86086a13)
     (property "Reference" "C523" (at 206.375 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 206.375 273.685 0)
+    (property "Value" "100n" (at 206.375 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 204.1652 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 204.1652 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 203.2 272.415 0)
@@ -3617,9 +3617,9 @@
     (pin "1" (uuid 8a38b126-93e7-4f9d-bc1b-469fa72b23f8))
     (pin "2" (uuid f4248e3f-b09a-42f2-89e0-43e65632c4b7))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C523") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C923") (unit 1)
         )
       )
     )
@@ -3634,7 +3634,7 @@
     (property "Value" "2k2" (at 208.28 206.375 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 203.962 205.105 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 203.962 205.105 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 205.74 205.105 0)
@@ -3643,9 +3643,9 @@
     (pin "1" (uuid a76077b4-c0a2-4cea-a259-5427e63b1c09))
     (pin "2" (uuid 415fb39a-771e-44cc-b211-fc8f9733676c))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "R503") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "R903") (unit 1)
         )
       )
     )
@@ -3668,9 +3668,9 @@
     )
     (pin "1" (uuid bd392f4a-8790-4b17-8ff7-ab807d05d6c4))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0509") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0909") (unit 1)
         )
       )
     )
@@ -3706,24 +3706,24 @@
     (pin "8" (uuid e4c0d624-66ff-4078-917d-f1b84cc7b315))
     (pin "9" (uuid ed28d74c-52fd-4882-bfe4-f108ff908e19))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "J502") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "J902") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:C") (at 50.8 272.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 6ab70201-7efb-4ba9-b82a-40a3fc29aed8)
     (property "Reference" "C505" (at 53.975 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 53.975 273.685 0)
+    (property "Value" "100n" (at 53.975 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 51.7652 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 51.7652 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 50.8 272.415 0)
@@ -3732,9 +3732,9 @@
     (pin "1" (uuid 6d32edfe-dbab-4839-a2ce-9cc8719cfed3))
     (pin "2" (uuid cb1399a5-b288-49aa-aa90-93391332d65a))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C505") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C905") (unit 1)
         )
       )
     )
@@ -3757,9 +3757,9 @@
     )
     (pin "1" (uuid 9bf78b14-d41d-4959-bc18-e8e49e7699d8))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0508") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0908") (unit 1)
         )
       )
     )
@@ -3784,12 +3784,12 @@
     (pin "2" (uuid 3be4f123-750f-4be8-a696-c20c2d0f247d))
     (pin "3" (uuid 23220fe8-9d24-4ecc-91a4-df57bf725763))
     (instances
-      (project "ETH1CFGEN1"
+      (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
           (reference "U?") (unit 1)
         )
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "U501") (unit 1)
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "U901") (unit 1)
         )
       )
     )
@@ -3812,24 +3812,24 @@
     )
     (pin "1" (uuid a2c13160-b39a-4409-af97-ca608e8b61b0))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0503") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0903") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:C") (at 153.67 272.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 71277e02-462e-497a-8662-7661f15f219b)
     (property "Reference" "C519" (at 156.845 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 156.845 273.685 0)
+    (property "Value" "100n" (at 156.845 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 154.6352 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 154.6352 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 153.67 272.415 0)
@@ -3838,9 +3838,9 @@
     (pin "1" (uuid 8524c0f5-5a1e-44ed-ae7f-f3d079ff73e9))
     (pin "2" (uuid d421bc8f-e5b5-4436-94be-45809c9f8c1f))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C519") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C919") (unit 1)
         )
       )
     )
@@ -3863,24 +3863,24 @@
     )
     (pin "1" (uuid d5f176b7-1986-45ed-9b78-f3061cfb91ff))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0513") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0913") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:C") (at 130.81 272.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 7562234a-6e6e-4753-94e3-7c4008e15b99)
     (property "Reference" "C517" (at 133.985 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 133.985 273.685 0)
+    (property "Value" "100n" (at 133.985 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 131.7752 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 131.7752 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 130.81 272.415 0)
@@ -3889,9 +3889,9 @@
     (pin "1" (uuid abcc6260-b725-478c-b5c1-62712cc01701))
     (pin "2" (uuid 0fcbce74-4dbd-46c8-9a60-6a4cf58cde0c))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C517") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C917") (unit 1)
         )
       )
     )
@@ -3914,9 +3914,9 @@
     )
     (pin "1" (uuid 9a927b3c-21e6-4268-947d-c497c1d37b39))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0524") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0924") (unit 1)
         )
       )
     )
@@ -3939,9 +3939,9 @@
     )
     (pin "1" (uuid ca563dc3-1c00-425c-8550-2b19f7e5dbaf))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0511") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0911") (unit 1)
         )
       )
     )
@@ -3964,9 +3964,9 @@
     )
     (pin "1" (uuid c060b5d8-594f-41a2-a79b-55f1f971f29d))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0517") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0917") (unit 1)
         )
       )
     )
@@ -3992,9 +3992,9 @@
     (pin "3" (uuid 88127710-673a-4493-8e5e-d7509ef7de0a))
     (pin "4" (uuid 4651561b-f1b8-4060-91ad-7468b3f6bad6))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "X501") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "X901") (unit 1)
         )
       )
     )
@@ -4017,9 +4017,9 @@
     )
     (pin "1" (uuid c7168c00-976e-46ab-8277-6919a682c8ae))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0504") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0904") (unit 1)
         )
       )
     )
@@ -4031,10 +4031,10 @@
     (property "Reference" "C525" (at 228.6 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 228.6 273.685 0)
+    (property "Value" "100n" (at 228.6 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 226.3902 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 226.3902 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 225.425 272.415 0)
@@ -4043,9 +4043,9 @@
     (pin "1" (uuid a6d53d12-f801-4309-a59b-e720325a9e76))
     (pin "2" (uuid 1425fca3-6a1c-48f1-b4e7-79c1d2579f60))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C525") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C925") (unit 1)
         )
       )
     )
@@ -4068,9 +4068,9 @@
     )
     (pin "1" (uuid 727bcd66-14ee-4277-b4eb-8fb1dde4cb23))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0501") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0901") (unit 1)
         )
       )
     )
@@ -4093,9 +4093,9 @@
     )
     (pin "1" (uuid 3a84d930-fe5e-43f7-8feb-c894fad6cb21))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0527") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0927") (unit 1)
         )
       )
     )
@@ -4118,9 +4118,9 @@
     )
     (pin "1" (uuid d2614c58-e190-4761-9bbf-0aa904a11416))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0534") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0934") (unit 1)
         )
       )
     )
@@ -4129,13 +4129,13 @@
   (symbol (lib_id "Device:C") (at 81.28 234.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8f3bd8ed-1ff7-400c-9f90-8116da9c7e8f)
-    (property "Reference" "C510" (at 84.455 233.68 0)
+    (property "Reference" "C510" (at 85.09 233.68 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 84.455 236.22 0)
+    (property "Value" "100n" (at 85.09 236.22 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 82.2452 238.76 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 82.2452 238.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 81.28 234.95 0)
@@ -4144,9 +4144,9 @@
     (pin "1" (uuid 9167bfd4-0380-4af9-a0cb-d20f57b1d7f4))
     (pin "2" (uuid bdf61b1b-1403-4823-bbc1-1e251270d601))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C510") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C910") (unit 1)
         )
       )
     )
@@ -4171,12 +4171,12 @@
     (pin "2" (uuid be2a37e3-6c62-464f-afbc-9f0b06c7b2b2))
     (pin "3" (uuid 1e9d058f-fb5e-4e0a-8554-001bfb5690e2))
     (instances
-      (project "ETH1CFGEN1"
+      (project "ETH1CFGEN1A"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
           (reference "U?") (unit 1)
         )
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "U502") (unit 1)
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "U902") (unit 1)
         )
       )
     )
@@ -4191,7 +4191,7 @@
     (property "Value" "1K" (at 347.98 151.765 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 347.98 153.543 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 347.98 153.543 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 347.98 151.765 0)
@@ -4200,9 +4200,9 @@
     (pin "1" (uuid dcd1c073-2cbf-488c-ac38-8d9ddf6facc6))
     (pin "2" (uuid 311ea69a-3ebb-483e-abe7-204249d3e160))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "R507") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "R907") (unit 1)
         )
       )
     )
@@ -4225,24 +4225,24 @@
     )
     (pin "1" (uuid 61eadc47-df81-4f73-8acf-5afc8408ea77))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0533") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0933") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:C") (at 27.94 272.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 96180b60-d8e7-4138-bb73-5ed26f9d671a)
     (property "Reference" "C502" (at 31.115 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 31.115 273.685 0)
+    (property "Value" "100n" (at 31.115 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 28.9052 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 28.9052 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 27.94 272.415 0)
@@ -4251,9 +4251,9 @@
     (pin "1" (uuid 7489d64c-5c86-4938-9a7f-82728c42f7ee))
     (pin "2" (uuid 09a88029-f8a8-4e5d-9a96-19f73cdf29a8))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C502") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C902") (unit 1)
         )
       )
     )
@@ -4265,10 +4265,10 @@
     (property "Reference" "C526" (at 240.03 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 240.03 273.685 0)
+    (property "Value" "100n" (at 240.03 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 237.8202 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 237.8202 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 236.855 272.415 0)
@@ -4277,24 +4277,24 @@
     (pin "1" (uuid 145a0dbc-6d76-410c-90a7-8edabf218a8b))
     (pin "2" (uuid 8a0dfc44-e724-49e1-a1f8-f99b5956d95a))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C526") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C926") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:C") (at 142.24 272.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 9a805685-f773-4368-ac70-b1166740a18f)
     (property "Reference" "C518" (at 145.415 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 145.415 273.685 0)
+    (property "Value" "100n" (at 145.415 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 143.2052 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 143.2052 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 142.24 272.415 0)
@@ -4303,9 +4303,9 @@
     (pin "1" (uuid b2478506-0479-4e78-a898-9ae44094114f))
     (pin "2" (uuid 0ca87518-985d-41c9-9276-9b6c7147a3ca))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C518") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C918") (unit 1)
         )
       )
     )
@@ -4328,9 +4328,9 @@
     )
     (pin "1" (uuid ef75094d-05fc-4cd9-b232-b0de2a17ecf4))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0507") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0907") (unit 1)
         )
       )
     )
@@ -4353,9 +4353,9 @@
     )
     (pin "1" (uuid d9f74a24-f662-48c1-a36b-1423f9779465))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0526") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0926") (unit 1)
         )
       )
     )
@@ -4378,9 +4378,9 @@
     )
     (pin "1" (uuid 46ea0847-a583-4aab-9178-0ae8a5d255c8))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0528") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0928") (unit 1)
         )
       )
     )
@@ -4403,9 +4403,9 @@
     )
     (pin "1" (uuid 959acc31-447d-4fa5-86e5-3a7bfcf990f3))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0510") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0910") (unit 1)
         )
       )
     )
@@ -4429,9 +4429,9 @@
     (pin "1" (uuid 75f1181f-b6f3-4a3b-86bb-f52cacb48166))
     (pin "2" (uuid 1b9c8369-f787-4885-82db-8ab557c8f32e))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C513") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C913") (unit 1)
         )
       )
     )
@@ -4454,9 +4454,9 @@
     )
     (pin "1" (uuid 55a424be-bd14-40a4-b07d-771f7ca0c9c5))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0519") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0919") (unit 1)
         )
       )
     )
@@ -4479,9 +4479,9 @@
     )
     (pin "1" (uuid 6204b7da-3fbd-4d09-8c5b-1cc06d08e24f))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0515") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0915") (unit 1)
         )
       )
     )
@@ -4490,13 +4490,13 @@
   (symbol (lib_id "Device:C") (at 281.94 272.415 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b358be26-61d6-4ed7-b337-80d437bedccf)
-    (property "Reference" "C529" (at 285.115 271.145 0)
+    (property "Reference" "C529" (at 285.75 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 285.115 273.685 0)
+    (property "Value" "100n" (at 285.75 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 282.9052 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 282.9052 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 281.94 272.415 0)
@@ -4505,9 +4505,9 @@
     (pin "1" (uuid c34e6ca8-9497-4f77-b69c-ca2e2360aa78))
     (pin "2" (uuid d9037878-f881-403e-bf13-2a03db8bde43))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C529") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C929") (unit 1)
         )
       )
     )
@@ -4530,9 +4530,9 @@
     )
     (pin "1" (uuid 8ef42b02-c09b-4784-bbe0-2c25b1c6718c))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0532") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0932") (unit 1)
         )
       )
     )
@@ -4555,9 +4555,9 @@
     )
     (pin "1" (uuid 217d3c79-9cbe-4344-bedb-70b0daabe7bb))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0537") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0937") (unit 1)
         )
       )
     )
@@ -4566,13 +4566,13 @@
   (symbol (lib_id "Device:C") (at 265.43 272.415 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b7c4240f-1266-4538-87bc-1a4c3f516559)
-    (property "Reference" "C528" (at 268.605 271.145 0)
+    (property "Reference" "C528" (at 269.24 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 268.605 273.685 0)
+    (property "Value" "100n" (at 269.24 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 266.3952 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 266.3952 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 265.43 272.415 0)
@@ -4581,24 +4581,24 @@
     (pin "1" (uuid 429cb803-7afe-41e1-b355-87967c3784a0))
     (pin "2" (uuid bda6c17b-4108-4d69-a021-c34c00d2ebf5))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C528") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C928") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:C") (at 96.52 272.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid bb84507e-d860-4c89-900b-d622ab53f6c3)
     (property "Reference" "C512" (at 99.695 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 99.695 273.685 0)
+    (property "Value" "100n" (at 99.695 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 97.4852 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 97.4852 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 96.52 272.415 0)
@@ -4607,24 +4607,24 @@
     (pin "1" (uuid 13c9ab5b-1c0c-4a1a-8321-e63660d52cae))
     (pin "2" (uuid 0e8a2c54-bb8c-4a58-a990-a520a38f6032))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C512") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C912") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:C") (at 107.95 272.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid bb8e96ee-e7f3-4b41-80aa-cc77ed5a4ad0)
     (property "Reference" "C514" (at 111.125 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 111.125 273.685 0)
+    (property "Value" "100n" (at 111.125 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 108.9152 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 108.9152 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 107.95 272.415 0)
@@ -4633,9 +4633,9 @@
     (pin "1" (uuid d07a9a40-8503-4627-a7b5-d2d11d5e0f33))
     (pin "2" (uuid e5342ba0-9fe5-4d00-bb55-6df891bd2f22))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C514") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C914") (unit 1)
         )
       )
     )
@@ -4658,9 +4658,9 @@
     )
     (pin "1" (uuid 9e29ed05-c3e1-4d59-ae8c-46e46aa894b7))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0525") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0925") (unit 1)
         )
       )
     )
@@ -4683,24 +4683,24 @@
     )
     (pin "1" (uuid c276e6c0-f065-4c82-aa37-3cdb8095aaa4))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0518") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0918") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:C") (at 62.23 272.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid cc9348d7-b063-437c-8ce2-f3638f772060)
     (property "Reference" "C507" (at 65.405 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 65.405 273.685 0)
+    (property "Value" "100n" (at 65.405 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 63.1952 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 63.1952 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 62.23 272.415 0)
@@ -4709,24 +4709,24 @@
     (pin "1" (uuid 065a480e-f6be-4dd8-9564-605d040fa692))
     (pin "2" (uuid b73c8f4c-1a69-4590-b8f2-0f3ea5da618d))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C507") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C907") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:C") (at 119.38 272.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid ce40883c-a4c3-4d8f-819e-e2970164bbd5)
     (property "Reference" "C516" (at 122.555 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 122.555 273.685 0)
+    (property "Value" "100n" (at 122.555 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 120.3452 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 120.3452 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 119.38 272.415 0)
@@ -4735,9 +4735,9 @@
     (pin "1" (uuid 2e310141-25c5-47d7-8fcf-4c6bed54aa1b))
     (pin "2" (uuid d3b929f7-a101-48ee-bdb8-cb74f4fe07ab))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C516") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C916") (unit 1)
         )
       )
     )
@@ -4760,9 +4760,9 @@
     )
     (pin "1" (uuid 5fe5ad49-2976-4b9a-8136-29c92e95713c))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0523") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0923") (unit 1)
         )
       )
     )
@@ -4774,10 +4774,10 @@
     (property "Reference" "C508" (at 72.39 233.68 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 72.39 236.22 0)
+    (property "Value" "100n" (at 72.39 236.22 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 70.1802 238.76 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 70.1802 238.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 69.215 234.95 0)
@@ -4786,9 +4786,9 @@
     (pin "1" (uuid 49572ba2-6e71-48cb-8960-a62f0d38da45))
     (pin "2" (uuid c47c7297-fcd2-44f9-8930-79982503acef))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C508") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C908") (unit 1)
         )
       )
     )
@@ -4800,10 +4800,10 @@
     (property "Reference" "U503" (at 293.37 117.475 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "XC6SLX9-TQG144" (at 293.37 120.015 0)
+    (property "Value" "XC6SLX9-3TQG144I" (at 293.37 120.015 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 293.37 72.39 0)
+    (property "Footprint" "ETH1CFGEN1:TQFP-144_20x20mm_P0.5mm" (at 293.37 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 293.37 72.39 0)
@@ -4954,9 +4954,9 @@
     (pin "91" (uuid 923ccd45-e72b-4402-8656-3f0911a07d2d))
     (pin "96" (uuid d2ef7cd8-d30c-46ec-a258-7c00a13c3fbe))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "U503") (unit 2)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "U903") (unit 2)
         )
       )
     )
@@ -4979,9 +4979,9 @@
     )
     (pin "1" (uuid 5eab5bfb-3b43-476b-a729-9ab0bcc4cfdb))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0514") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0914") (unit 1)
         )
       )
     )
@@ -4996,7 +4996,7 @@
     (property "Value" "1k" (at 260.35 216.535 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 256.667 215.265 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 256.667 215.265 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 258.445 215.265 0)
@@ -5005,9 +5005,9 @@
     (pin "1" (uuid fc01c76c-41dc-471c-8bf3-f9641c15f226))
     (pin "2" (uuid c6644176-9e88-4738-bad5-cc6f11281d6e))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "R505") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "R905") (unit 1)
         )
       )
     )
@@ -5030,9 +5030,9 @@
     )
     (pin "1" (uuid 8182ca17-63ae-4203-8454-0a547c6aa351))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0531") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0931") (unit 1)
         )
       )
     )
@@ -5044,10 +5044,10 @@
     (property "Reference" "C521" (at 179.07 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 179.07 273.685 0)
+    (property "Value" "100n" (at 179.07 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 176.8602 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 176.8602 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 175.895 272.415 0)
@@ -5056,9 +5056,9 @@
     (pin "1" (uuid 64f5d20f-d66a-43ba-afb5-24b3f6f89cee))
     (pin "2" (uuid 974ea316-406f-4eee-8a7f-ee11ecd3f5d3))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C521") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C921") (unit 1)
         )
       )
     )
@@ -5081,9 +5081,9 @@
     )
     (pin "1" (uuid 3e11b6de-2ee3-4371-a3f8-7bd227cdc134))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0512") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0912") (unit 1)
         )
       )
     )
@@ -5098,7 +5098,7 @@
     (property "Value" "10k" (at 198.755 206.375 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 195.072 205.105 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 195.072 205.105 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 196.85 205.105 0)
@@ -5107,9 +5107,9 @@
     (pin "1" (uuid 3caef290-3640-4bca-a196-8154b1c36d34))
     (pin "2" (uuid 4aa8a331-f8cf-4a37-9195-28e3ab4a660c))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "R502") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "R902") (unit 1)
         )
       )
     )
@@ -5121,10 +5121,10 @@
     (property "Reference" "U503" (at 130.175 128.27 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "XC6SLX9-TQG144" (at 130.175 130.81 0)
+    (property "Value" "XC6SLX9-3TQG144I" (at 130.175 130.81 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 130.175 151.13 0)
+    (property "Footprint" "ETH1CFGEN1:TQFP-144_20x20mm_P0.5mm" (at 130.175 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 130.175 151.13 0)
@@ -5275,9 +5275,9 @@
     (pin "91" (uuid c8beaf97-de6a-46ae-b33c-bc37a1f2f7b6))
     (pin "96" (uuid 5633a41c-c719-438c-b336-9890f2b37f5d))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "U503") (unit 4)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "U903") (unit 4)
         )
       )
     )
@@ -5292,7 +5292,7 @@
     (property "Value" "27" (at 283.845 217.17 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 283.845 221.488 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 283.845 221.488 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 283.845 219.71 0)
@@ -5301,9 +5301,9 @@
     (pin "1" (uuid 16e3ec18-de5f-4d46-b992-0ab66bc47dca))
     (pin "2" (uuid 5b8e6d29-d6ca-404e-9c61-b5cd22996608))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "R506") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "R906") (unit 1)
         )
       )
     )
@@ -5315,10 +5315,10 @@
     (property "Reference" "U503" (at 293.37 132.08 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "XC6SLX9-TQG144" (at 293.37 134.62 0)
+    (property "Value" "XC6SLX9-3TQG144I" (at 293.37 134.62 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 293.37 151.765 0)
+    (property "Footprint" "ETH1CFGEN1:TQFP-144_20x20mm_P0.5mm" (at 293.37 151.765 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 293.37 151.765 0)
@@ -5469,24 +5469,24 @@
     (pin "91" (uuid 87e8650e-1987-4ed3-890a-42b83092c85d))
     (pin "96" (uuid c3634a66-79e5-46a7-ae15-c9226855f1de))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "U503") (unit 3)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "U903") (unit 3)
         )
       )
     )
   )
 
   (symbol (lib_id "Device:C") (at 16.51 272.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid fa72d09e-fb51-4dc9-a44d-b1597dc41814)
     (property "Reference" "C501" (at 19.685 271.145 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 19.685 273.685 0)
+    (property "Value" "100n" (at 19.685 273.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 17.4752 276.225 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 17.4752 276.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 16.51 272.415 0)
@@ -5495,9 +5495,9 @@
     (pin "1" (uuid 24b484f5-b439-423f-81e6-f15d8b3c4c12))
     (pin "2" (uuid 6c3c8aca-6608-40be-b345-81e92eede642))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "C501") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "C901") (unit 1)
         )
       )
     )
@@ -5520,9 +5520,9 @@
     )
     (pin "1" (uuid 904a4947-5883-45da-96f7-7b3695662eed))
     (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8dbb67a1-c452-43a5-a871-9d0d2562a561"
-          (reference "#PWR0538") (unit 1)
+      (project "ETH1CFGEN1A"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/3db716d1-a300-4b46-a830-4c2d986405e3"
+          (reference "#PWR0938") (unit 1)
         )
       )
     )
