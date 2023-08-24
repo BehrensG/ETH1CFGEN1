@@ -510,23 +510,6 @@
     )
   )
 
-  (sheet (at 22.225 43.815) (size 41.91 43.815) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 3db716d1-a300-4b46-a830-4c2d986405e3)
-    (property "Sheetname" "FPGA" (at 22.225 43.1034 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "FPGA.kicad_sch" (at 22.225 88.2146 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "ETH1CFGEN1A"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50" (page "9"))
-      )
-    )
-  )
-
   (sheet (at 111.76 112.395) (size 72.39 22.225) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
