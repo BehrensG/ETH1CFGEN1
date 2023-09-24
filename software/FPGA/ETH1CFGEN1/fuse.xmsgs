@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/testbench/spiifc_tb_rx.v" Line 48: Port <arg fmt="%s" index="1">regAddr</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/testbench/test_ETH1CFGEN1.v" Line 47: Target &lt;<arg fmt="%s" index="1">AD9744_WD</arg>&gt; of concurrent assignment or output port connection should be a net type.
 </msg>
 
 </messages>

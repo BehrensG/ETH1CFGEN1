@@ -1,0 +1,634 @@
+(edif ETH1CFGEN1
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2023 9 23 21 34 30)
+      (program "Xilinx ngc2edif" (version "P.20131013"))
+      (author "Xilinx. Inc ")
+      (comment "This EDIF netlist is to be used within supported synthesis tools")
+      (comment "for determining resource/timing estimates of the design component")
+      (comment "represented by this netlist.")
+      (comment "Command line: -mdp2sp -w -secure ETH1CFGEN1.ngc ETH1CFGEN1.edif ")))
+  (external UNISIMS
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell VCC
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port P
+              (direction OUTPUT)
+              (property PIN_BUSNAME (string "out<1:8>") (owner "Xilinx"))
+              (property PIN_BUSIDX (integer -1) (owner "Xilinx"))
+            )
+          )
+      )
+    )
+    (cell GND
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port G
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell BUFG
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port O
+              (direction OUTPUT)
+            )
+            (port I
+              (direction INPUT)
+            )
+          )
+      )
+    )
+    (cell DCM_SP
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port CLK2X180
+              (direction OUTPUT)
+            )
+            (port PSCLK
+              (direction INPUT)
+            )
+            (port CLK2X
+              (direction OUTPUT)
+            )
+            (port CLKFX
+              (direction OUTPUT)
+            )
+            (port CLK180
+              (direction OUTPUT)
+            )
+            (port CLK270
+              (direction OUTPUT)
+            )
+            (port RST
+              (direction INPUT)
+            )
+            (port PSINCDEC
+              (direction INPUT)
+            )
+            (port CLKIN
+              (direction INPUT)
+            )
+            (port CLKFB
+              (direction INPUT)
+            )
+            (port PSEN
+              (direction INPUT)
+            )
+            (port CLK0
+              (direction OUTPUT)
+            )
+            (port CLKFX180
+              (direction OUTPUT)
+            )
+            (port CLKDV
+              (direction OUTPUT)
+            )
+            (port PSDONE
+              (direction OUTPUT)
+            )
+            (port CLK90
+              (direction OUTPUT)
+            )
+            (port LOCKED
+              (direction OUTPUT)
+            )
+            (port DSSEN
+              (direction INPUT)
+            )
+            (port (rename STATUS_7_ "STATUS<7>")
+              (direction OUTPUT)
+              (property PIN_BUSNAME (string "STATUS<7:0>") (owner "Xilinx"))
+              (property PIN_BUSIDX (integer 0) (owner "Xilinx"))
+            )
+            (port (rename STATUS_6_ "STATUS<6>")
+              (direction OUTPUT)
+              (property PIN_BUSNAME (string "STATUS<7:0>") (owner "Xilinx"))
+              (property PIN_BUSIDX (integer 1) (owner "Xilinx"))
+            )
+            (port (rename STATUS_5_ "STATUS<5>")
+              (direction OUTPUT)
+              (property PIN_BUSNAME (string "STATUS<7:0>") (owner "Xilinx"))
+              (property PIN_BUSIDX (integer 2) (owner "Xilinx"))
+            )
+            (port (rename STATUS_4_ "STATUS<4>")
+              (direction OUTPUT)
+              (property PIN_BUSNAME (string "STATUS<7:0>") (owner "Xilinx"))
+              (property PIN_BUSIDX (integer 3) (owner "Xilinx"))
+            )
+            (port (rename STATUS_3_ "STATUS<3>")
+              (direction OUTPUT)
+              (property PIN_BUSNAME (string "STATUS<7:0>") (owner "Xilinx"))
+              (property PIN_BUSIDX (integer 4) (owner "Xilinx"))
+            )
+            (port (rename STATUS_2_ "STATUS<2>")
+              (direction OUTPUT)
+              (property PIN_BUSNAME (string "STATUS<7:0>") (owner "Xilinx"))
+              (property PIN_BUSIDX (integer 5) (owner "Xilinx"))
+            )
+            (port (rename STATUS_1_ "STATUS<1>")
+              (direction OUTPUT)
+              (property PIN_BUSNAME (string "STATUS<7:0>") (owner "Xilinx"))
+              (property PIN_BUSIDX (integer 6) (owner "Xilinx"))
+            )
+            (port (rename STATUS_0_ "STATUS<0>")
+              (direction OUTPUT)
+              (property PIN_BUSNAME (string "STATUS<7:0>") (owner "Xilinx"))
+              (property PIN_BUSIDX (integer 7) (owner "Xilinx"))
+            )
+          )
+      )
+    )
+    (cell IBUFG
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell OBUF
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+  )
+
+  (library ETH1CFGEN1_lib
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell blk_mem_gen_v7_3
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port clka
+              (direction INPUT)
+            )
+            (port (array (rename wea "wea<0:0>") 1)
+              (direction INPUT))
+            (port (array (rename addra "addra<7:0>") 8)
+              (direction INPUT))
+            (port (array (rename dina "dina<13:0>") 14)
+              (direction INPUT))
+            (port (array (rename douta "douta<13:0>") 14)
+              (direction OUTPUT))
+          )
+      )
+    )
+    (cell ETH1CFGEN1
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port clk
+              (direction INPUT)
+            )
+            (port clk_AD9744
+              (direction INPUT)
+            )
+            (port SCK
+              (direction INPUT)
+            )
+            (port MISO
+              (direction INPUT)
+            )
+            (port SSEL
+              (direction INPUT)
+            )
+            (port MOSI
+              (direction OUTPUT)
+            )
+            (port (array (rename wd "wd<13:0>") 14)
+              (direction OUTPUT))
+            (port (array (rename LED_out "LED_out<7:0>") 8)
+              (direction OUTPUT))
+            (designator "xc6slx9-2-csg324")
+            (property TYPE (string "ETH1CFGEN1") (owner "Xilinx"))
+            (property BUS_INFO (string "14:OUTPUT:wd<13:0>") (owner "Xilinx"))
+            (property BUS_INFO (string "8:OUTPUT:LED_out<7:0>") (owner "Xilinx"))
+            (property SHREG_MIN_SIZE (string "2") (owner "Xilinx"))
+            (property X_CORE_INFO (string "blk_mem_gen_v7_3, Xilinx CORE Generator 14.7") (owner "Xilinx"))
+            (property CORE_GENERATION_INFO (string "clk_wiz_v3_6,clk_wiz_v3_6,{component_name=clk_wiz_v3_6,use_phase_alignment=true,use_min_o_jitter=false,use_max_i_jitter=false,use_dyn_phase_shift=false,use_inclk_switchover=false,use_dyn_reconfig=false,feedback_source=FDBK_AUTO,primtype_sel=DCM_SP,num_out_clk=1,clkin1_period=10.0,clkin2_period=10.0,use_power_down=false,use_reset=true,use_locked=false,use_inclk_stopped=false,use_status=false,use_freeze=false,use_clk_valid=false,feedback_type=SINGLE,clock_mgr_type=AUTO,manual_override=false}") (owner "Xilinx"))
+            (property SHREG_EXTRACT_NGC (string "YES") (owner "Xilinx"))
+            (property NLW_UNIQUE_ID (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_TAG (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_ALIAS (string "ETH1CFGEN1_ETH1CFGEN1") (owner "Xilinx"))
+          )
+          (contents
+            (instance XST_VCC
+              (viewRef view_1 (cellRef VCC (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property BUS_INFO (string "8:OUTPUT:out<1:8>") (owner "Xilinx"))
+            )
+            (instance XST_GND
+              (viewRef view_1 (cellRef GND (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename clocks_clkout1_buf "clocks/clkout1_buf")
+              (viewRef view_1 (cellRef BUFG (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property OPTIMIZE_PRIMITIVES_NGC (string "no") (owner "Xilinx"))
+            )
+            (instance (rename clocks_clkf_buf "clocks/clkf_buf")
+              (viewRef view_1 (cellRef BUFG (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property OPTIMIZE_PRIMITIVES_NGC (string "no") (owner "Xilinx"))
+            )
+            (instance (rename clocks_dcm_sp_inst "clocks/dcm_sp_inst")
+              (viewRef view_1 (cellRef DCM_SP (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property BUS_INFO (string "8:OUTPUT:STATUS<7:0>") (owner "Xilinx"))
+              (property OPTIMIZE_PRIMITIVES_NGC (string "no") (owner "Xilinx"))
+              (property CLKIN_DIVIDE_BY_2 (string "FALSE") (owner "Xilinx"))
+              (property CLKOUT_PHASE_SHIFT (string "NONE") (owner "Xilinx"))
+              (property CLK_FEEDBACK (string "1X") (owner "Xilinx"))
+              (property DESKEW_ADJUST (string "SYSTEM_SYNCHRONOUS") (owner "Xilinx"))
+              (property DFS_FREQUENCY_MODE (string "LOW") (owner "Xilinx"))
+              (property DLL_FREQUENCY_MODE (string "LOW") (owner "Xilinx"))
+              (property DSS_MODE (string "NONE") (owner "Xilinx"))
+              (property DUTY_CYCLE_CORRECTION (string "TRUE") (owner "Xilinx"))
+              (property FACTORY_JF (string "16'B1100000010000000") (owner "Xilinx"))
+              (property STARTUP_WAIT (string "FALSE") (owner "Xilinx"))
+              (property CLKFX_DIVIDE (integer 1) (owner "Xilinx"))
+              (property CLKFX_MULTIPLY (integer 3) (owner "Xilinx"))
+              (property PHASE_SHIFT (integer 0) (owner "Xilinx"))
+              (property CLKDV_DIVIDE (number (e 2 0)) (owner "Xilinx"))
+              (property CLKIN_PERIOD (string "10.000000") (owner "Xilinx"))
+              (property VERY_HIGH_FREQUENCY (string "FALSE") (owner "Xilinx"))
+            )
+            (instance (rename clocks_clkin1_buf "clocks/clkin1_buf")
+              (viewRef view_1 (cellRef IBUFG (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property OPTIMIZE_PRIMITIVES_NGC (string "no") (owner "Xilinx"))
+              (property CAPACITANCE (string "DONT_CARE") (owner "Xilinx"))
+              (property IBUF_DELAY_VALUE (string "0") (owner "Xilinx"))
+              (property IBUF_LOW_PWR (string "TRUE") (owner "Xilinx"))
+              (property IOSTANDARD (string "DEFAULT") (owner "Xilinx"))
+            )
+            (instance wd_13_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance wd_12_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance wd_11_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance wd_10_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance wd_9_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance wd_8_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance wd_7_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance wd_6_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance wd_5_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance wd_4_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance wd_3_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance wd_2_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance wd_1_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance wd_0_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance LED_out_7_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance LED_out_6_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance LED_out_5_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance LED_out_4_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance LED_out_3_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance LED_out_2_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance LED_out_1_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename LED_out_0_OBUF_renamed_0 "LED_out_0_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance blk_mem
+              (viewRef view_1 (cellRef blk_mem_gen_v7_3 (libraryRef ETH1CFGEN1_lib)))
+              (property BUS_INFO (string "1:INPUT:wea<0:0>") (owner "Xilinx"))
+              (property BUS_INFO (string "8:INPUT:addra<7:0>") (owner "Xilinx"))
+              (property BUS_INFO (string "14:INPUT:dina<13:0>") (owner "Xilinx"))
+              (property BUS_INFO (string "14:OUTPUT:douta<13:0>") (owner "Xilinx"))
+            )
+            (net clk
+              (joined
+                (portRef clk)
+                (portRef I (instanceRef clocks_clkin1_buf))
+              )
+            )
+            (net clk_300MHz
+              (joined
+                (portRef O (instanceRef clocks_clkout1_buf))
+                (portRef clka (instanceRef blk_mem))
+              )
+            )
+            (net LED_out_0_OBUF
+              (joined
+                (portRef G (instanceRef XST_GND))
+                (portRef DSSEN (instanceRef clocks_dcm_sp_inst))
+                (portRef PSCLK (instanceRef clocks_dcm_sp_inst))
+                (portRef PSEN (instanceRef clocks_dcm_sp_inst))
+                (portRef PSINCDEC (instanceRef clocks_dcm_sp_inst))
+                (portRef I (instanceRef wd_13_OBUF))
+                (portRef I (instanceRef wd_12_OBUF))
+                (portRef I (instanceRef wd_11_OBUF))
+                (portRef I (instanceRef wd_10_OBUF))
+                (portRef I (instanceRef wd_9_OBUF))
+                (portRef I (instanceRef wd_8_OBUF))
+                (portRef I (instanceRef wd_7_OBUF))
+                (portRef I (instanceRef wd_6_OBUF))
+                (portRef I (instanceRef wd_5_OBUF))
+                (portRef I (instanceRef wd_4_OBUF))
+                (portRef I (instanceRef wd_3_OBUF))
+                (portRef I (instanceRef wd_2_OBUF))
+                (portRef I (instanceRef wd_1_OBUF))
+                (portRef I (instanceRef wd_0_OBUF))
+                (portRef I (instanceRef LED_out_7_OBUF))
+                (portRef I (instanceRef LED_out_6_OBUF))
+                (portRef I (instanceRef LED_out_5_OBUF))
+                (portRef I (instanceRef LED_out_4_OBUF))
+                (portRef I (instanceRef LED_out_3_OBUF))
+                (portRef I (instanceRef LED_out_2_OBUF))
+                (portRef I (instanceRef LED_out_1_OBUF))
+                (portRef I (instanceRef LED_out_0_OBUF_renamed_0))
+              )
+            )
+            (net mem_wea
+              (joined
+                (portRef P (instanceRef XST_VCC))
+                (portRef RST (instanceRef clocks_dcm_sp_inst))
+                (portRef (member wea 0) (instanceRef blk_mem))
+                (portRef (member addra 0) (instanceRef blk_mem))
+                (portRef (member addra 1) (instanceRef blk_mem))
+                (portRef (member addra 2) (instanceRef blk_mem))
+                (portRef (member addra 3) (instanceRef blk_mem))
+                (portRef (member addra 4) (instanceRef blk_mem))
+                (portRef (member addra 5) (instanceRef blk_mem))
+                (portRef (member addra 6) (instanceRef blk_mem))
+                (portRef (member addra 7) (instanceRef blk_mem))
+                (portRef (member dina 0) (instanceRef blk_mem))
+                (portRef (member dina 1) (instanceRef blk_mem))
+                (portRef (member dina 2) (instanceRef blk_mem))
+                (portRef (member dina 3) (instanceRef blk_mem))
+                (portRef (member dina 4) (instanceRef blk_mem))
+                (portRef (member dina 5) (instanceRef blk_mem))
+                (portRef (member dina 6) (instanceRef blk_mem))
+                (portRef (member dina 7) (instanceRef blk_mem))
+                (portRef (member dina 8) (instanceRef blk_mem))
+                (portRef (member dina 9) (instanceRef blk_mem))
+                (portRef (member dina 10) (instanceRef blk_mem))
+                (portRef (member dina 11) (instanceRef blk_mem))
+                (portRef (member dina 12) (instanceRef blk_mem))
+                (portRef (member dina 13) (instanceRef blk_mem))
+              )
+            )
+            (net (rename clocks_clkfb "clocks/clkfb")
+              (joined
+                (portRef O (instanceRef clocks_clkf_buf))
+                (portRef CLKFB (instanceRef clocks_dcm_sp_inst))
+              )
+            )
+            (net (rename clocks_clkfx "clocks/clkfx")
+              (joined
+                (portRef I (instanceRef clocks_clkout1_buf))
+                (portRef CLKFX (instanceRef clocks_dcm_sp_inst))
+              )
+            )
+            (net (rename clocks_clk0 "clocks/clk0")
+              (joined
+                (portRef I (instanceRef clocks_clkf_buf))
+                (portRef CLK0 (instanceRef clocks_dcm_sp_inst))
+              )
+            )
+            (net (rename clocks_clkin1 "clocks/clkin1")
+              (joined
+                (portRef CLKIN (instanceRef clocks_dcm_sp_inst))
+                (portRef O (instanceRef clocks_clkin1_buf))
+              )
+            )
+            (net (rename wd_13_ "wd<13>")
+              (joined
+                (portRef (member wd 0))
+                (portRef O (instanceRef wd_13_OBUF))
+              )
+            )
+            (net (rename wd_12_ "wd<12>")
+              (joined
+                (portRef (member wd 1))
+                (portRef O (instanceRef wd_12_OBUF))
+              )
+            )
+            (net (rename wd_11_ "wd<11>")
+              (joined
+                (portRef (member wd 2))
+                (portRef O (instanceRef wd_11_OBUF))
+              )
+            )
+            (net (rename wd_10_ "wd<10>")
+              (joined
+                (portRef (member wd 3))
+                (portRef O (instanceRef wd_10_OBUF))
+              )
+            )
+            (net (rename wd_9_ "wd<9>")
+              (joined
+                (portRef (member wd 4))
+                (portRef O (instanceRef wd_9_OBUF))
+              )
+            )
+            (net (rename wd_8_ "wd<8>")
+              (joined
+                (portRef (member wd 5))
+                (portRef O (instanceRef wd_8_OBUF))
+              )
+            )
+            (net (rename wd_7_ "wd<7>")
+              (joined
+                (portRef (member wd 6))
+                (portRef O (instanceRef wd_7_OBUF))
+              )
+            )
+            (net (rename wd_6_ "wd<6>")
+              (joined
+                (portRef (member wd 7))
+                (portRef O (instanceRef wd_6_OBUF))
+              )
+            )
+            (net (rename wd_5_ "wd<5>")
+              (joined
+                (portRef (member wd 8))
+                (portRef O (instanceRef wd_5_OBUF))
+              )
+            )
+            (net (rename wd_4_ "wd<4>")
+              (joined
+                (portRef (member wd 9))
+                (portRef O (instanceRef wd_4_OBUF))
+              )
+            )
+            (net (rename wd_3_ "wd<3>")
+              (joined
+                (portRef (member wd 10))
+                (portRef O (instanceRef wd_3_OBUF))
+              )
+            )
+            (net (rename wd_2_ "wd<2>")
+              (joined
+                (portRef (member wd 11))
+                (portRef O (instanceRef wd_2_OBUF))
+              )
+            )
+            (net (rename wd_1_ "wd<1>")
+              (joined
+                (portRef (member wd 12))
+                (portRef O (instanceRef wd_1_OBUF))
+              )
+            )
+            (net (rename wd_0_ "wd<0>")
+              (joined
+                (portRef (member wd 13))
+                (portRef O (instanceRef wd_0_OBUF))
+              )
+            )
+            (net (rename LED_out_7_ "LED_out<7>")
+              (joined
+                (portRef (member LED_out 0))
+                (portRef O (instanceRef LED_out_7_OBUF))
+              )
+            )
+            (net (rename LED_out_6_ "LED_out<6>")
+              (joined
+                (portRef (member LED_out 1))
+                (portRef O (instanceRef LED_out_6_OBUF))
+              )
+            )
+            (net (rename LED_out_5_ "LED_out<5>")
+              (joined
+                (portRef (member LED_out 2))
+                (portRef O (instanceRef LED_out_5_OBUF))
+              )
+            )
+            (net (rename LED_out_4_ "LED_out<4>")
+              (joined
+                (portRef (member LED_out 3))
+                (portRef O (instanceRef LED_out_4_OBUF))
+              )
+            )
+            (net (rename LED_out_3_ "LED_out<3>")
+              (joined
+                (portRef (member LED_out 4))
+                (portRef O (instanceRef LED_out_3_OBUF))
+              )
+            )
+            (net (rename LED_out_2_ "LED_out<2>")
+              (joined
+                (portRef (member LED_out 5))
+                (portRef O (instanceRef LED_out_2_OBUF))
+              )
+            )
+            (net (rename LED_out_1_ "LED_out<1>")
+              (joined
+                (portRef (member LED_out 6))
+                (portRef O (instanceRef LED_out_1_OBUF))
+              )
+            )
+            (net (rename LED_out_0_ "LED_out<0>")
+              (joined
+                (portRef (member LED_out 7))
+                (portRef O (instanceRef LED_out_0_OBUF_renamed_0))
+              )
+            )
+          )
+      )
+    )
+  )
+
+  (design ETH1CFGEN1
+    (cellRef ETH1CFGEN1
+      (libraryRef ETH1CFGEN1_lib)
+    )
+    (property PART (string "xc6slx9-2-csg324") (owner "Xilinx"))
+  )
+)
+
