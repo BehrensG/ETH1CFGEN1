@@ -24,12 +24,14 @@ module ETH1CFGEN1(
   input wire clk,
   input wire clk_AD9744,
   input wire SCK,
-  output reg MISO,
+  output wire MISO,
   input wire MOSI,
   input wire SSEL,
   output wire [13:0]wd,
   output reg [7:0]LED_out,
-  output reg test_rx_valid
+  output reg test_rx_valid,
+  output reg test_clk_valid,
+  output reg[31:0] test_spi_rx_data
 	);
 
 /* ODDR2 #(
@@ -51,7 +53,7 @@ module ETH1CFGEN1(
 	wire clk_100MHz;
 	localparam ADDR_SIZE = 8'd8;
 	
-	reg mem_wea;
+	reg mem_wea = 1'b0;
 	reg [13:0]mem_dina = 14'd0;
 	wire [13:0]mem_douta;
 	reg [13:0]ad9744_mem_dout = 14'd0;
@@ -66,8 +68,10 @@ module ETH1CFGEN1(
 	reg ad9744_enable = 1'b0;
 	
 	wire rx_dv;
+	wire clk_valid;
 	reg [3:0]rx_dv_count = 4'd0;
-	reg spi_rx_done = 1'b0;
+	reg spi_rx_done;
+	reg fgen_enable = 1'b0;
 	
 	localparam WRITE_TO_MEMORY = 4'd1;
 	localparam RUN_FGEN = 4'd2;
@@ -77,24 +81,25 @@ module ETH1CFGEN1(
 		.CLK_IN1(clk),
 		.CLK_300MHz(clk_300MHz),
 		.CLK_100MHz(clk_100MHz),
-		.RESET(1'b0)
+		.RESET(1'b0),
+		.CLK_VALID(clk_valid)
 	);
 
 
 	spi_slave spi_stm32h7(
-   // Control/Data Signals,
-   .i_Rst_L(1'b1),    // FPGA Reset, active low
-   .i_Clk(clk_300MHz),      // FPGA Clock
-   .o_RX_DV(rx_dv),    // Data Valid pulse (1 clock cycle)
-   .o_RX_Byte(spi_rx_data_tmp),  // Byte received on MOSI
-   .i_TX_DV(),    // Data Valid pulse to register i_TX_Byte
-   .i_TX_Byte(),  // Byte to serialize to MISO.
+		// Control/Data Signals,
+		.i_Rst_L(1'b1),    // FPGA Reset, active low
+		.i_Clk(clk_300MHz),      // FPGA Clock
+		.o_RX_DV(rx_dv),    // Data Valid pulse (1 clock cycle)
+		.o_RX_Byte(spi_rx_data_tmp),  // Byte received on MOSI
+		.i_TX_DV(),    // Data Valid pulse to register i_TX_Byte
+		.i_TX_Byte(),  // Byte to serialize to MISO.
 
-   // SPI Interface
-   .i_SPI_Clk(SCK),
-   .o_SPI_MISO(),
-   .i_SPI_MOSI(MOSI),
-   .i_SPI_CS_n(SSEL)        // active low
+		// SPI Interface
+		.i_SPI_Clk(SCK),
+		.o_SPI_MISO(MISO),
+		.i_SPI_MOSI(MOSI),
+		.i_SPI_CS_n(SSEL)        // active low
    );
  
 	blk_mem_gen_v7_3 blk_mem(
@@ -104,9 +109,7 @@ module ETH1CFGEN1(
 		.douta(mem_douta),
 		.clka(clk_100MHz)
 	); 
-	
-	
-	
+		
 	ad9744_module ad9744(
 		.clk(clk_AD9744),
 		.enable(ad9744_enable),
@@ -114,65 +117,104 @@ module ETH1CFGEN1(
 		.wd(wd)
     );
 	 
+	 // Delete after tests bench
 	 always @(posedge clk_300MHz) begin
 		test_rx_valid <= rx_dv;
+		test_clk_valid <= clk_valid;
+		test_spi_rx_data <= spi_rx_data;
 	end
 	
-	always @(posedge rx_dv) begin
-		case(rx_dv_count)
-			0: begin 
-					spi_rx_data[31:24] <= spi_rx_data_tmp;
-					rx_dv_count <= rx_dv_count + 1'b1;
-				end
-			1: begin 
-					spi_rx_data[23:16] <= spi_rx_data_tmp;
-					rx_dv_count <= rx_dv_count + 1'b1;
-				end
-			2: begin
-					spi_rx_data[15:8] <= spi_rx_data_tmp;
-					rx_dv_count <= rx_dv_count + 1'b1;
-				end
-			3: begin 
-					spi_rx_data[7:0] <= spi_rx_data_tmp;
-					rx_dv_count <= rx_dv_count + 1'b1;
-					spi_rx_done <= 1'b1;
-				end
-		endcase		
-		if(rx_dv_count == 4'd4) rx_dv_count <= 4'd0;		
+	
+	
+	always @(posedge clk_300MHz) begin
+		if(rx_dv) begin
+			case(rx_dv_count)
+				0: begin 
+						spi_rx_data[31:24] <= spi_rx_data_tmp;
+						rx_dv_count <= rx_dv_count + 1'b1;
+						spi_rx_done <= 1'b0;
+					end
+				1: begin 
+						spi_rx_data[23:16] <= spi_rx_data_tmp;
+						rx_dv_count <= rx_dv_count + 1'b1;
+						spi_rx_done <= 1'b0;
+					end
+				2: begin
+						spi_rx_data[15:8] <= spi_rx_data_tmp;
+						rx_dv_count <= rx_dv_count + 1'b1;
+						spi_rx_done <= 1'b0;
+					end
+				3: begin 
+						spi_rx_data[7:0] <= spi_rx_data_tmp;
+						rx_dv_count <= rx_dv_count + 1'b1;
+						spi_rx_done <= 1'b1;
+					end
+			endcase	
+		end
+		
+		if(rx_dv_count == 4'd4) begin
+			rx_dv_count <= 4'd0;
+			spi_rx_done <= 1'b0;			
+		end
 	end
 	
+	task idle_task();
+		begin
+			LED_out <= 8'd1;
+			ad9744_enable <= 1'b0;
+			mem_wea <= 1'b0;
+		end
+	endtask
+	
+	task write_to_memory_task();
+		begin
+			ad9744_enable <= 1'b0;
+			mem_wea <= 1'b1;
+			mem_dina <= spi_rx_data[13:0];
+			mem_addr <= spi_rx_data[20:14];
+			if(spi_rx_done) begin
+				//samples <= spi_rx_data[20:14];
+				samples <= samples + 1'b1;
+			end
+			LED_out <= 8'd2;
+		end
+	endtask
+	
+	task run_fgen_task();
+		begin
+			if(samples >= count && fgen_enable) begin
+				LED_out <= 8'd3;
+				ad9744_enable <= 1'b1;
+				mem_wea <= 1'b0;
+				count <= count + 1'b1;
+				mem_addr <= count;
+			end else begin
+				count <= 8'h00;
+			end
+		end
+	endtask
+
+	always @(posedge clk_AD9744) begin
+		run_fgen_task();
+	end
 
 	always @(posedge clk_300MHz) begin
-		if(spi_rx_done) begin
+		if(spi_rx_done && clk_valid) begin
 			state <= spi_rx_data[31:28];
 			case (state)
 				IDLE : begin
-					LED_out <= 8'd4;
-					ad9744_enable <= 1'b0;
-					mem_wea <= 1'b0;
-					spi_rx_done <= 1'b0;
+					idle_task();
 				end
 				WRITE_TO_MEMORY : begin
-					ad9744_enable <= 1'b0;
-					mem_wea <= 1'b1;
-					mem_dina <= spi_rx_data[13:0];
-					mem_addr <= spi_rx_data[20:14];
-					samples <= samples + 1'b1;
-					LED_out <= 8'd1;
-					spi_rx_done <= 1'b0;
+					write_to_memory_task();
+					fgen_enable <= 1'b0;
 				end
 				RUN_FGEN : begin
-					if(samples >= count) begin
-						LED_out <= 8'd2;
-						ad9744_enable <= 1'b1;
-						mem_wea <= 1'b0;
-						count <= count + 1'b1;
-						mem_addr <= count;
-						spi_rx_done <= 1'b0;
-					end else begin
-						count <= 8'h00;
-						spi_rx_done <= 1'b0;
-					end
+					//run_fgen_task();
+					fgen_enable <= 1'b1;
+				end
+				default : begin
+					LED_out <= 8'd4;
 				end
 			endcase
 		end

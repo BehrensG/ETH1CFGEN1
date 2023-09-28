@@ -68,7 +68,8 @@ module clk_wiz_v3_6_exdes
   // High bits of counters driven by clocks
   output [2:1]  COUNT,
   // Status and control signals
-  input         RESET
+  input         RESET,
+  output        CLK_VALID
  );
 
   // Parameters for the counters
@@ -101,7 +102,8 @@ module clk_wiz_v3_6_exdes
     .CLK_300MHz           (clk_int[1]),
     .CLK_100MHz           (clk_int[2]),
     // Status and control signals
-    .RESET              (RESET));
+    .RESET              (RESET),
+    .CLK_VALID          (CLK_VALID));
 
 genvar clk_out_pins;
 

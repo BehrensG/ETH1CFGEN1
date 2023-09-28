@@ -1,7 +1,7 @@
 
 # PlanAhead Launch Script for Post-Synthesis pin planning, created by Project Navigator
 
-create_project -name ETH1CFGEN1 -dir "/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/planAhead_run_5" -part xc6slx9csg324-2
+create_project -name ETH1CFGEN1 -dir "/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/planAhead_run_1" -part xc6slx9csg324-2
 set_property design_mode GateLvl [get_property srcset [current_run -impl]]
 set_property edif_top_file "/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/ETH1CFGEN1.ngc" [ get_property srcset [ current_run ] ]
 add_files -norecurse { {/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1} {ipcore_dir} }

@@ -1,7 +1,4 @@
 # Output products list for <blk_mem_gen_v7_3>
-_dbg/xil_779.in
-_dbg/xil_779.out
-_xmsgs/pn_parser.xmsgs
 blk_mem_gen_v7_3/blk_mem_gen_v7_3_readme.txt
 blk_mem_gen_v7_3/doc/blk_mem_gen_v7_3_vinfo.html
 blk_mem_gen_v7_3/doc/pg058-blk-mem-gen.pdf

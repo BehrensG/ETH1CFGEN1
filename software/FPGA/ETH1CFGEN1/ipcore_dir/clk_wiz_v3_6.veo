@@ -75,5 +75,6 @@
     .CLK_300MHz(CLK_300MHz),     // OUT
     .CLK_100MHz(CLK_100MHz),     // OUT
     // Status and control signals
-    .RESET(RESET));       // IN
+    .RESET(RESET),// IN
+    .CLK_VALID(CLK_VALID));   // OUT
 // INST_TAG_END ------ End INSTANTIATION Template ---------

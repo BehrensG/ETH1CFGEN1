@@ -1,0 +1,81 @@
+# do {test_MEM.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:00:41 on Sep 27,2023
+# vlog -reportprogress 300 ipcore_dir/blk_mem_gen_v7_3.v 
+# -- Compiling module blk_mem_gen_v7_3
+# 
+# Top level modules:
+# 	blk_mem_gen_v7_3
+# End time: 01:00:41 on Sep 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:00:41 on Sep 27,2023
+# vlog -reportprogress 300 testbench/test_MEM.v 
+# -- Compiling module test_MEM
+# 
+# Top level modules:
+# 	test_MEM
+# End time: 01:00:41 on Sep 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:00:41 on Sep 27,2023
+# vlog -reportprogress 300 /opt/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 01:00:41 on Sep 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work work.test_MEM glbl 
+# Start time: 01:00:41 on Sep 27,2023
+# Loading work.test_MEM
+# ** Error (suppressible): (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# Loading work.blk_mem_gen_v7_3
+# ** Error (suppressible): (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) Instantiation of 'BLK_MEM_GEN_V7_3' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test_MEM/blk_mem File: ipcore_dir/blk_mem_gen_v7_3.v Line: 118
+#         Searched libraries:
+# ** Error (suppressible): (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+#             /home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/work
+# Loading work.glbl
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./test_MEM.fdo PAUSED at line 29
+vmap work /home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work /home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/work 
+# Modifying modelsim.ini
+vmap -del work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap -del work 
+# Removing reference to logical library work
+# Modifying modelsim.ini
+vmap work /home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work /home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/work 
+# Modifying modelsim.ini
+# End time: 01:01:23 on Sep 27,2023, Elapsed time: 0:00:42
+# Errors: 13, Warnings: 0

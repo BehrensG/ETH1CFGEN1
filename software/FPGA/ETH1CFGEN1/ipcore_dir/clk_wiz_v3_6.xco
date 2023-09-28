@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Sun Sep 24 21:22:29 2023
+# Date: Mon Sep 25 19:08:56 2023
 #
 ##############################################################
 #
@@ -243,7 +243,7 @@ CSET ss_mod_freq=250
 CSET ss_mode=CENTER_HIGH
 CSET status_port=STATUS
 CSET summary_strings=empty
-CSET use_clk_valid=false
+CSET use_clk_valid=true
 CSET use_clkfb_stopped=false
 CSET use_dyn_phase_shift=false
 CSET use_dyn_reconfig=false
@@ -266,4 +266,4 @@ CSET use_status=false
 MISC pkg_timestamp=2012-05-10T12:44:55Z
 # END Extra information
 GENERATE
-# CRC:  7ea0a52
+# CRC: 225ca0bc

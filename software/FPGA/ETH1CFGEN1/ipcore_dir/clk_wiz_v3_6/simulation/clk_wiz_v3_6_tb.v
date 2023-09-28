@@ -57,7 +57,7 @@
 
 `timescale 1ps/1ps
 
-`define wait_lock @(posedge dut.clknetwork.dcm_sp_inst.LOCKED)
+`define wait_lock @(posedge CLK_VALID)
 
 module clk_wiz_v3_6_tb ();
 
@@ -82,6 +82,7 @@ module clk_wiz_v3_6_tb ();
   wire [2:1]  COUNT;
   // Status and control signals
   reg         RESET      = 0;
+  wire        CLK_VALID;
   reg         COUNTER_RESET = 0;
 wire [2:1] CLK_OUT;
 //Freq Check using the M & D values setting and actual Frequency generated
@@ -134,7 +135,8 @@ wire [2:1] CLK_OUT;
     // High bits of the counters
     .COUNT              (COUNT),
     // Status and control signals
-    .RESET              (RESET));
+    .RESET              (RESET),
+    .CLK_VALID          (CLK_VALID));
 
 // Freq Check 
 
