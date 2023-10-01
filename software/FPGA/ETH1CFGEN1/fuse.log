@@ -1,0 +1,48 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/test_ETH1CFGEN1_isim_beh.exe -prj /home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/test_ETH1CFGEN1_beh.prj work.test_ETH1CFGEN1 work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/verilog/src/spi_slave.v" into library work
+Analyzing Verilog file "/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/verilog/src/ad9744.v" into library work
+Analyzing Verilog file "/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/ipcore_dir/fifo_generator_v9_3.v" into library work
+Analyzing Verilog file "/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/ipcore_dir/clk_wiz_v3_6.v" into library work
+Analyzing Verilog file "/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/ipcore_dir/blk_mem_gen_v7_3.v" into library work
+Analyzing Verilog file "/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/verilog/src/main.v" into library work
+Analyzing Verilog file "/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/testbench/test_ETH1CFGEN1.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/testbench/test_ETH1CFGEN1.v" Line 68: Size mismatch in connection of port <test_count>. Formal port size is 9-bit while actual signal size is 8-bit.
+Completed static elaboration
+Fuse Memory Usage: 87916 KB
+Fuse CPU Usage: 1070 ms
+Compiling module IBUFG
+Compiling module dcm_sp_clock_divide_by_2
+Compiling module dcm_sp_maximum_period_check(cloc...
+Compiling module dcm_sp_maximum_period_check(cloc...
+Compiling module dcm_sp_clock_lost
+Compiling module DCM_SP(CLKFX_MULTIPLY=3)
+Compiling module BUFG
+Compiling module clk_wiz_v3_6
+Compiling module spi_slave
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module blk_mem_gen_v7_3
+Compiling module ad9744_module
+Compiling module fifo_generator_v9_3_sync_stage(C...
+Compiling module fifo_generator_v9_3_bhv_ver_as(C...
+Compiling module FIFO_GENERATOR_V9_3_CONV_VER(C_C...
+Compiling module FIFO_GENERATOR_V9_3(C_DATA_COUNT...
+Compiling module fifo_generator_v9_3
+Compiling module ETH1CFGEN1
+Compiling module test_ETH1CFGEN1
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 23 Verilog Units
+Built simulation executable /home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/test_ETH1CFGEN1_isim_beh.exe
+Fuse Memory Usage: 1175940 KB
+Fuse CPU Usage: 1230 ms
+GCC CPU Usage: 6750 ms

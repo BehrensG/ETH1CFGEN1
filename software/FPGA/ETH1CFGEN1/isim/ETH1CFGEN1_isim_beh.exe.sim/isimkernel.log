@@ -1,0 +1,29 @@
+Command line:
+   ETH1CFGEN1_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51895
+
+Sun Oct  1 04:05:41 2023
+
+
+ Elaboration Time: 0.21 sec
+
+ Current Memory Usage: 200.057 Meg
+
+ Total Signals          : 780
+ Total Nets             : 2845
+ Total Signal Drivers   : 230
+ Total Blocks           : 54
+ Total Primitive Blocks : 44
+ Total Processes        : 377
+ Total Traceable Variables  : 1096
+ Total Scalar Nets and Variables : 48261
+Total Line Count : 2042
+
+ Total Simulation Time: 0.26 sec
+
+ Current Memory Usage: 275.558 Meg
+
+Sun Oct  1 04:06:07 2023
+

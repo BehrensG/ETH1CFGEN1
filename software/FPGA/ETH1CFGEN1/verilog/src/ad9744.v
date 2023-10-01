@@ -21,13 +21,20 @@
 module ad9744_module(
 	input wire clk,
 	input wire enable,
-	input wire [13:0]mem_data,	
+	input wire [13:0]fifo_data,	
+	input wire fifo_almost_empty,
+	input wire fifo_empty,
+	output reg fifo_rd_en,
 	output reg [13:0]wd
     );
 	 
 	always @(posedge clk) begin
-		if(enable) begin
-			wd <= mem_data;
+		if(enable &&  ~fifo_almost_empty) begin
+			fifo_rd_en <= 1'b1;
+			wd <= fifo_data;
+		end
+		else begin
+			fifo_rd_en <= 1'b0;
 		end
 	end
 	

@@ -38,9 +38,16 @@ module test_ETH1CFGEN1;
 	wire rx_valid;
 	integer count_rx_valid = 0;
 	wire clk_valid;
-	reg mem_wr_ena = 1'b1;
 	reg fgen_ena = 1'b0;
 	reg idle_ena = 1'b0;
+	wire test_fifo_wr_en;
+	wire test_fifo_wr_ack;
+   wire [13:0]test_fifo_din;
+	wire [7:0]test_fifo_wr_data_count;
+	wire [7:0]test_count;
+	wire fifo_almost_full;
+	wire fifo_full;
+	wire [7:0]test_samples;
 	
 	ETH1CFGEN1 test(
 		.clk(clk),
@@ -53,7 +60,15 @@ module test_ETH1CFGEN1;
 		.LED_out(LED),
 		.test_rx_valid(rx_valid),
 		.test_clk_valid(clk_valid),
-		.test_spi_rx_data(spi_rx_data)
+		.test_spi_rx_data(spi_rx_data),
+		.test_fifo_wr_en(test_fifo_wr_en),
+		.test_fifo_wr_ack(test_fifo_wr_ack),
+		.test_fifo_din(test_fifo_din),
+		.test_fifo_wr_data_count(test_fifo_wr_data_count),
+		.test_count(test_count),
+		.test_fifo_almost_full(fifo_almost_full),
+		.test_fifo_full(fifo_full),
+		.test_samples(test_samples)
 	);
 
 	
@@ -68,7 +83,7 @@ module test_ETH1CFGEN1;
 	end
 	
 	always @(posedge clk) begin
-		#7.5 SPI_SCK <= ~SPI_SCK;
+		#20 SPI_SCK <= ~SPI_SCK;
 	end
 	
 	always @(posedge clk) begin
@@ -108,7 +123,7 @@ module test_ETH1CFGEN1;
 				count_index = count_index + 1'b1;
 				count_rx_valid = 0;
 				fgen_ena = 1'b0;
-				#1000;
+				#2000;
 				SPI_SSEL = 1'b1;
 			end
 			end
@@ -117,7 +132,7 @@ module test_ETH1CFGEN1;
 	
 	always @(posedge SPI_SCK) begin
 		if(clk_valid) begin
-			if(count_index < 64) begin
+			if(count_index < 24) begin
 				write_to_memory();
 			end else begin
 				fgen_enable();
