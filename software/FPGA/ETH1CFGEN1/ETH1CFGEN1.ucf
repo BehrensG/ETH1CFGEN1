@@ -5,13 +5,13 @@ NET "clk" LOC = V10;
 
 NET "clk" IOSTANDARD = LVCMOS33;
 NET "clk_AD9744" IOSTANDARD = LVCMOS33;
-NET "MISO" IOSTANDARD = LVCMOS33;
+#NET "MISO" IOSTANDARD = LVCMOS33;
 NET "MOSI" IOSTANDARD = LVCMOS33;
 NET "SCK" IOSTANDARD = LVCMOS33;
 NET "SSEL" IOSTANDARD = LVCMOS33;
 
 
-NET "clk_AD9744" LOC = H18;
+NET "clk_AD9744" LOC = H17;
 
 # PlanAhead Generated physical constraints 
 
@@ -57,21 +57,21 @@ NET "wd[13]" IOSTANDARD = LVCMOS33;
 
 # PlanAhead Generated physical constraints 
 
-NET "wd[0]" LOC = U11;
-NET "wd[1]" LOC = V11;
-NET "wd[2]" LOC = U13;
-NET "wd[3]" LOC = V13;
-NET "wd[4]" LOC = R10;
-NET "wd[5]" LOC = T10;
-NET "wd[6]" LOC = R11;
-NET "wd[7]" LOC = T11;
-NET "wd[8]" LOC = L16;
-NET "wd[9]" LOC = L15;
-NET "wd[10]" LOC = K16;
-NET "wd[11]" LOC = K15;
-NET "wd[12]" LOC = J18;
-NET "wd[13]" LOC = J16;
-NET "MISO" LOC = U7;
+NET "wd[0]" LOC = V11;
+NET "wd[1]" LOC = U11;
+NET "wd[2]" LOC = V13;
+NET "wd[3]" LOC = U13;
+NET "wd[4]" LOC = T10;
+NET "wd[5]" LOC = R10;
+NET "wd[6]" LOC = T11;
+NET "wd[7]" LOC = R11;
+NET "wd[8]" LOC = L15;
+NET "wd[9]" LOC = L16;
+NET "wd[10]" LOC = K15;
+NET "wd[11]" LOC = K16;
+NET "wd[12]" LOC = J16;
+NET "wd[13]" LOC = J18;
+#NET "MISO" LOC = U7;
 NET "MOSI" LOC = V7;
 NET "SCK" LOC = R3;
 NET "SSEL" LOC = V4;

@@ -53,7 +53,7 @@ module test_ETH1CFGEN1;
 		.clk(clk),
 		.clk_AD9744(clk_AD9744),
 		.SCK(SPI_SCK),
-		.MISO(SPI_MISO),
+		//.MISO(SPI_MISO),
 		.MOSI(SPI_MOSI),
 		.SSEL(SPI_SSEL),
 		.wd(AD9744_WD),
@@ -132,7 +132,7 @@ module test_ETH1CFGEN1;
 	
 	always @(posedge SPI_SCK) begin
 		if(clk_valid) begin
-			if(count_index < 24) begin
+			if(count_index < 6) begin
 				write_to_memory();
 			end else begin
 				fgen_enable();

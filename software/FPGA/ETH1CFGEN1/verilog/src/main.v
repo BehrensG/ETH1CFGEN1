@@ -69,6 +69,7 @@ module ETH1CFGEN1(
 	
 	reg [31:0]spi_rx_data = 32'd0;
 	wire [7:0]spi_rx_data_tmp;
+	wire [7:0]spi_tx_data_tmp;
 	
 	reg [3:0]state_c = 4'd0;
 	reg [ADDR_SIZE-1:0]samples = 8'd0;
@@ -96,14 +97,14 @@ module ETH1CFGEN1(
 
 	clk_wiz_v3_6 clocks(
 		.CLK_IN1(clk),
-		.CLK_300MHz(clk_300MHz),
+		//.CLK_300MHz(clk_300MHz),
 		.CLK_100MHz(clk_100MHz),
 		.RESET(1'b0),
 		.CLK_VALID(clk_valid)
 	);
 
 
-	spi_slave spi_stm32h7(
+	/* spi_slave spi_stm32h7(
 		// Control/Data Signals,
 		.i_Rst_L(1'b1),    // FPGA Reset, active low
 		.i_Clk(clk_100MHz),      // FPGA Clock
@@ -117,7 +118,20 @@ module ETH1CFGEN1(
 		.o_SPI_MISO(MISO),
 		.i_SPI_MOSI(MOSI),
 		.i_SPI_CS_n(SSEL)        // active low
-   );
+   ); */
+ 
+ 
+ 	spi_byte_if spi_byte_if_i(
+		.sysClk(clk_100MHz),
+		.usrReset(~clk_valid),
+		.SCLK(SCK),        // SPI clock
+		.MOSI(MOSI),        // SPI master out, slave in
+		.MISO(MISO),       // SPI slave in, master out
+		.SS(SSEL),          // SPI slave select
+		.rxValid(rx_dv),    // BYTE received is valid
+		.rx(spi_rx_data_tmp),    // BYTE received
+		.tx(spi_tx_data_tmp)
+		);  // BYTE to transmit
  
 	blk_mem_gen_v7_3 blk_mem(
 		.wea(mem_wea),

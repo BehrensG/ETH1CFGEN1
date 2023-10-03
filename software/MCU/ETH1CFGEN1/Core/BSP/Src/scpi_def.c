@@ -206,6 +206,8 @@ static scpi_result_t SCPI_IdnQ(scpi_t * context)
 }
 
 
+
+
 scpi_result_t SCPI_TS(scpi_t * context)
 {
 
