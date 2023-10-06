@@ -1,0 +1,18 @@
+Welcome to Xilinx CORE Generator.
+Help system initialized.
+The IP Catalog has been reloaded.
+Opening project file
+/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/ipcore_dir/coregen.cgp.
+Customize and GenerateINFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+Cancelled executing Tcl generator.
+Recustomize and Generate (Under Original Project Settings)INFO:sim:172 - Generating IP...
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+Cancelled executing Tcl generator.
+ERROR:encore:196 - Unable to set project directory to
+   /home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/ipcore_dir/
+Closed project file.

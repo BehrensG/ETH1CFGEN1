@@ -1,4 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "ETH1CFGEN1")(type "KiCad")(uri "/home/grzegorz/git/ETH1CFGEN1/hardware/lib/sch/ETH1CFGEN1.kicad_sym")(options "")(descr ""))
-)

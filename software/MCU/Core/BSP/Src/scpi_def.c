@@ -1,0 +1,333 @@
+/*-
+ * Copyright (c) 2012-2013 Jan Breuer,
+ *
+ * All Rights Reserved
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are
+ * met:
+ * 1. Redistributions of source code must retain the above copyright notice,
+ *    this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHORS ``AS IS'' AND ANY EXPRESS OR
+ * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+ * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+/**
+ * @file   scpi-def.c
+ * @date   Thu Nov 15 10:58:45 UTC 2012
+ *
+ * @brief  SCPI parser test
+ *
+ *
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "scpi/scpi.h"
+#include "stm32h7xx_hal.h"
+#include "scpi_def.h"
+#include "main.h"
+
+extern struct bsp_t bsp;
+
+scpi_choice_def_t scpi_boolean_select[] =
+{
+    {"OFF",0},
+    {"ON", 1},
+	{"0",0},
+	{"1", 1},
+    SCPI_CHOICE_LIST_END
+};
+
+
+
+size_t SCPI_GetChannels(scpi_t* context, scpi_channel_value_t array[])
+{
+    scpi_parameter_t channel_list_param;
+    // scpi_channel_value_t array[MAXROW * MAXCOL]; /* array which holds values in order (2D) */
+    size_t chanlst_idx; /* index for channel list */
+    size_t arr_idx = 0; /* index for array */
+    size_t n, m = 1; /* counters for row (n) and columns (m) */
+    scpi_expr_result_t res;
+
+    /* get channel list */
+    if (SCPI_Parameter(context, &channel_list_param, TRUE)) {
+        scpi_bool_t is_range;
+        int32_t values_from[MAXDIM];
+        int32_t values_to[MAXDIM];
+        size_t dimensions;
+
+        bool for_stop_row = FALSE; /* true if iteration for rows has to stop */
+        bool for_stop_col = FALSE; /* true if iteration for columns has to stop */
+        int32_t dir_row = 1; /* direction of counter for rows, +/-1 */
+        int32_t dir_col = 1; /* direction of counter for columns, +/-1 */
+
+        /* the next statement is valid usage and it gets only real number of dimensions for the first item (index 0) */
+        if (!SCPI_ExprChannelListEntry(context, &channel_list_param,0, &is_range, NULL, NULL,0, &dimensions)) {
+            chanlst_idx = 0; /* call first index */
+            arr_idx = 0; /* set arr_idx to 0 */
+            do { /* if valid, iterate over channel_list_param index while res == valid (do-while cause we have to do it once) */
+                res = SCPI_ExprChannelListEntry(context, &channel_list_param, chanlst_idx, &is_range, values_from, values_to, 4, &dimensions);
+                if (is_range == FALSE) { /* still can have multiple dimensions */
+                    if (dimensions == 1) {
+                        /* here we have our values
+                         * row == values_from[0]
+                         * col == 0 (fixed number)
+                         * call a function or something */
+                        array[arr_idx].row = values_from[0];
+                        array[arr_idx].col = 0;
+                    } else if (dimensions == 2) {
+                        /* here we have our values
+                         * row == values_fom[0]
+                         * col == values_from[1]
+                         * call a function or something */
+                        array[arr_idx].row = values_from[0];
+                        array[arr_idx].col = values_from[1];
+                    } else {
+                        return arr_idx = 0;
+                    }
+                    arr_idx++; /* inkrement array where we want to save our values to, not neccessary otherwise */
+                    if (arr_idx >= MAXROW * MAXCOL) {
+                        return arr_idx = 0;
+                    }
+                } else if (is_range == TRUE) {
+                    if (values_from[0] > values_to[0]) {
+                        dir_row = -1; /* we have to decrement from values_from */
+                    } else { /* if (values_from[0] < values_to[0]) */
+                        dir_row = +1; /* default, we increment from values_from */
+                    }
+
+                    /* iterating over rows, do ilwip nvic gpiot once -> set for_stop_row = false
+                     * needed if there is channel list index isn't at end yet */
+                    for_stop_row = FALSE;
+                    for (n = values_from[0]; for_stop_row == FALSE; n += dir_row) {
+                        /* usual case for ranges, 2 dimensions */
+                        if (dimensions == 2) {
+                            if (values_from[1] > values_to[1]) {
+                                dir_col = -1;
+                            } else if (values_from[1] < values_to[1]) {
+                                dir_col = +1;
+                            }
+                            /* iterating over columns, do it at least once -> set for_stop_col = false
+                             * needed if there is channel list index isn't at end yet */
+                            for_stop_col = FALSE;
+                            for (m = values_from[1]; for_stop_col == FALSE; m += dir_col) {
+                                /* here we have our values
+                                 * row == n
+                                 * col == m
+                                 * call a function or something */
+                                array[arr_idx].row = n;
+                                array[arr_idx].col = m;
+                                arr_idx++;
+                                if (arr_idx >= MAXROW * MAXCOL) {
+                                    return arr_idx = 0;
+                                }
+                                if (m == (size_t)values_to[1]) {
+                                    /* endpoint reached, stop column for-loop */
+                                    for_stop_col = TRUE;
+                                }
+                            }
+                            /* special case for range, example: (@2!1) */
+                        } else if (dimensions == 1) {
+                            /* here we have values
+                             * row == n
+                             * col == 0 (fixed number)
+                             * call function or sth. */
+                            array[arr_idx].row = n;
+                            array[arr_idx].col = 0;
+                            arr_idx++;
+                            if (arr_idx >= (MAXROW+1) * MAXCOL) {
+                                return arr_idx = 0;
+                            }
+                        }
+                        if (n == (size_t)values_to[0]) {
+                            /* endpoint reached, stop row for-loop */
+                            for_stop_row = TRUE;
+                        }
+                    }
+
+
+                } else {
+                    return arr_idx = 0;
+                }
+                /* increase index */
+                chanlst_idx++;
+            } while (SCPI_EXPR_OK == SCPI_ExprChannelListEntry(context, &channel_list_param, chanlst_idx, &is_range, values_from, values_to, 4, &dimensions));
+            /* while checks, whether incremented index is valid */
+        }
+        /* do something at the end if needed */
+        /* array[arr_idx].row = 0; */
+        /* array[arr_idx].col = 0; */
+    }
+    return arr_idx;
+}
+
+
+static scpi_result_t SCPI_Rst(scpi_t * context)
+{
+
+	HAL_NVIC_SystemReset();
+    return SCPI_RES_OK;
+}
+
+static scpi_result_t SCPI_IdnQ(scpi_t * context)
+{
+	int32_t ptr = 0;
+	static char info[46] = {'\0'};
+
+    for (uint8_t i = 0; i < 4; i++)
+    {
+        if (context->idn[i])
+        {
+        	ptr += snprintf(info + ptr, sizeof(info) - ptr, "%s,", context->idn[i] );
+        }
+        else{}
+    }
+
+    SCPI_ResultCharacters(context, info, 45);
+    return SCPI_RES_OK;
+}
+
+extern uint32_t PSSI_HAL_PSSI_TransmitComplete_count;
+extern uint32_t PSSI_HAL_PSSI_ReceiveComplete_count ;
+extern uint32_t PSSI_HAL_PSSI_ErrorCallback_count;
+extern PSSI_HandleTypeDef hpssi;
+
+
+uint16_t spi_data[]={ 0x2000,0x20c9,0x2191,0x225a,0x2322,0x23ea,0x24b1,0x2578,0x263e,0x2702,0x27c6,0x2888,0x2949,0x2a09,0x2ac7,
+0x2b84,0x2c3e,0x2cf7,0x2dae,0x2e62,0x2f15,0x2fc5,0x3073,0x311e,0x31c6,0x326c,0x330f,0x33af,0x344c,0x34e6,0x357d,0x3610,0x36a0,
+0x372c,0x37b5,0x383a,0x38bc,0x3939,0x39b3,0x3a29,0x3a9a,0x3b08,0x3b72,0x3bd7,0x3c38,0x3c94,0x3ced,0x3d40,0x3d8f,0x3dda,0x3e20,
+0x3e62,0x3e9e,0x3ed6,0x3f0a,0x3f38,0x3f62,0x3f86,0x3fa6,0x3fc1,0x3fd8,0x3fe9,0x3ff5,0x3ffd,0x3fff,0x3ffd,0x3ff5,0x3fe9,0x3fd8,
+0x3fc1,0x3fa6,0x3f86,0x3f62,0x3f38,0x3f0a,0x3ed6,0x3e9e,0x3e62,0x3e20,0x3dda,0x3d8f,0x3d40,0x3ced,0x3c94,0x3c38,0x3bd7,0x3b72,
+0x3b08,0x3a9a,0x3a29,0x39b3,0x3939,0x38bc,0x383a,0x37b5,0x372c,0x36a0,0x3610,0x357d,0x34e6,0x344c,0x33af,0x330f,0x326c,0x31c6,
+0x311e,0x3073,0x2fc5,0x2f15,0x2e62,0x2dae,0x2cf7,0x2c3e,0x2b84,0x2ac7,0x2a09,0x2949,0x2888,0x27c6,0x2702,0x263e,0x2578,0x24b1,
+0x23ea,0x2322,0x225a,0x2191,0x20c9,0x2000,0x1f36,0x1e6e,0x1da5,0x1cdd,0x1c15,0x1b4e,0x1a87,0x19c1,0x18fd,0x1839,0x1777,0x16b6,
+0x15f6,0x1538,0x147b,0x13c1,0x1308,0x1251,0x119d,0x10ea,0x103a,0xf8c,0xee1,0xe39,0xd93,0xcf0,0xc50,0xbb3,0xb19,0xa82,0x9ef,
+0x95f,0x8d3,0x84a,0x7c5,0x743,0x6c6,0x64c,0x5d6,0x565,0x4f7,0x48d,0x428,0x3c7,0x36b,0x312,0x2bf,0x270,0x225,0x1df,0x19d,0x161,
+0x129,0xf5,0xc7,0x9d,0x79,0x59,0x3e,0x27,0x16,0xa,0x2,0x0,0x2,0xa,0x16,0x27,0x3e,0x59,0x79,0x9d,0xc7,0xf5,0x129,0x161,0x19d,
+0x1df,0x225,0x270,0x2bf,0x312,0x36b,0x3c7,0x428,0x48d,0x4f7,0x565,0x5d6,0x64c,0x6c6,0x743,0x7c5,0x84a,0x8d3,0x95f,0x9ef,0xa82,
+0xb19,0xbb3,0xc50,0xcf0,0xd93,0xe39,0xee1,0xf8c,0x103a,0x10ea,0x119d,0x1251,0x1308,0x13c1,0x147b,0x1538,0x15f6,0x16b6,0x1777,
+0x1839,0x18fd,0x19c1,0x1a87,0x1b4e,0x1c15,0x1cdd,0x1da5,0x1e6e,0x1f36};
+
+char pData8_S_TRSMT[4];
+
+extern SPI_HandleTypeDef hspi1;
+extern TIM_HandleTypeDef htim3;
+
+
+void TIM_Delay_us(uint16_t us)
+{
+	if(us)
+	{
+		__HAL_TIM_SET_COUNTER(&htim3, 0);
+		while (__HAL_TIM_GET_COUNTER(&htim3) < us);
+	}
+}
+
+scpi_result_t SCPI_TS(scpi_t * context)
+{
+  uint32_t tx_data = 0;
+  uint8_t tmp_data[4];
+  uint8_t rx_data[4];
+  HAL_StatusTypeDef status;
+
+  if(!SCPI_ParamUInt32(context, &tx_data, TRUE))
+  {
+	  return SCPI_RES_ERR;
+  }
+
+
+  if(tx_data == 1)
+  {
+	  tmp_data[0] = 0x10;
+	  tmp_data[1] = 0x00;
+	  HAL_GPIO_WritePin(SPI1_SSEL_GPIO_Port, SPI1_SSEL_Pin, 1);
+	  HAL_GPIO_WritePin(SPI1_SSEL_GPIO_Port, SPI1_SSEL_Pin, 0);
+	  for(uint16_t x = 0; x < 255; x++)
+	  {
+		  tmp_data[2] = (uint8_t)(spi_data[x] >> 8);
+		  tmp_data[3] = (uint8_t)(spi_data[x]);
+		  HAL_SPI_Transmit(&hspi1, tmp_data, 4, 1000);
+	  }
+
+	  HAL_GPIO_WritePin(SPI1_SSEL_GPIO_Port, SPI1_SSEL_Pin, 1);
+  }
+
+  if(tx_data == 2)
+  {
+	  tmp_data[0] = 0x20;
+	  tmp_data[1] = 0x00;
+	  tmp_data[2] = 0x00;
+	  tmp_data[3] = 0x00;
+
+	  HAL_GPIO_WritePin(SPI1_SSEL_GPIO_Port, SPI1_SSEL_Pin, 1);
+	  HAL_GPIO_WritePin(SPI1_SSEL_GPIO_Port, SPI1_SSEL_Pin, 0);
+	  HAL_SPI_Transmit(&hspi1, tmp_data, 4, 1000);
+
+	  HAL_GPIO_WritePin(SPI1_SSEL_GPIO_Port, SPI1_SSEL_Pin, 1);
+  }
+
+    return SCPI_RES_OK;
+}
+
+const scpi_command_t scpi_commands[] = {
+    /* IEEE Mandated Commands (SCPI std V1999.0 4.1.1) */
+    { .pattern = "*CLS", .callback = SCPI_CoreCls,},
+    { .pattern = "*ESE", .callback = SCPI_CoreEse,},
+    { .pattern = "*ESE?", .callback = SCPI_CoreEseQ,},
+    { .pattern = "*ESR?", .callback = SCPI_CoreEsrQ,},
+    { .pattern = "*IDN?", .callback = SCPI_IdnQ,},
+    { .pattern = "*OPC", .callback = SCPI_CoreOpc,},
+    { .pattern = "*OPC?", .callback = SCPI_CoreOpcQ,},
+    { .pattern = "*RST", .callback = SCPI_Rst,},
+    { .pattern = "*SRE", .callback = SCPI_CoreSre,},
+    { .pattern = "*SRE?", .callback = SCPI_CoreSreQ,},
+    { .pattern = "*STB?", .callback = SCPI_CoreStbQ,},
+    { .pattern = "*TST?", .callback = SCPI_CoreTstQ,},
+    { .pattern = "*WAI", .callback = SCPI_CoreWai,},
+
+    {.pattern = "STATus:QUEStionable[:EVENt]?", .callback = SCPI_StatusQuestionableEventQ,},
+    /* {.pattern = "STATus:QUEStionable:CONDition?", .callback = scpi_stub_callback,}, */
+    {.pattern = "STATus:QUEStionable:ENABle", .callback = SCPI_StatusQuestionableEnable,},
+    {.pattern = "STATus:QUEStionable:ENABle?", .callback = SCPI_StatusQuestionableEnableQ,},
+
+    {.pattern = "STATus:PRESet", .callback = SCPI_StatusPreset,},
+
+    /* Required SCPI commands (SCPI std V1999.0 4.2.1) */
+    {.pattern = "SYSTem:ERRor[:NEXT]?", .callback = SCPI_SystemErrorNextQ,},
+    {.pattern = "SYSTem:ERRor:COUNt?", .callback = SCPI_SystemErrorCountQ,},
+    {.pattern = "SYSTem:VERSion?", .callback = SCPI_SystemVersionQ,},
+
+
+	{.pattern = "TS", .callback = SCPI_TS,},
+
+	SCPI_CMD_LIST_END
+};
+
+scpi_interface_t scpi_interface = {
+    .error = SCPI_Error,
+    .write = SCPI_Write,
+    .control = SCPI_Control,
+    .flush = SCPI_Flush,
+    .reset = SCPI_Reset,
+};
+
+char scpi_input_buffer[SCPI_INPUT_BUFFER_LENGTH];
+scpi_error_t scpi_error_queue_data[SCPI_ERROR_QUEUE_SIZE];
+
+scpi_t scpi_context;
