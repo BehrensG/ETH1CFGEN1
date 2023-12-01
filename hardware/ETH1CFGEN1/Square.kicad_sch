@@ -4,6 +4,11 @@
 
   (paper "A3")
 
+  (title_block
+    (date "2023-07-12")
+    (rev "1.1")
+  )
+
   (lib_symbols
     (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "C" (at 0.635 2.54 0)
@@ -2928,7 +2933,7 @@
     (property "Value" "82n" (at 360.68 163.83 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 354.33 162.56 0)
+    (property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (at 354.33 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 354.33 162.56 0)
@@ -3095,7 +3100,7 @@
     (property "Value" "1m" (at 115.57 109.855 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 115.57 112.395 0)
+    (property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (at 115.57 112.395 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 115.57 112.395 0)
@@ -3112,40 +3117,6 @@
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
           (reference "L1201") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Polarized") (at 90.805 74.295 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 1551e349-0725-4b41-b5b6-6c05b49f9671)
-    (property "Reference" "C369" (at 93.98 72.136 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "22u" (at 93.98 74.676 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 91.7702 78.105 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 90.805 74.295 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7b723ecb-a987-4436-9cab-62278ae4b117))
-    (pin "2" (uuid 814ff5ba-e31d-4f13-a539-f37940f872a1))
-    (instances
-      (project "ETH1CFGEN1B"
-        (path "/3dceb0a1-97ad-435d-a235-e3839b959163/4a966eb3-1da9-4a67-ba6c-e557098bb995"
-          (reference "C369") (unit 1)
-        )
-        (path "/3dceb0a1-97ad-435d-a235-e3839b959163/a29df865-98bf-4fa6-a65a-56d8d0a1d3db"
-          (reference "C406") (unit 1)
-        )
-      )
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1206") (unit 1)
         )
       )
     )
@@ -3934,6 +3905,43 @@
     )
   )
 
+  (symbol (lib_id "Device:C_Polarized") (at 61.595 138.43 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 4243c1e6-a998-4a81-8a56-206a169acb4b)
+    (property "Reference" "C309" (at 64.77 138.049 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "22u" (at 64.77 140.589 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D_Pad2.25x2.55mm_HandSolder" (at 60.6298 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 61.595 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 485227c0-8f82-40f0-8fe1-5102105e1902))
+    (pin "2" (uuid 02b2ab55-7afd-4202-b706-67bd307177bd))
+    (instances
+      (project "ETH1CFGEN1B"
+        (path "/3dceb0a1-97ad-435d-a235-e3839b959163/4a966eb3-1da9-4a67-ba6c-e557098bb995"
+          (reference "C309") (unit 1)
+        )
+        (path "/3dceb0a1-97ad-435d-a235-e3839b959163/4ac0516f-db36-4471-9493-49791ab70a77"
+          (reference "C606") (unit 1)
+        )
+      )
+      (project "ETH1CFGEN1"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8b56ddc3-2841-4bbc-aa12-e659a81ab8f9"
+          (reference "C906") (unit 1)
+        )
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
+          (reference "C1202") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "ETH1CFGEN1:AD706") (at 179.705 180.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 42af2233-26d8-4790-a43a-dc6134c2b4e6)
@@ -3997,40 +4005,6 @@
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
           (reference "R1203") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Polarized") (at 61.595 138.43 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 45e9333f-2289-4812-9b73-f6f9d623c9bb)
-    (property "Reference" "C369" (at 64.77 136.271 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "22u" (at 64.77 138.811 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 62.5602 142.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 61.595 138.43 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 591d33f0-6d3d-4abd-b0a0-29273e577199))
-    (pin "2" (uuid 7c4b86bf-8945-45f0-bcfb-1345a4050c6f))
-    (instances
-      (project "ETH1CFGEN1B"
-        (path "/3dceb0a1-97ad-435d-a235-e3839b959163/4a966eb3-1da9-4a67-ba6c-e557098bb995"
-          (reference "C369") (unit 1)
-        )
-        (path "/3dceb0a1-97ad-435d-a235-e3839b959163/a29df865-98bf-4fa6-a65a-56d8d0a1d3db"
-          (reference "C402") (unit 1)
-        )
-      )
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1202") (unit 1)
         )
       )
     )
@@ -6077,7 +6051,7 @@
     (property "Value" "MMBFJ175LT1" (at 210.185 181.61 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 210.185 177.8 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 210.185 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 205.105 180.34 0)
@@ -6169,7 +6143,7 @@
     (property "Value" "MMBT5087LT1G" (at 294.005 68.58 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 294.005 69.85 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 294.005 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 288.925 67.31 0)
@@ -6482,7 +6456,7 @@
     (property "Value" "MMBF4416A" (at 205.105 62.23 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 204.47 58.42 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 204.47 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 199.39 60.96 0)
@@ -6596,6 +6570,43 @@
     )
   )
 
+  (symbol (lib_id "Device:C_Polarized") (at 90.805 74.295 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid cc8151ca-dd8a-430a-ae65-f1e5ea92f279)
+    (property "Reference" "C309" (at 93.98 72.136 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "22u" (at 93.98 74.676 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D_Pad2.25x2.55mm_HandSolder" (at 91.7702 78.105 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 90.805 74.295 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 432454a3-b261-4432-8743-47b375249400))
+    (pin "2" (uuid 3d0eeef8-e0d4-40e7-8102-43e1a44aa721))
+    (instances
+      (project "ETH1CFGEN1B"
+        (path "/3dceb0a1-97ad-435d-a235-e3839b959163/4a966eb3-1da9-4a67-ba6c-e557098bb995"
+          (reference "C309") (unit 1)
+        )
+        (path "/3dceb0a1-97ad-435d-a235-e3839b959163/4ac0516f-db36-4471-9493-49791ab70a77"
+          (reference "C606") (unit 1)
+        )
+      )
+      (project "ETH1CFGEN1"
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8b56ddc3-2841-4bbc-aa12-e659a81ab8f9"
+          (reference "C906") (unit 1)
+        )
+        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
+          (reference "C1206") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GNDA") (at 159.385 122.555 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cd1ee87d-5629-4fbb-8ed8-fe744a3cbd3a)
@@ -6635,7 +6646,7 @@
     (property "Value" "82n" (at 252.095 150.495 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 245.745 149.225 0)
+    (property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (at 245.745 149.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 245.745 149.225 0)
@@ -6861,7 +6872,7 @@
     (property "Value" "MMBT6429LT1" (at 294.64 181.61 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 294.005 177.8 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 294.005 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 288.925 180.34 0)

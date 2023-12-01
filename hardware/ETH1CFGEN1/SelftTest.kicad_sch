@@ -4,6 +4,11 @@
 
   (paper "A4")
 
+  (title_block
+    (date "2023-07-12")
+    (rev "1.1")
+  )
+
   (lib_symbols
     (symbol "Amplifier_Operational:TL074" (pin_names (offset 0.127)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (at 0 5.08 0)
@@ -1168,11 +1173,11 @@
     (uuid fe878178-cc9f-4e59-a7e6-3c6e6720cd89)
   )
 
-  (hierarchical_label "I2C_SDA" (shape bidirectional) (at 252.73 111.125 0) (fields_autoplaced)
+  (hierarchical_label "ADC_I2C_SDA" (shape bidirectional) (at 252.73 111.125 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 4fa8ae93-1f16-4a9c-bf5b-ea852ecb5437)
   )
-  (hierarchical_label "I2C_SCL" (shape bidirectional) (at 252.73 108.585 0) (fields_autoplaced)
+  (hierarchical_label "ADC_I2C_SCL" (shape bidirectional) (at 252.73 108.585 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 786d09be-e224-4037-b74a-e975a6fe8197)
   )

@@ -4,6 +4,11 @@
 
   (paper "A4")
 
+  (title_block
+    (date "2023-07-12")
+    (rev "1.1")
+  )
+
   (lib_symbols
     (symbol "Connector:C64AC" (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 85.09 0)
@@ -1625,13 +1630,13 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 4189d105-a29a-4842-a93a-ffd793eb3c8f)
   )
+  (hierarchical_label "MAIN_OUTPUT" (shape input) (at 40.005 30.48 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 5efed1a0-b7d2-4961-ad10-8c259dcd0995)
+  )
   (hierarchical_label "RX-" (shape bidirectional) (at 81.915 125.73 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 91111e07-f222-4e62-bbdd-530b4fdb9cfc)
-  )
-  (hierarchical_label "SIGNAL" (shape bidirectional) (at 40.005 30.48 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid a504809a-3238-4b82-82b6-b4ac6e808b7c)
   )
   (hierarchical_label "RX+" (shape bidirectional) (at 81.915 120.65 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
