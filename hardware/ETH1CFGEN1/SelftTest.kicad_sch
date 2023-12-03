@@ -1244,41 +1244,10 @@
     )
   )
 
-  (symbol (lib_id "Device:C") (at 77.47 179.705 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 06ff3f9f-ae81-4416-801b-03e136beaf3d)
-    (property "Reference" "C803" (at 80.391 178.5366 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "100n" (at 80.391 180.848 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 76.5048 175.895 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 77.47 179.705 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 39eb4d5b-b0d5-4539-a149-1568c4d44bfc))
-    (pin "2" (uuid 798a8685-5980-41b0-af38-2f811f59ba20))
-    (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "C803") (unit 1)
-        )
-      )
-      (project "ETH3CDAQ1A.kicad_pro"
-        (path "/5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7/00000000-0000-0000-0000-00005fccc26e"
-          (reference "C703") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:+3.3V") (at 240.03 93.345 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0787f233-0ed7-4f28-aa58-615204e47cad)
-    (property "Reference" "#PWR0839" (at 240.03 97.155 0)
+    (property "Reference" "#PWR0835" (at 240.03 97.155 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 240.03 89.789 0)
@@ -1294,25 +1263,25 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0839") (unit 1)
+          (reference "#PWR0835") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:C") (at 135.89 179.705 180) (unit 1)
+  (symbol (lib_id "Device:C") (at 113.03 179.705 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0b1aa316-20f2-4eb0-b616-1240ab621dd9)
-    (property "Reference" "C808" (at 138.811 178.5366 0)
+    (property "Reference" "C806" (at 115.951 178.5366 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "100n" (at 138.811 180.848 0)
+    (property "Value" "100n" (at 115.951 180.848 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 134.9248 175.895 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 112.0648 175.895 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 135.89 179.705 0)
+    (property "Datasheet" "~" (at 113.03 179.705 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ee075146-6f69-4177-987b-8cd13af0c9b2))
@@ -1320,7 +1289,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "C808") (unit 1)
+          (reference "C806") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -1365,7 +1334,7 @@
   (symbol (lib_id "power:GNDA") (at 198.12 128.905 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 108d7179-7f4a-44c0-8240-d6c7dff81cae)
-    (property "Reference" "#PWR0836" (at 198.12 135.255 0)
+    (property "Reference" "#PWR0832" (at 198.12 135.255 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 198.12 132.715 0)
@@ -1381,7 +1350,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0836") (unit 1)
+          (reference "#PWR0832") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -1392,19 +1361,19 @@
     )
   )
 
-  (symbol (lib_id "Device:C") (at 111.76 179.705 180) (unit 1)
+  (symbol (lib_id "Device:C") (at 88.9 179.705 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 11154745-ef6d-4b95-a4e5-c278740458f4)
-    (property "Reference" "C806" (at 114.681 178.5366 0)
+    (property "Reference" "C804" (at 91.821 178.5366 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "100n" (at 114.681 180.848 0)
+    (property "Value" "100n" (at 91.821 180.848 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 110.7948 175.895 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 87.9348 175.895 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 111.76 179.705 0)
+    (property "Datasheet" "~" (at 88.9 179.705 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3114ad6a-d3e7-4a80-9e39-d0f8e741c057))
@@ -1412,7 +1381,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "C806") (unit 1)
+          (reference "C804") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -1423,26 +1392,26 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 124.46 175.895 0) (unit 1)
+  (symbol (lib_id "power:+5V") (at 101.6 175.895 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 123fdb67-48f4-44a5-bc5f-b4f13410b6a3)
-    (property "Reference" "#PWR0827" (at 124.46 179.705 0)
+    (property "Reference" "#PWR0817" (at 101.6 179.705 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (at 124.46 172.339 0)
+    (property "Value" "+5V" (at 101.6 172.339 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 124.46 175.895 0)
+    (property "Footprint" "" (at 101.6 175.895 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 124.46 175.895 0)
+    (property "Datasheet" "" (at 101.6 175.895 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d7a0c065-a6c7-4f55-a188-4ab170ce3803))
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0827") (unit 1)
+          (reference "#PWR0817") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -1456,7 +1425,7 @@
   (symbol (lib_id "power:GNDA") (at 113.03 61.595 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1645786d-5e32-4480-a34e-c1893b6f9f8c)
-    (property "Reference" "#PWR0824" (at 113.03 67.945 0)
+    (property "Reference" "#PWR0822" (at 113.03 67.945 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 113.03 65.405 0)
@@ -1472,7 +1441,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0824") (unit 1)
+          (reference "#PWR0822") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -1505,25 +1474,25 @@
           (reference "#PWR0707") (unit 1)
         )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0831") (unit 1)
+          (reference "#PWR0827") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:C") (at 100.33 179.705 180) (unit 1)
+  (symbol (lib_id "Device:C") (at 77.47 179.705 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 22a31160-3c16-472d-b980-e9266f88b741)
-    (property "Reference" "C805" (at 103.251 178.5366 0)
+    (property "Reference" "C803" (at 80.391 178.5366 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "100n" (at 103.251 180.848 0)
+    (property "Value" "100n" (at 80.391 180.848 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 99.3648 175.895 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 76.5048 175.895 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 100.33 179.705 0)
+    (property "Datasheet" "~" (at 77.47 179.705 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ffb415f3-9d70-44c4-982a-4a5a9d34900f))
@@ -1531,7 +1500,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "C805") (unit 1)
+          (reference "C803") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -1576,7 +1545,7 @@
   (symbol (lib_id "power:GNDA") (at 113.03 34.925 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 300e4246-4aca-4278-a973-045bbf3727c2)
-    (property "Reference" "#PWR0823" (at 113.03 41.275 0)
+    (property "Reference" "#PWR0821" (at 113.03 41.275 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 113.03 38.735 0)
@@ -1592,7 +1561,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0823") (unit 1)
+          (reference "#PWR0821") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -1661,19 +1630,19 @@
     )
   )
 
-  (symbol (lib_id "Device:C") (at 124.46 179.705 180) (unit 1)
+  (symbol (lib_id "Device:C") (at 101.6 179.705 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 36498746-228f-44f1-872c-569c79666073)
-    (property "Reference" "C807" (at 127.381 178.5366 0)
+    (property "Reference" "C805" (at 104.521 178.5366 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "1u" (at 127.381 180.848 0)
+    (property "Value" "1u" (at 104.521 180.848 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 123.4948 175.895 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 100.6348 175.895 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 124.46 179.705 0)
+    (property "Datasheet" "~" (at 101.6 179.705 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 529da48b-8948-4fad-ba3d-189b07c5c018))
@@ -1681,7 +1650,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "C807") (unit 1)
+          (reference "C805") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -1726,7 +1695,7 @@
   (symbol (lib_id "power:GNDA") (at 168.275 61.595 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3f78f7bf-ee10-409a-80d9-dad09aa0a8f2)
-    (property "Reference" "#PWR0832" (at 168.275 67.945 0)
+    (property "Reference" "#PWR0828" (at 168.275 67.945 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 168.275 65.405 0)
@@ -1742,7 +1711,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0832") (unit 1)
+          (reference "#PWR0828") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -1834,34 +1803,6 @@
       (project "ETH3CDAQ1A.kicad_pro"
         (path "/5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7/00000000-0000-0000-0000-00005fccc26e"
           (reference "#PWR0719") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+15V") (at 77.47 175.895 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 448174c8-c2c5-4dbc-a206-06b6697a83d1)
-    (property "Reference" "#PWR0721" (at 77.47 179.705 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+15V" (at 77.47 171.45 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 77.47 175.895 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 77.47 175.895 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b923d6df-de5c-40ac-99f5-7d5648a0ef53))
-    (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0721") (unit 1)
-        )
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0811") (unit 1)
         )
       )
     )
@@ -1969,7 +1910,7 @@
   (symbol (lib_id "power:GNDA") (at 224.79 99.695 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4f75983d-9c0d-40c6-8f18-3c47519ca6e4)
-    (property "Reference" "#PWR0838" (at 231.14 99.695 0)
+    (property "Reference" "#PWR0834" (at 231.14 99.695 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 228.6 99.695 0)
@@ -1985,42 +1926,12 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0838") (unit 1)
+          (reference "#PWR0834") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
         (path "/5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7/00000000-0000-0000-0000-00005fccc26e"
           (reference "#PWR0742") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GNDA") (at 88.9 183.515 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 534dca29-b30e-4601-9aad-471db2575924)
-    (property "Reference" "#PWR0816" (at 88.9 189.865 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GNDA" (at 88.9 187.325 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 88.9 183.515 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 88.9 183.515 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b81b31f7-c5b2-4d85-ace2-232343375ade))
-    (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0816") (unit 1)
-        )
-      )
-      (project "ETH3CDAQ1A.kicad_pro"
-        (path "/5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7/00000000-0000-0000-0000-00005fccc26e"
-          (reference "#PWR0722") (unit 1)
         )
       )
     )
@@ -2143,7 +2054,7 @@
   (symbol (lib_id "power:GNDA") (at 224.79 83.185 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5c0eada5-c351-4937-8196-bc04cd6e04f6)
-    (property "Reference" "#PWR0837" (at 231.14 83.185 0)
+    (property "Reference" "#PWR0833" (at 231.14 83.185 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 228.6 83.185 0)
@@ -2159,7 +2070,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0837") (unit 1)
+          (reference "#PWR0833") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -2259,26 +2170,26 @@
     )
   )
 
-  (symbol (lib_id "power:+3.3V") (at 135.89 175.895 0) (unit 1)
+  (symbol (lib_id "power:+3.3V") (at 113.03 175.895 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6c4b8148-6173-4dbe-841a-bcf6706d7807)
-    (property "Reference" "#PWR0829" (at 135.89 179.705 0)
+    (property "Reference" "#PWR0823" (at 113.03 179.705 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3.3V" (at 135.89 172.339 0)
+    (property "Value" "+3.3V" (at 113.03 172.339 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 135.89 175.895 0)
+    (property "Footprint" "" (at 113.03 175.895 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 135.89 175.895 0)
+    (property "Datasheet" "" (at 113.03 175.895 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 4f464a8e-9963-4aab-8ab6-603a341c5266))
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0829") (unit 1)
+          (reference "#PWR0823") (unit 1)
         )
       )
     )
@@ -2419,26 +2330,26 @@
     )
   )
 
-  (symbol (lib_id "power:GNDA") (at 111.76 183.515 0) (unit 1)
+  (symbol (lib_id "power:GNDA") (at 88.9 183.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8d80aa3e-defe-44a6-b5f3-8cb7e184f09f)
-    (property "Reference" "#PWR0822" (at 111.76 189.865 0)
+    (property "Reference" "#PWR0816" (at 88.9 189.865 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GNDA" (at 111.76 187.325 0)
+    (property "Value" "GNDA" (at 88.9 187.325 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 111.76 183.515 0)
+    (property "Footprint" "" (at 88.9 183.515 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 111.76 183.515 0)
+    (property "Datasheet" "" (at 88.9 183.515 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e1dd3e7f-4e4b-4a88-afd2-a70860d105f7))
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0822") (unit 1)
+          (reference "#PWR0816") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -2603,7 +2514,7 @@
   (symbol (lib_id "power:+3.3V") (at 198.12 88.265 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9b73d87b-f43f-45d5-9f3d-a8de9f21b59b)
-    (property "Reference" "#PWR0835" (at 198.12 92.075 0)
+    (property "Reference" "#PWR0831" (at 198.12 92.075 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 198.12 84.709 0)
@@ -2619,7 +2530,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0835") (unit 1)
+          (reference "#PWR0831") (unit 1)
         )
       )
     )
@@ -2732,7 +2643,7 @@
   (symbol (lib_id "power:+3.3V") (at 177.165 24.765 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a41c01f4-2e39-4080-b22b-7aa8e8a05db5)
-    (property "Reference" "#PWR0833" (at 180.975 24.765 0)
+    (property "Reference" "#PWR0829" (at 180.975 24.765 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 173.609 24.765 0)
@@ -2748,7 +2659,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0833") (unit 1)
+          (reference "#PWR0829") (unit 1)
         )
       )
     )
@@ -2974,65 +2885,6 @@
     )
   )
 
-  (symbol (lib_id "Device:C") (at 88.9 179.705 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid b8e56f73-e849-4b10-bd15-b873e0dab7a5)
-    (property "Reference" "C804" (at 91.821 178.5366 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "100n" (at 91.821 180.848 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 87.9348 175.895 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 88.9 179.705 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2be45724-087b-415f-8a19-9b82df4a0aab))
-    (pin "2" (uuid 298bdb86-fe3f-49af-ad17-d8625f349b02))
-    (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "C804") (unit 1)
-        )
-      )
-      (project "ETH3CDAQ1A.kicad_pro"
-        (path "/5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7/00000000-0000-0000-0000-00005fccc26e"
-          (reference "C704") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:-15V") (at 88.9 175.895 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid badd8ca1-c7b6-4d5a-aa0f-7cd9a934eadf)
-    (property "Reference" "#PWR0722" (at 88.9 173.355 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "-15V" (at 88.9 171.45 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 88.9 175.895 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 88.9 175.895 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ceb858c4-e961-46dc-8f8c-b2cab9a39f01))
-    (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0722") (unit 1)
-        )
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0815") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Amplifier_Operational:TL074") (at 101.6 144.145 0) (unit 4)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c634cc17-713a-4c1b-a25f-7a3591de0587)
@@ -3107,39 +2959,9 @@
     )
   )
 
-  (symbol (lib_id "power:GNDA") (at 100.33 183.515 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid c9096777-e115-4c51-ab65-7e645900a482)
-    (property "Reference" "#PWR0818" (at 100.33 189.865 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GNDA" (at 100.33 187.325 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 100.33 183.515 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 100.33 183.515 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e91095c9-c4aa-45a1-bac2-460adc3704aa))
-    (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0818") (unit 1)
-        )
-      )
-      (project "ETH3CDAQ1A.kicad_pro"
-        (path "/5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7/00000000-0000-0000-0000-00005fccc26e"
-          (reference "#PWR0724") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GNDA") (at 77.47 183.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
-    (uuid cc1e1959-0783-4ff1-8161-a334c94acd7f)
+    (uuid c9096777-e115-4c51-ab65-7e645900a482)
     (property "Reference" "#PWR0812" (at 77.47 189.865 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3152,7 +2974,7 @@
     (property "Datasheet" "" (at 77.47 183.515 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2e6015a3-d7ae-4b9d-839e-3673cc730d2e))
+    (pin "1" (uuid e91095c9-c4aa-45a1-bac2-460adc3704aa))
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
@@ -3161,7 +2983,7 @@
       )
       (project "ETH3CDAQ1A.kicad_pro"
         (path "/5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7/00000000-0000-0000-0000-00005fccc26e"
-          (reference "#PWR0718") (unit 1)
+          (reference "#PWR0724") (unit 1)
         )
       )
     )
@@ -3170,7 +2992,7 @@
   (symbol (lib_id "Device:C") (at 220.98 83.185 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d1f6da81-b0ea-4dbe-89fc-52e8c9651218)
-    (property "Reference" "C809" (at 220.98 76.7842 90)
+    (property "Reference" "C807" (at 220.98 76.7842 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1u" (at 220.98 79.0956 90)
@@ -3187,7 +3009,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "C809") (unit 1)
+          (reference "C807") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -3198,26 +3020,26 @@
     )
   )
 
-  (symbol (lib_id "power:GNDA") (at 124.46 183.515 0) (unit 1)
+  (symbol (lib_id "power:GNDA") (at 101.6 183.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d2057c72-e28e-48e2-a9cb-5b85936f25de)
-    (property "Reference" "#PWR0828" (at 124.46 189.865 0)
+    (property "Reference" "#PWR0818" (at 101.6 189.865 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GNDA" (at 124.46 187.325 0)
+    (property "Value" "GNDA" (at 101.6 187.325 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 124.46 183.515 0)
+    (property "Footprint" "" (at 101.6 183.515 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 124.46 183.515 0)
+    (property "Datasheet" "" (at 101.6 183.515 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 73f31e7d-88c5-4486-9e1f-731292be9d99))
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0828") (unit 1)
+          (reference "#PWR0818") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -3290,19 +3112,19 @@
     )
   )
 
-  (symbol (lib_id "power:-15V") (at 111.76 175.895 0) (unit 1)
+  (symbol (lib_id "power:-15V") (at 88.9 175.895 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e4a8f070-3e36-4ffc-a938-6fdce86bc660)
-    (property "Reference" "#PWR0722" (at 111.76 173.355 0)
+    (property "Reference" "#PWR0722" (at 88.9 173.355 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "-15V" (at 111.76 171.45 0)
+    (property "Value" "-15V" (at 88.9 171.45 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 111.76 175.895 0)
+    (property "Footprint" "" (at 88.9 175.895 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 111.76 175.895 0)
+    (property "Datasheet" "" (at 88.9 175.895 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0015a428-9a28-4dfa-94bc-eaef21f67b4c))
@@ -3312,7 +3134,7 @@
           (reference "#PWR0722") (unit 1)
         )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0821") (unit 1)
+          (reference "#PWR0815") (unit 1)
         )
       )
     )
@@ -3321,7 +3143,7 @@
   (symbol (lib_id "power:+5V") (at 193.04 88.265 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid eaba1ddc-8075-4627-9526-966ccb4acb2d)
-    (property "Reference" "#PWR0834" (at 193.04 92.075 0)
+    (property "Reference" "#PWR0830" (at 193.04 92.075 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 193.04 84.709 0)
@@ -3337,7 +3159,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0834") (unit 1)
+          (reference "#PWR0830") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"
@@ -3526,19 +3348,19 @@
     )
   )
 
-  (symbol (lib_id "power:+15V") (at 100.33 175.895 0) (unit 1)
+  (symbol (lib_id "power:+15V") (at 77.47 175.895 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fcee7cc4-b7a2-4893-bc8f-ec8be497a151)
-    (property "Reference" "#PWR0721" (at 100.33 179.705 0)
+    (property "Reference" "#PWR0721" (at 77.47 179.705 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+15V" (at 100.33 171.45 0)
+    (property "Value" "+15V" (at 77.47 171.45 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 100.33 175.895 0)
+    (property "Footprint" "" (at 77.47 175.895 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 100.33 175.895 0)
+    (property "Datasheet" "" (at 77.47 175.895 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 74bec9a7-4754-4edd-9eb1-3cd5b5218b85))
@@ -3548,32 +3370,32 @@
           (reference "#PWR0721") (unit 1)
         )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0817") (unit 1)
+          (reference "#PWR0811") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GNDA") (at 135.89 183.515 0) (unit 1)
+  (symbol (lib_id "power:GNDA") (at 113.03 183.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fd8a98e3-60e9-468f-8e2f-5696bf85c27f)
-    (property "Reference" "#PWR0830" (at 135.89 189.865 0)
+    (property "Reference" "#PWR0824" (at 113.03 189.865 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GNDA" (at 135.89 187.325 0)
+    (property "Value" "GNDA" (at 113.03 187.325 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 135.89 183.515 0)
+    (property "Footprint" "" (at 113.03 183.515 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 135.89 183.515 0)
+    (property "Datasheet" "" (at 113.03 183.515 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 26536fbb-0b07-47fb-9ac0-cbb52976424c))
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d2e4c506-e6e2-410e-aca6-f51d5adfe086"
-          (reference "#PWR0830") (unit 1)
+          (reference "#PWR0824") (unit 1)
         )
       )
       (project "ETH3CDAQ1A.kicad_pro"

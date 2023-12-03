@@ -1,4 +1,4 @@
-22295357179947582
+22297058695825484
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -53902,6 +53902,13 @@ WE-MAPI SMT Power Inductor
 ETH1CFGEN1
 74489440068
 COUPLED INDUCTOR  WE-TDC 8038
+
+0
+4
+4
+ETH1CFGEN1
+ACP3225
+
 
 0
 4

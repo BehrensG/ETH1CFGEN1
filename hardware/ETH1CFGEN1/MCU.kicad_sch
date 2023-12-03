@@ -4890,7 +4890,7 @@
     (property "Value" "STM32H723ZGTx" (at 189.23 126.365 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_QFP:LQFP-144_20x20mm_P0.5mm" (at 168.91 212.725 0)
+    (property "Footprint" "ETH1CFGEN1:TQFP-144_20x20mm_P0.5mm" (at 168.91 212.725 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
     (property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32h723zg.pdf" (at 196.85 126.365 0)
