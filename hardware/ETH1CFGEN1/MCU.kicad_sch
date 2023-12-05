@@ -5718,7 +5718,7 @@
     (property "Reference" "C1021" (at 174.371 268.7066 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1u" (at 174.371 271.018 0)
+    (property "Value" "100n" (at 174.371 271.018 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 172.4152 273.685 0)
