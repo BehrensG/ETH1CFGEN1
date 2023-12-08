@@ -3654,7 +3654,7 @@
     (property "Reference" "#PWR0627" (at 250.19 264.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3.3V" (at 250.19 256.794 0)
+    (property "Value" "+3.3V" (at 250.19 256.54 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 250.19 260.35 0)
@@ -5334,7 +5334,7 @@
     (property "Reference" "#PWR0628" (at 262.255 264.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5VD" (at 262.255 255.905 0)
+    (property "Value" "+5VD" (at 262.255 256.54 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 262.255 260.35 0)
@@ -6169,36 +6169,6 @@
     )
   )
 
-  (symbol (lib_id "power:PWR_FLAG") (at 236.22 260.35 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a1c79273-0644-4a50-965a-0535e2af53ed)
-    (property "Reference" "#FLG0605" (at 236.22 258.445 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "PWR_FLAG" (at 236.22 256.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 236.22 260.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 236.22 260.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e09707e7-cc03-49ce-b5c4-c38ecd53d283))
-    (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#FLG0605") (unit 1)
-        )
-      )
-      (project "ETH1CLCR1"
-        (path "/da26c521-26ba-46a0-91ab-131d1ff07c76/00000000-0000-0000-0000-00005dec0296"
-          (reference "#FLG01502") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:+24V") (at 100.965 33.655 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a36dd9e3-5012-4794-8d00-77c815def1ec)
@@ -6346,31 +6316,6 @@
       (project "ETH1CLCR1"
         (path "/da26c521-26ba-46a0-91ab-131d1ff07c76/00000000-0000-0000-0000-00005dec0296"
           (reference "U1504") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GNDD") (at 236.22 260.35 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid af20f1c2-c443-487e-b842-e03686f012a2)
-    (property "Reference" "#PWR0626" (at 236.22 266.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GNDD" (at 236.22 264.795 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 236.22 260.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 236.22 260.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3723ef4e-983f-45a3-8bc3-d50dd51917f2))
-    (instances
-      (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0626") (unit 1)
         )
       )
     )

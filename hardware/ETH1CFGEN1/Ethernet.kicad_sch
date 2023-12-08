@@ -1998,7 +1998,7 @@
     (property "Reference" "#PWR0204" (at 27.94 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GNDD" (at 31.115 83.82 0)
+    (property "Value" "GNDD" (at 29.21 83.82 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 34.29 83.82 0)
