@@ -547,6 +547,10 @@
     [
       "89f867e2-a5cd-41fe-8de0-7333d1a4ffe5",
       "Output"
+    ],
+    [
+      "d0076730-13d9-4c16-89b1-0f6ca7601b8d",
+      "SDRAM"
     ]
   ],
   "text_variables": {}
