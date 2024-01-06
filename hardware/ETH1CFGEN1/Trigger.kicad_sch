@@ -2919,7 +2919,7 @@
   (symbol (lib_id "power:+5VD") (at 100.33 21.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ae62b581-4cc7-4b6c-908f-3a32edc02b08)
-    (property "Reference" "#PWR0607" (at 100.33 25.4 0)
+    (property "Reference" "#PWR0411" (at 100.33 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5VD" (at 100.33 17.145 0)
@@ -2934,11 +2934,8 @@
     (pin "1" (uuid 914c6132-b6cf-4682-8791-4a422f3ddc78))
     (instances
       (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0607") (unit 1)
-        )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/064703a1-ee1f-4a0b-949a-89ec1ae8066a"
-          (reference "#PWR0414") (unit 1)
+          (reference "#PWR0411") (unit 1)
         )
       )
     )
@@ -3191,7 +3188,7 @@
   (symbol (lib_id "power:+5VD") (at 110.49 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d975483c-0683-4b3e-acd0-345af02650a5)
-    (property "Reference" "#PWR0607" (at 110.49 69.85 0)
+    (property "Reference" "#PWR0414" (at 110.49 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5VD" (at 110.49 61.595 0)
@@ -3206,11 +3203,8 @@
     (pin "1" (uuid 9a7bc95c-b606-4b65-8619-2369bf0421ca))
     (instances
       (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0607") (unit 1)
-        )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/064703a1-ee1f-4a0b-949a-89ec1ae8066a"
-          (reference "#PWR0408") (unit 1)
+          (reference "#PWR0414") (unit 1)
         )
       )
     )
@@ -3250,7 +3244,7 @@
   (symbol (lib_id "power:+5VD") (at 81.28 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid db8819d4-fb8b-4c7f-b5c5-36074a14fd7a)
-    (property "Reference" "#PWR0607" (at 81.28 67.31 0)
+    (property "Reference" "#PWR0408" (at 81.28 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5VD" (at 81.28 59.055 0)
@@ -3265,11 +3259,8 @@
     (pin "1" (uuid 812e536e-6424-445b-a9fc-20be696b232e))
     (instances
       (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0607") (unit 1)
-        )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/064703a1-ee1f-4a0b-949a-89ec1ae8066a"
-          (reference "#PWR0432") (unit 1)
+          (reference "#PWR0408") (unit 1)
         )
       )
     )
@@ -3499,7 +3490,7 @@
   (symbol (lib_id "power:+5VD") (at 82.55 21.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ed7ee642-9c48-42eb-a63f-f8a4a206871f)
-    (property "Reference" "#PWR0607" (at 82.55 25.4 0)
+    (property "Reference" "#PWR0409" (at 82.55 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5VD" (at 82.55 17.145 0)
@@ -3514,9 +3505,6 @@
     (pin "1" (uuid 72d55802-d52a-4d73-bba4-2ebab860b181))
     (instances
       (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0607") (unit 1)
-        )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/064703a1-ee1f-4a0b-949a-89ec1ae8066a"
           (reference "#PWR0409") (unit 1)
         )

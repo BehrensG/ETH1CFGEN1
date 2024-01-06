@@ -3589,7 +3589,7 @@
   (symbol (lib_id "Device:C") (at 322.58 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0229da77-a764-42a3-a79b-368c4919aa6f)
-    (property "Reference" "C637" (at 325.501 122.0216 0)
+    (property "Reference" "C639" (at 325.501 122.0216 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4u7/25V" (at 325.501 124.333 0)
@@ -3606,7 +3606,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C637") (unit 1)
+          (reference "C639") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -3651,7 +3651,7 @@
   (symbol (lib_id "power:+3.3V") (at 250.19 260.35 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 040e4749-86f8-4f02-8a94-4cd600e88ccc)
-    (property "Reference" "#PWR0627" (at 250.19 264.16 0)
+    (property "Reference" "#PWR0626" (at 250.19 264.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 250.19 256.54 0)
@@ -3667,7 +3667,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0627") (unit 1)
+          (reference "#PWR0626") (unit 1)
         )
       )
     )
@@ -3700,12 +3700,6 @@
         )
       )
       (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8b56ddc3-2841-4bbc-aa12-e659a81ab8f9"
-          (reference "C906") (unit 1)
-        )
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1206") (unit 1)
-        )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
           (reference "C645") (unit 1)
         )
@@ -3740,14 +3734,8 @@
         )
       )
       (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8b56ddc3-2841-4bbc-aa12-e659a81ab8f9"
-          (reference "C906") (unit 1)
-        )
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1206") (unit 1)
-        )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C643") (unit 1)
+          (reference "C623") (unit 1)
         )
       )
     )
@@ -3756,7 +3744,7 @@
   (symbol (lib_id "power:+5V") (at 364.49 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0a917733-39bf-4080-9876-534440691580)
-    (property "Reference" "#PWR0636" (at 364.49 114.3 0)
+    (property "Reference" "#PWR0635" (at 364.49 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 364.49 106.934 0)
@@ -3772,7 +3760,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0636") (unit 1)
+          (reference "#PWR0635") (unit 1)
         )
       )
     )
@@ -3781,7 +3769,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 322.58 171.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0bbb7659-c6d2-4d5f-bb32-9f4af0571833)
-    (property "Reference" "#FLG0609" (at 322.58 169.545 0)
+    (property "Reference" "#FLG0608" (at 322.58 169.545 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 322.58 167.64 0)
@@ -3797,7 +3785,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#FLG0609") (unit 1)
+          (reference "#FLG0608") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -3811,7 +3799,7 @@
   (symbol (lib_id "Device:C") (at 337.82 184.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0e8d4598-fe01-428d-9ea6-efb730e7dea2)
-    (property "Reference" "C640" (at 340.741 182.9816 0)
+    (property "Reference" "C642" (at 340.741 182.9816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4u7/25V" (at 340.741 185.293 0)
@@ -3828,7 +3816,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C640") (unit 1)
+          (reference "C642") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -3877,7 +3865,7 @@
   (symbol (lib_id "power:GNDD") (at 101.6 257.175 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 116193a8-0691-4de3-bf5c-fadc72beeea5)
-    (property "Reference" "#PWR0615" (at 101.6 263.525 0)
+    (property "Reference" "#PWR0617" (at 101.6 263.525 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 101.6 261.62 0)
@@ -3893,7 +3881,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0615") (unit 1)
+          (reference "#PWR0617") (unit 1)
         )
       )
     )
@@ -3933,7 +3921,7 @@
   (symbol (lib_id "power:GNDA") (at 88.9 182.245 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 139211c9-163e-411d-8c20-05d33eb6b48a)
-    (property "Reference" "#PWR0616" (at 88.9 188.595 0)
+    (property "Reference" "#PWR0613" (at 88.9 188.595 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 88.9 186.055 0)
@@ -3949,7 +3937,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0616") (unit 1)
+          (reference "#PWR0613") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -4048,7 +4036,7 @@
   (symbol (lib_id "Device:C") (at 232.41 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1c78b8f2-c1fa-4c8e-bc04-d77995c49de8)
-    (property "Reference" "C627" (at 235.331 122.0216 0)
+    (property "Reference" "C629" (at 235.331 122.0216 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4u7/50V" (at 235.331 124.333 0)
@@ -4065,7 +4053,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C627") (unit 1)
+          (reference "C629") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -4321,7 +4309,7 @@
   (symbol (lib_id "Device:C") (at 267.335 70.485 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2a475f03-805e-4867-97de-9ad7dc924f80)
-    (property "Reference" "C632" (at 267.335 64.0842 90)
+    (property "Reference" "C634" (at 267.335 64.0842 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "330p/2kV" (at 267.335 66.3956 90)
@@ -4338,7 +4326,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C632") (unit 1)
+          (reference "C634") (unit 1)
         )
       )
       (project "ETH1CDMM1"
@@ -4383,7 +4371,7 @@
   (symbol (lib_id "power:-5V") (at 364.49 171.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2ba01723-717a-4e9a-a886-b37add2fc1d3)
-    (property "Reference" "#PWR0637" (at 364.49 168.91 0)
+    (property "Reference" "#PWR0636" (at 364.49 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-5V" (at 364.49 167.005 0)
@@ -4399,7 +4387,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0637") (unit 1)
+          (reference "#PWR0636") (unit 1)
         )
       )
     )
@@ -4559,7 +4547,7 @@
   (symbol (lib_id "Device:C") (at 322.58 184.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3b1c5f17-04a3-46f1-9549-f20ada77aa6e)
-    (property "Reference" "C638" (at 325.501 182.9816 0)
+    (property "Reference" "C640" (at 325.501 182.9816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4u7/25V" (at 325.501 185.293 0)
@@ -4576,7 +4564,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C638") (unit 1)
+          (reference "C640") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -4590,7 +4578,7 @@
   (symbol (lib_id "power:GNDA") (at 280.67 182.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3d6107c4-4c99-4426-aee8-1666188081ec)
-    (property "Reference" "#PWR0632" (at 280.67 189.23 0)
+    (property "Reference" "#PWR0631" (at 280.67 189.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 280.67 186.69 0)
@@ -4606,7 +4594,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0632") (unit 1)
+          (reference "#PWR0631") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -4707,7 +4695,7 @@
   (symbol (lib_id "Device:C") (at 83.82 111.125 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3ea2e06a-f16d-46ed-8a50-fd8c4d251226)
-    (property "Reference" "C611" (at 83.82 104.7242 90)
+    (property "Reference" "C610" (at 83.82 104.7242 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1u/HC" (at 83.82 107.0356 90)
@@ -4724,7 +4712,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C611") (unit 1)
+          (reference "C610") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -4760,7 +4748,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C604") (unit 1)
+          (reference "C606") (unit 1)
         )
       )
     )
@@ -4804,7 +4792,7 @@
   (symbol (lib_id "Device:C") (at 364.49 184.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4b3ac19b-ecb7-4755-9eff-02304e1c0cae)
-    (property "Reference" "C642" (at 367.411 182.9816 0)
+    (property "Reference" "C644" (at 367.411 182.9816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u/25V" (at 367.411 185.293 0)
@@ -4821,7 +4809,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C642") (unit 1)
+          (reference "C644") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -4835,7 +4823,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 250.19 260.35 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4d7c756d-908a-4004-82cb-687e687b00ae)
-    (property "Reference" "#FLG0606" (at 250.19 262.255 0)
+    (property "Reference" "#FLG0605" (at 250.19 262.255 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 250.19 264.16 0)
@@ -4851,7 +4839,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#FLG0606") (unit 1)
+          (reference "#FLG0605") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -4865,7 +4853,7 @@
   (symbol (lib_id "Device:R") (at 109.22 183.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4da90da4-de57-429f-bfec-9a3b00932e5b)
-    (property "Reference" "R608" (at 110.49 182.245 0)
+    (property "Reference" "R607" (at 110.49 182.245 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1M" (at 110.998 184.658 0)
@@ -4882,7 +4870,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "R608") (unit 1)
+          (reference "R607") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -4896,7 +4884,7 @@
   (symbol (lib_id "power:GNDD") (at 84.455 257.175 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4f5ca8f8-d69d-41f9-a35d-ad4649c0598c)
-    (property "Reference" "#PWR0610" (at 84.455 263.525 0)
+    (property "Reference" "#PWR0612" (at 84.455 263.525 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 84.455 261.62 0)
@@ -4912,7 +4900,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0610") (unit 1)
+          (reference "#PWR0612") (unit 1)
         )
       )
     )
@@ -4956,7 +4944,7 @@
   (symbol (lib_id "Device:C") (at 259.08 204.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5485c823-5e0a-4cfe-8386-ad7180c2766c)
-    (property "Reference" "C630" (at 262.001 203.3016 0)
+    (property "Reference" "C632" (at 262.001 203.3016 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 262.001 205.613 0)
@@ -4973,7 +4961,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C630") (unit 1)
+          (reference "C632") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -5020,7 +5008,7 @@
   (symbol (lib_id "Device:C") (at 311.15 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5da901bd-4385-4cdf-92ca-bd9f397f40be)
-    (property "Reference" "C635" (at 313.69 121.92 0)
+    (property "Reference" "C637" (at 313.69 121.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4p7" (at 314.071 124.333 0)
@@ -5037,7 +5025,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C635") (unit 1)
+          (reference "C637") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -5113,7 +5101,7 @@
   (symbol (lib_id "Device:C") (at 83.82 172.085 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 65d2906c-4779-4862-9b7f-8e46f2ed8d8a)
-    (property "Reference" "C612" (at 83.82 165.6842 90)
+    (property "Reference" "C611" (at 83.82 165.6842 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1u/HC" (at 83.82 167.9956 90)
@@ -5130,7 +5118,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C612") (unit 1)
+          (reference "C611") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -5208,7 +5196,7 @@
   (symbol (lib_id "Device:C") (at 217.17 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6c4f6a34-8036-474c-aca2-18de1c0afc55)
-    (property "Reference" "C625" (at 220.091 122.0216 0)
+    (property "Reference" "C627" (at 220.091 122.0216 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u/50V" (at 220.091 124.333 0)
@@ -5225,7 +5213,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C625") (unit 1)
+          (reference "C627") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -5331,7 +5319,7 @@
   (symbol (lib_id "power:+5VD") (at 262.255 260.35 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 71e4a20d-a42e-454f-ad7c-1a800006cfaf)
-    (property "Reference" "#PWR0628" (at 262.255 264.16 0)
+    (property "Reference" "#PWR0627" (at 262.255 264.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5VD" (at 262.255 256.54 0)
@@ -5347,7 +5335,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0628") (unit 1)
+          (reference "#PWR0627") (unit 1)
         )
       )
     )
@@ -5387,7 +5375,7 @@
   (symbol (lib_id "Device:R") (at 122.555 41.275 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 752b1f27-ba84-43be-9a35-f8cbc758a3ba)
-    (property "Reference" "R605" (at 124.333 40.1066 0)
+    (property "Reference" "R609" (at 124.333 40.1066 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 124.333 42.418 0)
@@ -5404,7 +5392,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "R605") (unit 1)
+          (reference "R609") (unit 1)
         )
       )
       (project "ETH1CDMM1"
@@ -5449,7 +5437,7 @@
   (symbol (lib_id "power:GNDA") (at 286.385 71.755 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7b8351ae-ed76-459d-bfca-42be9a613e31)
-    (property "Reference" "#PWR0635" (at 286.385 78.105 0)
+    (property "Reference" "#PWR0634" (at 286.385 78.105 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 286.385 76.2 0)
@@ -5465,7 +5453,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0635") (unit 1)
+          (reference "#PWR0634") (unit 1)
         )
       )
     )
@@ -5569,7 +5557,7 @@
   (symbol (lib_id "Device:C") (at 311.15 184.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 80ef9eee-a9aa-46d0-9953-d460ede28d7d)
-    (property "Reference" "C636" (at 313.69 182.88 0)
+    (property "Reference" "C638" (at 313.69 182.88 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4p7" (at 314.071 185.293 0)
@@ -5586,7 +5574,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C636") (unit 1)
+          (reference "C638") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -5600,7 +5588,7 @@
   (symbol (lib_id "Device:R") (at 109.22 135.255 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8130df1e-7191-433e-88eb-b12299600053)
-    (property "Reference" "R607" (at 110.998 134.0866 0)
+    (property "Reference" "R606" (at 110.998 134.0866 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "97k6" (at 110.998 136.398 0)
@@ -5617,7 +5605,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "R607") (unit 1)
+          (reference "R606") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -5631,7 +5619,7 @@
   (symbol (lib_id "Device:C") (at 337.82 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 86ace033-cfdc-4cdb-a4f8-2b54aa831990)
-    (property "Reference" "C639" (at 340.741 122.0216 0)
+    (property "Reference" "C641" (at 340.741 122.0216 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4u7/50V" (at 340.741 124.333 0)
@@ -5648,7 +5636,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C639") (unit 1)
+          (reference "C641") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -5662,7 +5650,7 @@
   (symbol (lib_id "Device:R") (at 109.22 196.215 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 88aa43f2-c4a4-4bde-9918-1c9e014a076b)
-    (property "Reference" "R609" (at 110.998 195.0466 0)
+    (property "Reference" "R608" (at 110.998 195.0466 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "46k4" (at 110.998 197.358 0)
@@ -5679,7 +5667,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "R609") (unit 1)
+          (reference "R608") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -5693,7 +5681,7 @@
   (symbol (lib_id "Device:C") (at 364.49 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8abdfd7b-3025-4b31-913d-966b8b8a15d1)
-    (property "Reference" "C641" (at 367.411 122.0216 0)
+    (property "Reference" "C643" (at 367.411 122.0216 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u/25V" (at 367.411 124.333 0)
@@ -5710,7 +5698,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C641") (unit 1)
+          (reference "C643") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -5818,7 +5806,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 322.58 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8e114d98-125b-43ef-a6ea-095035dea440)
-    (property "Reference" "#FLG0608" (at 322.58 108.585 0)
+    (property "Reference" "#FLG0607" (at 322.58 108.585 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 322.58 106.68 0)
@@ -5834,7 +5822,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#FLG0608") (unit 1)
+          (reference "#FLG0607") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -5881,7 +5869,7 @@
   (symbol (lib_id "power:GNDA") (at 77.47 210.185 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 901ed071-cee0-4847-8173-aee93e0cdc89)
-    (property "Reference" "#PWR0612" (at 77.47 216.535 0)
+    (property "Reference" "#PWR0610" (at 77.47 216.535 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 77.47 214.63 0)
@@ -5897,7 +5885,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0612") (unit 1)
+          (reference "#PWR0610") (unit 1)
         )
       )
     )
@@ -5906,7 +5894,7 @@
   (symbol (lib_id "power:GNDA") (at 283.845 123.825 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 90982039-e127-4d25-85ef-16618926d536)
-    (property "Reference" "#PWR0633" (at 283.845 130.175 0)
+    (property "Reference" "#PWR0632" (at 283.845 130.175 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 283.845 127.635 0)
@@ -5922,7 +5910,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0633") (unit 1)
+          (reference "#PWR0632") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -6027,7 +6015,7 @@
   (symbol (lib_id "power:GNDA") (at 77.47 149.225 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 993b6ef3-c045-4a9d-ad33-f9dcee9edb6e)
-    (property "Reference" "#PWR0611" (at 77.47 155.575 0)
+    (property "Reference" "#PWR0609" (at 77.47 155.575 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 77.47 153.67 0)
@@ -6043,7 +6031,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0611") (unit 1)
+          (reference "#PWR0609") (unit 1)
         )
       )
     )
@@ -6172,7 +6160,7 @@
   (symbol (lib_id "power:+24V") (at 100.965 33.655 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a36dd9e3-5012-4794-8d00-77c815def1ec)
-    (property "Reference" "#PWR0613" (at 100.965 37.465 0)
+    (property "Reference" "#PWR0615" (at 100.965 37.465 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+24V" (at 100.965 30.099 0)
@@ -6188,7 +6176,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0613") (unit 1)
+          (reference "#PWR0615") (unit 1)
         )
       )
       (project "ETH1CDMM1"
@@ -6421,7 +6409,7 @@
   (symbol (lib_id "Device:C") (at 119.38 122.555 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b53e9302-287a-478d-ad36-2fe2622ed7d4)
-    (property "Reference" "C615" (at 121.92 121.285 0)
+    (property "Reference" "C614" (at 121.92 121.285 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4p7" (at 122.301 123.698 0)
@@ -6438,7 +6426,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C615") (unit 1)
+          (reference "C614") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -6482,7 +6470,7 @@
   (symbol (lib_id "Device:C") (at 40.64 183.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ba12e20a-e6f1-4f2b-9a1e-42f339fe05fa)
-    (property "Reference" "C606" (at 43.561 182.3466 0)
+    (property "Reference" "C605" (at 43.561 182.3466 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4u7/50V" (at 43.561 184.658 0)
@@ -6499,7 +6487,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C606") (unit 1)
+          (reference "C605") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -6513,7 +6501,7 @@
   (symbol (lib_id "Device:C") (at 275.59 172.72 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ba504bf6-2156-4b8e-b5c4-590dd46958fc)
-    (property "Reference" "C634" (at 275.59 166.3192 90)
+    (property "Reference" "C636" (at 275.59 166.3192 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1u/HC" (at 275.59 168.6306 90)
@@ -6530,7 +6518,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C634") (unit 1)
+          (reference "C636") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -6651,7 +6639,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C614") (unit 1)
+          (reference "C616") (unit 1)
         )
       )
     )
@@ -6660,7 +6648,7 @@
   (symbol (lib_id "power:GNDA") (at 269.24 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c63bd0f4-0c77-4368-8a8f-ae37aa9a2f86)
-    (property "Reference" "#PWR0629" (at 269.24 156.21 0)
+    (property "Reference" "#PWR0628" (at 269.24 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 269.24 154.305 0)
@@ -6676,7 +6664,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0629") (unit 1)
+          (reference "#PWR0628") (unit 1)
         )
       )
     )
@@ -6685,7 +6673,7 @@
   (symbol (lib_id "Device:C") (at 119.38 183.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c7bffb56-f282-4306-828e-d78ede4945e4)
-    (property "Reference" "C616" (at 121.92 182.245 0)
+    (property "Reference" "C615" (at 121.92 182.245 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4p7" (at 122.301 184.658 0)
@@ -6702,7 +6690,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C616") (unit 1)
+          (reference "C615") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -6740,14 +6728,8 @@
         )
       )
       (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8b56ddc3-2841-4bbc-aa12-e659a81ab8f9"
-          (reference "C906") (unit 1)
-        )
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1206") (unit 1)
-        )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C644") (unit 1)
+          (reference "C624") (unit 1)
         )
       )
     )
@@ -6789,7 +6771,7 @@
   (symbol (lib_id "Device:C") (at 259.08 143.51 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cc0a1800-d980-4f34-9b9a-30436150bb99)
-    (property "Reference" "C629" (at 262.001 142.3416 0)
+    (property "Reference" "C631" (at 262.001 142.3416 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 262.001 144.653 0)
@@ -6806,7 +6788,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C629") (unit 1)
+          (reference "C631") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -6820,7 +6802,7 @@
   (symbol (lib_id "Device:C") (at 200.025 47.625 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cc96cd34-a9ad-4a55-873b-f5a22d1c49d1)
-    (property "Reference" "C623" (at 202.946 46.4566 0)
+    (property "Reference" "C625" (at 202.946 46.4566 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4u7/50V" (at 202.946 48.768 0)
@@ -6837,7 +6819,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C623") (unit 1)
+          (reference "C625") (unit 1)
         )
       )
       (project "ETH1CDMM1"
@@ -6914,7 +6896,7 @@
   (symbol (lib_id "Device:C") (at 267.335 24.765 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cf288e3d-80a7-4878-b9ec-998cfc96379d)
-    (property "Reference" "C631" (at 267.335 18.3642 90)
+    (property "Reference" "C633" (at 267.335 18.3642 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "330p/2kV" (at 267.335 20.6756 90)
@@ -6931,7 +6913,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C631") (unit 1)
+          (reference "C633") (unit 1)
         )
       )
       (project "ETH1CDMM1"
@@ -6975,7 +6957,7 @@
   (symbol (lib_id "power:VPP") (at 84.455 246.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d1868bef-ac76-468d-9ab5-dc237354aeb5)
-    (property "Reference" "#PWR0609" (at 84.455 250.19 0)
+    (property "Reference" "#PWR0611" (at 84.455 250.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VPP" (at 84.455 242.57 0)
@@ -6991,7 +6973,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0609") (unit 1)
+          (reference "#PWR0611") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -7036,7 +7018,7 @@
   (symbol (lib_id "Device:C") (at 275.59 111.76 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d764074f-5034-4d4d-9450-c16ef5cc3107)
-    (property "Reference" "C633" (at 275.59 105.3592 90)
+    (property "Reference" "C635" (at 275.59 105.3592 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1u/HC" (at 275.59 107.6706 90)
@@ -7053,7 +7035,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C633") (unit 1)
+          (reference "C635") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -7092,7 +7074,7 @@
   (symbol (lib_id "power:GNDPWR") (at 100.965 62.865 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dadb5ab1-e2a0-4963-a368-e203577774eb)
-    (property "Reference" "#PWR0614" (at 100.965 67.945 0)
+    (property "Reference" "#PWR0616" (at 100.965 67.945 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDPWR" (at 101.0666 66.7766 0)
@@ -7108,7 +7090,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0614") (unit 1)
+          (reference "#PWR0616") (unit 1)
         )
       )
       (project "ETH1CDMM1"
@@ -7178,12 +7160,6 @@
         )
       )
       (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/8b56ddc3-2841-4bbc-aa12-e659a81ab8f9"
-          (reference "C906") (unit 1)
-        )
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1206") (unit 1)
-        )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
           (reference "C646") (unit 1)
         )
@@ -7216,7 +7192,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C610") (unit 1)
+          (reference "C612") (unit 1)
         )
       )
     )
@@ -7225,7 +7201,7 @@
   (symbol (lib_id "power:GNDA") (at 269.24 210.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dfddd577-f371-4853-8f17-4bc569af4ae3)
-    (property "Reference" "#PWR0630" (at 269.24 217.17 0)
+    (property "Reference" "#PWR0629" (at 269.24 217.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 269.24 215.265 0)
@@ -7241,7 +7217,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0630") (unit 1)
+          (reference "#PWR0629") (unit 1)
         )
       )
     )
@@ -7281,7 +7257,7 @@
   (symbol (lib_id "power:GNDD") (at 279.4 71.755 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e476fe5c-5c54-40ad-bdd4-ce1092b07514)
-    (property "Reference" "#PWR0631" (at 279.4 78.105 0)
+    (property "Reference" "#PWR0630" (at 279.4 78.105 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 279.4 76.2 0)
@@ -7297,7 +7273,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0631") (unit 1)
+          (reference "#PWR0630") (unit 1)
         )
       )
     )
@@ -7362,7 +7338,7 @@
   (symbol (lib_id "Device:C") (at 215.265 47.625 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e65bde5b-40a7-4d97-9952-c600ed267e96)
-    (property "Reference" "C624" (at 218.186 46.4566 0)
+    (property "Reference" "C626" (at 218.186 46.4566 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4u7/50V" (at 218.186 48.768 0)
@@ -7379,7 +7355,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C624") (unit 1)
+          (reference "C626") (unit 1)
         )
       )
       (project "ETH1CDMM1"
@@ -7425,7 +7401,7 @@
   (symbol (lib_id "power:VPP") (at 286.385 23.495 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid eb7d2f2a-b2aa-4a59-bf13-5eb706ba02bb)
-    (property "Reference" "#PWR0634" (at 286.385 27.305 0)
+    (property "Reference" "#PWR0633" (at 286.385 27.305 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VPP" (at 286.385 19.685 0)
@@ -7441,7 +7417,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0634") (unit 1)
+          (reference "#PWR0633") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -7486,7 +7462,7 @@
   (symbol (lib_id "Device:C") (at 40.64 122.555 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ec6aa013-531d-44ab-80db-d8d3c345b125)
-    (property "Reference" "C605" (at 43.561 121.3866 0)
+    (property "Reference" "C604" (at 43.561 121.3866 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4u7/50V" (at 43.561 123.698 0)
@@ -7503,7 +7479,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C605") (unit 1)
+          (reference "C604") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -7542,7 +7518,7 @@
   (symbol (lib_id "power:GNDA") (at 92.075 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f0bc0ed7-f0b4-4961-917d-91a251387e8f)
-    (property "Reference" "#PWR0617" (at 92.075 129.54 0)
+    (property "Reference" "#PWR0614" (at 92.075 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 92.075 127 0)
@@ -7558,7 +7534,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0617") (unit 1)
+          (reference "#PWR0614") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -7572,7 +7548,7 @@
   (symbol (lib_id "Device:C") (at 217.17 184.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f294aa5e-d2d4-49aa-80f1-0cff89810790)
-    (property "Reference" "C626" (at 220.091 182.9816 0)
+    (property "Reference" "C628" (at 220.091 182.9816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u/50V" (at 220.091 185.293 0)
@@ -7589,7 +7565,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C626") (unit 1)
+          (reference "C628") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -7603,7 +7579,7 @@
   (symbol (lib_id "Device:C") (at 232.41 184.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f3dc0605-fb5c-4465-be35-1cf2ec12d78f)
-    (property "Reference" "C628" (at 235.331 182.9816 0)
+    (property "Reference" "C630" (at 235.331 182.9816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4u7/50V" (at 235.331 185.293 0)
@@ -7620,7 +7596,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "C628") (unit 1)
+          (reference "C630") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -7721,7 +7697,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 262.255 260.35 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f7487c08-e135-4e2c-9531-6dfd38f750b3)
-    (property "Reference" "#FLG0607" (at 262.255 262.255 0)
+    (property "Reference" "#FLG0606" (at 262.255 262.255 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 262.255 264.16 0)
@@ -7737,7 +7713,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#FLG0607") (unit 1)
+          (reference "#FLG0606") (unit 1)
         )
       )
       (project "ETH1CLCR1"
@@ -7786,7 +7762,7 @@
   (symbol (lib_id "Device:R") (at 109.22 122.555 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ffb7390c-0c3c-49ca-8acb-a19bc6bac801)
-    (property "Reference" "R606" (at 110.49 121.285 0)
+    (property "Reference" "R605" (at 110.49 121.285 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1M" (at 110.998 123.698 0)
@@ -7803,7 +7779,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "R606") (unit 1)
+          (reference "R605") (unit 1)
         )
       )
       (project "ETH1CLCR1"

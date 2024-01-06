@@ -1047,11 +1047,8 @@
         )
       )
       (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/341f5c61-297e-4a23-a6a5-42e392eadbed"
-          (reference "C702") (unit 1)
-        )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d0076730-13d9-4c16-89b1-0f6ca7601b8d"
-          (reference "C2") (unit 1)
+          (reference "C1402") (unit 1)
         )
       )
     )
@@ -1080,11 +1077,8 @@
         )
       )
       (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/341f5c61-297e-4a23-a6a5-42e392eadbed"
-          (reference "#PWR0707") (unit 1)
-        )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d0076730-13d9-4c16-89b1-0f6ca7601b8d"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR01402") (unit 1)
         )
       )
     )
@@ -1093,7 +1087,7 @@
   (symbol (lib_id "ETH1CFGEN1:IS61LV25616AL-10TL") (at 143.51 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6e268953-7de6-4356-af7c-f10cf9906289)
-    (property "Reference" "U1" (at 132.08 52.07 0)
+    (property "Reference" "U1401" (at 132.08 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "IS61LV25616AL-10TL" (at 146.05 52.07 0)
@@ -1152,7 +1146,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d0076730-13d9-4c16-89b1-0f6ca7601b8d"
-          (reference "U1") (unit 1)
+          (reference "U1401") (unit 1)
         )
       )
     )
@@ -1181,11 +1175,8 @@
         )
       )
       (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/341f5c61-297e-4a23-a6a5-42e392eadbed"
-          (reference "#PWR0706") (unit 1)
-        )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d0076730-13d9-4c16-89b1-0f6ca7601b8d"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR01401") (unit 1)
         )
       )
     )
@@ -1214,11 +1205,8 @@
         )
       )
       (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/341f5c61-297e-4a23-a6a5-42e392eadbed"
-          (reference "#PWR0706") (unit 1)
-        )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d0076730-13d9-4c16-89b1-0f6ca7601b8d"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR01403") (unit 1)
         )
       )
     )
@@ -1247,11 +1235,8 @@
         )
       )
       (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/341f5c61-297e-4a23-a6a5-42e392eadbed"
-          (reference "#PWR0707") (unit 1)
-        )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d0076730-13d9-4c16-89b1-0f6ca7601b8d"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR01404") (unit 1)
         )
       )
     )
@@ -1281,11 +1266,8 @@
         )
       )
       (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/341f5c61-297e-4a23-a6a5-42e392eadbed"
-          (reference "C701") (unit 1)
-        )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/d0076730-13d9-4c16-89b1-0f6ca7601b8d"
-          (reference "C1") (unit 1)
+          (reference "C1401") (unit 1)
         )
       )
     )

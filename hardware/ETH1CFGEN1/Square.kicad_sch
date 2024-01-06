@@ -2419,7 +2419,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1214") (unit 1)
+          (reference "C1209") (unit 1)
         )
       )
     )
@@ -2582,7 +2582,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1218") (unit 1)
+          (reference "C1216") (unit 1)
         )
       )
     )
@@ -2681,7 +2681,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1205") (unit 1)
+          (reference "C1206") (unit 1)
         )
       )
     )
@@ -2737,7 +2737,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1224") (unit 1)
+          (reference "C1222") (unit 1)
         )
       )
     )
@@ -2836,7 +2836,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1208") (unit 1)
+          (reference "C1204") (unit 1)
         )
       )
     )
@@ -2897,7 +2897,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01211") (unit 1)
+          (reference "#PWR01210") (unit 1)
         )
       )
     )
@@ -2927,7 +2927,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01232") (unit 1)
+          (reference "#PWR01222") (unit 1)
         )
       )
     )
@@ -2936,7 +2936,7 @@
   (symbol (lib_id "power:+5V") (at 262.255 116.205 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 19c2c772-b3d1-48a0-8833-cf8e473ea184)
-    (property "Reference" "#PWR01214" (at 262.255 120.015 0)
+    (property "Reference" "#PWR01243" (at 262.255 120.015 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 262.255 111.125 0)
@@ -2952,7 +2952,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01214") (unit 1)
+          (reference "#PWR01243") (unit 1)
         )
       )
     )
@@ -2998,7 +2998,7 @@
   (symbol (lib_id "power:+15V") (at 60.325 255.905 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1bfeb613-bbd0-4b26-8348-08748066cdc7)
-    (property "Reference" "#PWR01204" (at 60.325 259.715 0)
+    (property "Reference" "#PWR01207" (at 60.325 259.715 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+15V" (at 60.325 251.46 0)
@@ -3014,7 +3014,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01204") (unit 1)
+          (reference "#PWR01207") (unit 1)
         )
       )
     )
@@ -3108,7 +3108,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01226") (unit 1)
+          (reference "#PWR01228") (unit 1)
         )
       )
     )
@@ -3163,7 +3163,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01230") (unit 1)
+          (reference "#PWR01236") (unit 1)
         )
       )
     )
@@ -3194,7 +3194,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1222") (unit 1)
+          (reference "C1220") (unit 1)
         )
       )
     )
@@ -3317,7 +3317,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01218") (unit 1)
+          (reference "#PWR01220") (unit 1)
         )
       )
     )
@@ -3441,7 +3441,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1204") (unit 1)
+          (reference "C1203") (unit 1)
         )
       )
     )
@@ -3450,7 +3450,7 @@
   (symbol (lib_id "power:+5V") (at 360.045 118.745 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 36378082-c5bf-45be-877f-56fa1432e201)
-    (property "Reference" "#PWR01216" (at 360.045 122.555 0)
+    (property "Reference" "#PWR01253" (at 360.045 122.555 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 360.045 113.665 0)
@@ -3466,7 +3466,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01216") (unit 1)
+          (reference "#PWR01253") (unit 1)
         )
       )
     )
@@ -3475,7 +3475,7 @@
   (symbol (lib_id "power:+15V") (at 42.545 255.905 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 374c13f9-025d-4865-b828-db8dee959138)
-    (property "Reference" "#PWR01201" (at 42.545 259.715 0)
+    (property "Reference" "#PWR01203" (at 42.545 259.715 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+15V" (at 42.545 251.46 0)
@@ -3491,7 +3491,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01201") (unit 1)
+          (reference "#PWR01203") (unit 1)
         )
       )
     )
@@ -3531,7 +3531,7 @@
   (symbol (lib_id "power:-5V") (at 360.045 133.985 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 39bda602-ace2-464f-ae46-f8b779fe7f1e)
-    (property "Reference" "#PWR01245" (at 360.045 136.525 0)
+    (property "Reference" "#PWR01254" (at 360.045 136.525 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-5V" (at 360.045 138.43 0)
@@ -3547,7 +3547,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01245") (unit 1)
+          (reference "#PWR01254") (unit 1)
         )
       )
     )
@@ -3608,7 +3608,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01237") (unit 1)
+          (reference "#PWR01233") (unit 1)
         )
       )
     )
@@ -3639,7 +3639,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1225") (unit 1)
+          (reference "C1223") (unit 1)
         )
       )
     )
@@ -3648,7 +3648,7 @@
   (symbol (lib_id "power:+15V") (at 185.42 43.18 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 424954c4-7203-498e-90d0-f9b414dedebf)
-    (property "Reference" "#PWR01209" (at 189.23 43.18 0)
+    (property "Reference" "#PWR01229" (at 189.23 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+15V" (at 182.245 43.18 90)
@@ -3664,7 +3664,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01209") (unit 1)
+          (reference "#PWR01229") (unit 1)
         )
       )
     )
@@ -3762,7 +3762,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01250") (unit 1)
+          (reference "#PWR01248") (unit 1)
         )
       )
     )
@@ -3824,7 +3824,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1221") (unit 1)
+          (reference "C1219") (unit 1)
         )
       )
     )
@@ -3892,7 +3892,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1209") (unit 1)
+          (reference "C1205") (unit 1)
         )
       )
     )
@@ -3901,7 +3901,7 @@
   (symbol (lib_id "power:-5V") (at 179.07 259.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4f918eb7-073c-41c6-8662-96271dd738b0)
-    (property "Reference" "#PWR01255" (at 179.07 256.54 0)
+    (property "Reference" "#PWR01227" (at 179.07 256.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-5V" (at 179.07 254 0)
@@ -3917,7 +3917,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01255") (unit 1)
+          (reference "#PWR01227") (unit 1)
         )
       )
     )
@@ -3947,7 +3947,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01219") (unit 1)
+          (reference "#PWR01213") (unit 1)
         )
       )
     )
@@ -4039,7 +4039,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01238") (unit 1)
+          (reference "#PWR01234") (unit 1)
         )
       )
     )
@@ -4069,7 +4069,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01239") (unit 1)
+          (reference "#PWR01237") (unit 1)
         )
       )
     )
@@ -4130,7 +4130,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01234") (unit 1)
+          (reference "#PWR01226") (unit 1)
         )
       )
     )
@@ -4191,7 +4191,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01252") (unit 1)
+          (reference "#PWR01250") (unit 1)
         )
       )
     )
@@ -4258,7 +4258,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01253") (unit 1)
+          (reference "#PWR01251") (unit 1)
         )
       )
     )
@@ -4319,7 +4319,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01254") (unit 1)
+          (reference "#PWR01252") (unit 1)
         )
       )
     )
@@ -4349,7 +4349,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01213") (unit 1)
+          (reference "#PWR01212") (unit 1)
         )
       )
     )
@@ -4379,7 +4379,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01251") (unit 1)
+          (reference "#PWR01249") (unit 1)
         )
       )
     )
@@ -4412,7 +4412,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01206") (unit 1)
+          (reference "#PWR01209") (unit 1)
         )
       )
     )
@@ -4536,7 +4536,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1217") (unit 1)
+          (reference "C1215") (unit 1)
         )
       )
     )
@@ -4634,7 +4634,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01249") (unit 1)
+          (reference "#PWR01247") (unit 1)
         )
       )
     )
@@ -4643,7 +4643,7 @@
   (symbol (lib_id "power:+5V") (at 149.225 259.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7b2dbf41-a678-4e25-9a08-fcd7c8452b86)
-    (property "Reference" "#PWR01221" (at 149.225 262.89 0)
+    (property "Reference" "#PWR01219" (at 149.225 262.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 149.225 254 0)
@@ -4659,7 +4659,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01221") (unit 1)
+          (reference "#PWR01219") (unit 1)
         )
       )
     )
@@ -4751,7 +4751,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01243") (unit 1)
+          (reference "#PWR01241") (unit 1)
         )
       )
     )
@@ -4818,7 +4818,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01257") (unit 1)
+          (reference "#PWR01255") (unit 1)
         )
       )
     )
@@ -4827,7 +4827,7 @@
   (symbol (lib_id "power:-5V") (at 194.31 259.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9046ed5a-f8db-4109-ab80-35338d6d7b23)
-    (property "Reference" "#PWR01225" (at 194.31 256.54 0)
+    (property "Reference" "#PWR01231" (at 194.31 256.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-5V" (at 194.31 254 0)
@@ -4843,7 +4843,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01225") (unit 1)
+          (reference "#PWR01231") (unit 1)
         )
       )
     )
@@ -4874,7 +4874,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1223") (unit 1)
+          (reference "C1221") (unit 1)
         )
       )
     )
@@ -4960,7 +4960,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01244") (unit 1)
+          (reference "#PWR01242") (unit 1)
         )
       )
     )
@@ -5022,7 +5022,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1215") (unit 1)
+          (reference "C1210") (unit 1)
         )
       )
     )
@@ -5083,7 +5083,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01203") (unit 1)
+          (reference "#PWR01205") (unit 1)
         )
       )
     )
@@ -5160,7 +5160,7 @@
   (symbol (lib_id "power:-5V") (at 262.255 131.445 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a0f3d414-8825-4743-847f-df72d186d1b2)
-    (property "Reference" "#PWR01241" (at 262.255 133.985 0)
+    (property "Reference" "#PWR01244" (at 262.255 133.985 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-5V" (at 262.255 135.89 0)
@@ -5176,7 +5176,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01241") (unit 1)
+          (reference "#PWR01244") (unit 1)
         )
       )
     )
@@ -5238,7 +5238,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1220") (unit 1)
+          (reference "C1218") (unit 1)
         )
       )
     )
@@ -5300,7 +5300,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01223") (unit 1)
+          (reference "#PWR01215") (unit 1)
         )
       )
     )
@@ -5361,7 +5361,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01220") (unit 1)
+          (reference "#PWR01214") (unit 1)
         )
       )
     )
@@ -5391,7 +5391,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01212") (unit 1)
+          (reference "#PWR01211") (unit 1)
         )
       )
     )
@@ -5459,7 +5459,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1219") (unit 1)
+          (reference "C1217") (unit 1)
         )
       )
     )
@@ -5531,7 +5531,7 @@
   (symbol (lib_id "power:+15V") (at 24.765 255.905 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b3a6c508-9c4e-472d-ba5a-a81fbc640d59)
-    (property "Reference" "#PWR01229" (at 24.765 259.715 0)
+    (property "Reference" "#PWR01201" (at 24.765 259.715 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+15V" (at 24.765 251.46 0)
@@ -5547,7 +5547,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01229") (unit 1)
+          (reference "#PWR01201") (unit 1)
         )
       )
     )
@@ -5577,7 +5577,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01215") (unit 1)
+          (reference "#PWR01218") (unit 1)
         )
       )
     )
@@ -5607,7 +5607,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01224") (unit 1)
+          (reference "#PWR01216") (unit 1)
         )
       )
     )
@@ -5669,7 +5669,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01207") (unit 1)
+          (reference "#PWR01206") (unit 1)
         )
       )
     )
@@ -5740,7 +5740,7 @@
   (symbol (lib_id "power:-5V") (at 222.25 132.715 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c53f6a06-c5f5-4724-ad7c-ddf09b51d107)
-    (property "Reference" "#PWR01246" (at 222.25 135.255 0)
+    (property "Reference" "#PWR01239" (at 222.25 135.255 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-5V" (at 222.25 137.16 0)
@@ -5756,7 +5756,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01246") (unit 1)
+          (reference "#PWR01239") (unit 1)
         )
       )
     )
@@ -5787,7 +5787,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1216") (unit 1)
+          (reference "C1214") (unit 1)
         )
       )
     )
@@ -5817,7 +5817,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01248") (unit 1)
+          (reference "#PWR01246") (unit 1)
         )
       )
     )
@@ -5911,7 +5911,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01222") (unit 1)
+          (reference "#PWR01224") (unit 1)
         )
       )
     )
@@ -5972,7 +5972,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01242") (unit 1)
+          (reference "#PWR01240") (unit 1)
         )
       )
     )
@@ -6002,7 +6002,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01231") (unit 1)
+          (reference "#PWR01221") (unit 1)
         )
       )
     )
@@ -6100,7 +6100,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01228") (unit 1)
+          (reference "#PWR01232") (unit 1)
         )
       )
     )
@@ -6140,7 +6140,7 @@
   (symbol (lib_id "power:-15V") (at 42.545 271.145 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cf2478ee-922c-4b26-a91d-0158e1ab96d5)
-    (property "Reference" "#PWR01205" (at 42.545 273.685 0)
+    (property "Reference" "#PWR01204" (at 42.545 273.685 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-15V" (at 42.545 275.59 0)
@@ -6156,7 +6156,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01205") (unit 1)
+          (reference "#PWR01204") (unit 1)
         )
       )
     )
@@ -6280,7 +6280,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01233") (unit 1)
+          (reference "#PWR01225") (unit 1)
         )
       )
     )
@@ -6311,7 +6311,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1210") (unit 1)
+          (reference "C1208") (unit 1)
         )
       )
     )
@@ -6373,7 +6373,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1203") (unit 1)
+          (reference "C1202") (unit 1)
         )
       )
     )
@@ -6382,7 +6382,7 @@
   (symbol (lib_id "power:-15V") (at 190.5 201.93 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dded4b03-4361-4765-9684-3edb9109862b)
-    (property "Reference" "#PWR01235" (at 187.96 201.93 0)
+    (property "Reference" "#PWR01230" (at 187.96 201.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-15V" (at 186.69 201.93 90)
@@ -6398,7 +6398,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01235") (unit 1)
+          (reference "#PWR01230") (unit 1)
         )
       )
     )
@@ -6407,7 +6407,7 @@
   (symbol (lib_id "power:-5V") (at 208.28 259.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid de746304-58a5-46e1-ad8b-5c0131f32604)
-    (property "Reference" "#PWR01227" (at 208.28 256.54 0)
+    (property "Reference" "#PWR01235" (at 208.28 256.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "-5V" (at 208.28 254 0)
@@ -6423,7 +6423,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01227") (unit 1)
+          (reference "#PWR01235") (unit 1)
         )
       )
     )
@@ -6432,7 +6432,7 @@
   (symbol (lib_id "power:+5V") (at 163.83 259.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e146ddb4-4e4f-4880-b40f-62c8b262b797)
-    (property "Reference" "#PWR01240" (at 163.83 262.89 0)
+    (property "Reference" "#PWR01223" (at 163.83 262.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 163.83 254 0)
@@ -6448,7 +6448,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01240") (unit 1)
+          (reference "#PWR01223") (unit 1)
         )
       )
     )
@@ -6587,7 +6587,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1226") (unit 1)
+          (reference "C1224") (unit 1)
         )
       )
     )
@@ -6596,7 +6596,7 @@
   (symbol (lib_id "power:+5V") (at 217.17 107.315 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f650d389-cfc0-496c-b398-7f7e62cb424e)
-    (property "Reference" "#PWR01210" (at 217.17 111.125 0)
+    (property "Reference" "#PWR01238" (at 217.17 111.125 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 217.17 102.235 0)
@@ -6612,7 +6612,7 @@
     (instances
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01210") (unit 1)
+          (reference "#PWR01238") (unit 1)
         )
       )
     )
@@ -6675,7 +6675,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "C1227") (unit 1)
+          (reference "C1225") (unit 1)
         )
       )
     )
@@ -6705,7 +6705,7 @@
       )
       (project "ETH1CFGEN1"
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/9b89076f-b382-432c-8652-bfba09d4fc07"
-          (reference "#PWR01247") (unit 1)
+          (reference "#PWR01245") (unit 1)
         )
       )
     )

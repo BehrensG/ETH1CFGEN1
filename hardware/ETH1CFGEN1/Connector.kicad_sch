@@ -2230,7 +2230,7 @@
   (symbol (lib_id "power:GNDPWR") (at 86.995 160.02 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid aced2c75-f279-49b4-803b-4603612ef598)
-    (property "Reference" "#PWR0614" (at 81.915 160.02 0)
+    (property "Reference" "#PWR0504" (at 81.915 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDPWR" (at 80.01 160.02 90)
@@ -2245,9 +2245,6 @@
     (pin "1" (uuid 50d79e0d-81d0-4f50-877b-85b39e023865))
     (instances
       (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0614") (unit 1)
-        )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/2e0f9c08-3e61-422b-89e0-77554374b56d"
           (reference "#PWR0504") (unit 1)
         )
@@ -2288,7 +2285,7 @@
   (symbol (lib_id "power:GNDPWR") (at 124.46 182.245 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ba48e24e-ac15-4863-98fd-2e67e66917cf)
-    (property "Reference" "#PWR0614" (at 124.46 187.325 0)
+    (property "Reference" "#PWR0508" (at 124.46 187.325 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDPWR" (at 124.46 186.055 0)
@@ -2303,9 +2300,6 @@
     (pin "1" (uuid 6f369a85-8880-45b4-93ab-1005554e49ba))
     (instances
       (project "ETH1CFGEN1"
-        (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/61e965c1-e946-4500-a63b-fb711a3a2ae7"
-          (reference "#PWR0614") (unit 1)
-        )
         (path "/44bc1157-6d68-4ab3-afc0-b8d9f089cc50/2e0f9c08-3e61-422b-89e0-77554374b56d"
           (reference "#PWR0508") (unit 1)
         )
