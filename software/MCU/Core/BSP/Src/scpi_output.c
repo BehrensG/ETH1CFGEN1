@@ -8,7 +8,9 @@
 #include <string.h>
 
 #include "scpi_output.h"
+#include "BSP.h"
 
+extern struct bsp_t bsp;
 
 scpi_choice_def_t function_select[] =
 {
@@ -30,7 +32,7 @@ scpi_result_t SCPI_Function(scpi_t * context)
 scpi_result_t SCPI_FunctionQ(scpi_t * context)
 {
 	char *func[] = {"SIN", "SQU", "RAMP", "PULS", "DC", "USER"};
-	uint8_t idx = bsp.output.function;
+	uint8_t idx;
 
 	SCPI_ResultCharacters(context, func[idx], strlen(func[idx]));
 

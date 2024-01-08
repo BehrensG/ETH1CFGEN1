@@ -8,6 +8,14 @@
 #ifndef BSP_INC_BSP_H_
 #define BSP_INC_BSP_H_
 
+#include "main.h"
+
+typedef union _uni_spi_data_t
+{
+	uint64_t word64;
+	uint8_t bytes[8];
+
+}uni_spi_data_t;
 
 typedef enum _e_function_mode_t
 {

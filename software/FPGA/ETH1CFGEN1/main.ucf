@@ -1,0 +1,57 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "test_LED[7]" LOC = T18;
+NET "test_LED[6]" LOC = T17;
+
+# PlanAhead Generated IO constraints 
+
+NET "test_LED[5]" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "test_LED[5]" LOC = U18;
+NET "test_LED[4]" LOC = U17;
+NET "test_LED[3]" LOC = N16;
+NET "test_LED[2]" LOC = N15;
+NET "test_LED[1]" LOC = P16;
+NET "test_LED[0]" LOC = P15;
+
+# PlanAhead Generated IO constraints 
+
+NET "test_LED[0]" IOSTANDARD = LVCMOS33;
+NET "test_LED[1]" IOSTANDARD = LVCMOS33;
+NET "test_LED[2]" IOSTANDARD = LVCMOS33;
+NET "test_LED[3]" IOSTANDARD = LVCMOS33;
+NET "test_LED[4]" IOSTANDARD = LVCMOS33;
+NET "test_LED[6]" IOSTANDARD = LVCMOS33;
+NET "test_LED[7]" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "CLK" LOC = V10;
+
+# PlanAhead Generated IO constraints 
+
+NET "CLK" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "MCU_GPIO1" LOC = T4;
+
+# PlanAhead Generated IO constraints 
+
+NET "MCU_GPIO1" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "MCU_SPI_MISO" LOC = U7;
+NET "MCU_SPI_MOSI" LOC = V7;
+NET "MCU_SPI_NSS" LOC = R3;
+NET "MCU_SPI_SCK" LOC = V4;
+
+# PlanAhead Generated IO constraints 
+
+NET "MCU_SPI_SCK" IOSTANDARD = LVCMOS33;
+NET "MCU_SPI_NSS" IOSTANDARD = LVCMOS33;
+NET "MCU_SPI_MOSI" IOSTANDARD = LVCMOS33;

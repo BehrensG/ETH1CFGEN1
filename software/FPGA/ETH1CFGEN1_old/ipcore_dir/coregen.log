@@ -4,16 +4,4 @@ The IP Catalog has been reloaded.
 Opening project file
 /home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1_old/ipcore_dir/coregen.cg
 p.
-WARNING:sim:1016 - Unable to launch pdf viewer
-WARNING:sim:1016 - Unable to launch pdf viewer
-WARNING:sim:1016 - Unable to launch pdf viewer
-View Product WebpageINFO:sim:172 - Generating IP...
-Launching Product Webpage viewer...
-Launched Product Webpage viewer.
-Customize and GenerateINFO:sim:172 - Generating IP...
-Applying current project options...
-Finished applying current project options.
-WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
-   core. Overriding with simulation file type 'Structural'.
-Cancelled executing Tcl generator.
 Closed project file.

@@ -40,11 +40,13 @@
 
 #include "stm32h7xx_hal.h"
 #include "scpi_def.h"
-#include "main.h"
+#include "BSP.h"
 
 #include "scpi_output.h"
 
-extern struct bsp_t bsp;
+extern bsp_t bsp;
+
+extern SPI_HandleTypeDef hspi3;
 
 scpi_choice_def_t scpi_boolean_select[] =
 {
@@ -228,47 +230,13 @@ void TIM_Delay_us(uint16_t us)
 
 scpi_result_t SCPI_TS(scpi_t * context)
 {
-  uint32_t tx_data = 0;
-  uint8_t tmp_data[4];
-  uint8_t rx_data[4];
-  HAL_StatusTypeDef status;
-/*
-  if(!SCPI_ParamUInt32(context, &tx_data, TRUE))
-  {
-	  return SCPI_RES_ERR;
-  }
+	uni_spi_data_t spi_tx_data;
+	spi_tx_data.word64 = 0x0100000000000022;
 
+	HAL_GPIO_WritePin(SPI3_NSS_GPIO_Port, SPI3_NSS_Pin, GPIO_PIN_RESET);
+	HAL_SPI_Transmit(&hspi3, spi_tx_data.bytes, 8, 2000);
+	HAL_GPIO_WritePin(SPI3_NSS_GPIO_Port, SPI3_NSS_Pin, GPIO_PIN_SET);
 
-  if(tx_data == 1)
-  {
-	  tmp_data[0] = 0x10;
-	  tmp_data[1] = 0x00;
-	  HAL_GPIO_WritePin(SPI1_SSEL_GPIO_Port, SPI1_SSEL_Pin, 1);
-	  HAL_GPIO_WritePin(SPI1_SSEL_GPIO_Port, SPI1_SSEL_Pin, 0);
-	  for(uint16_t x = 0; x < 255; x++)
-	  {
-		  tmp_data[2] = (uint8_t)(spi_data[x] >> 8);
-		  tmp_data[3] = (uint8_t)(spi_data[x]);
-		  HAL_SPI_Transmit(&hspi1, tmp_data, 4, 1000);
-	  }
-
-	  HAL_GPIO_WritePin(SPI1_SSEL_GPIO_Port, SPI1_SSEL_Pin, 1);
-  }
-
-  if(tx_data == 2)
-  {
-	  tmp_data[0] = 0x20;
-	  tmp_data[1] = 0x00;
-	  tmp_data[2] = 0x00;
-	  tmp_data[3] = 0x00;
-
-	  HAL_GPIO_WritePin(SPI1_SSEL_GPIO_Port, SPI1_SSEL_Pin, 1);
-	  HAL_GPIO_WritePin(SPI1_SSEL_GPIO_Port, SPI1_SSEL_Pin, 0);
-	  HAL_SPI_Transmit(&hspi1, tmp_data, 4, 1000);
-
-	  HAL_GPIO_WritePin(SPI1_SSEL_GPIO_Port, SPI1_SSEL_Pin, 1);
-  }
-*/
     return SCPI_RES_OK;
 }
 
@@ -302,8 +270,8 @@ const scpi_command_t scpi_commands[] = {
 
 	{.pattern = "FUNCtion", .callback = SCPI_Function,},
 	{.pattern = "FUNCtion?", .callback = SCPI_FunctionQ,},
-	{.pattern = "FREQuency", .callback = SCPI_Frequency,},
-	{.pattern = "FREQuency?", .callback = SCPI_FrequencyQ,},
+//	{.pattern = "FREQuency", .callback = SCPI_Frequency,},
+//	{.pattern = "FREQuency?", .callback = SCPI_FrequencyQ,},
 
 	{.pattern = "TS", .callback = SCPI_TS,},
 
