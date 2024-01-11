@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/test_main_isim_beh.exe" -prj "/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/test_main_beh.prj" "work.test_main" "work.glbl" 
+-intstyle "ise" -incremental -lib "secureip" -o "/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/SPI_SLAVE_TB_isim_beh.exe" -prj "/home/grzegorz/git/ETH1CFGEN1/software/FPGA/ETH1CFGEN1/SPI_SLAVE_TB_beh.prj" "work.SPI_SLAVE_TB" 

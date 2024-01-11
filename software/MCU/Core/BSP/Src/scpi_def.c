@@ -184,7 +184,9 @@ size_t SCPI_GetChannels(scpi_t* context, scpi_channel_value_t array[])
 static scpi_result_t SCPI_Rst(scpi_t * context)
 {
 
-	HAL_NVIC_SystemReset();
+	HAL_GPIO_WritePin(MCU_GPIO1_GPIO_Port,MCU_GPIO1_Pin,GPIO_PIN_SET);
+	HAL_Delay(10);
+	HAL_GPIO_WritePin(MCU_GPIO1_GPIO_Port,MCU_GPIO1_Pin,GPIO_PIN_RESET);
     return SCPI_RES_OK;
 }
 
@@ -230,12 +232,19 @@ void TIM_Delay_us(uint16_t us)
 
 scpi_result_t SCPI_TS(scpi_t * context)
 {
-	uni_spi_data_t spi_tx_data;
-	spi_tx_data.word64 = 0x0100000000000022;
 
-	HAL_GPIO_WritePin(SPI3_NSS_GPIO_Port, SPI3_NSS_Pin, GPIO_PIN_RESET);
-	HAL_SPI_Transmit(&hspi3, spi_tx_data.bytes, 8, 2000);
-	HAL_GPIO_WritePin(SPI3_NSS_GPIO_Port, SPI3_NSS_Pin, GPIO_PIN_SET);
+	uint8_t tx[2] = {0x11,0x22};
+
+	for(uint16_t x=0; x < 256; x++)
+	{
+		tx[1] = x;
+		HAL_GPIO_WritePin(SPI3_NSS_GPIO_Port, SPI3_NSS_Pin, GPIO_PIN_RESET);
+		HAL_SPI_Transmit(&hspi3, tx, 2, 2000);
+		HAL_GPIO_WritePin(SPI3_NSS_GPIO_Port, SPI3_NSS_Pin, GPIO_PIN_SET);
+		HAL_Delay(300);
+	}
+
+
 
     return SCPI_RES_OK;
 }
