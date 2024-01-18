@@ -233,20 +233,20 @@ void TIM_Delay_us(uint16_t us)
 scpi_result_t SCPI_TS(scpi_t * context)
 {
 
-	uint8_t tx[2] = {0x11,0x22};
+	uint8_t tx[2] = {0x00,0x00};
 
-	for(uint16_t x=0; x < 256; x++)
+
+	for(uint8_t x=0; x < 255; x++)
 	{
 		tx[1] = x;
 		HAL_GPIO_WritePin(SPI3_NSS_GPIO_Port, SPI3_NSS_Pin, GPIO_PIN_RESET);
-		HAL_SPI_Transmit(&hspi3, tx, 2, 2000);
+		HAL_SPI_Transmit(&hspi3, tx, 2, 1000);
 		HAL_GPIO_WritePin(SPI3_NSS_GPIO_Port, SPI3_NSS_Pin, GPIO_PIN_SET);
 		HAL_Delay(300);
 	}
 
+	return SCPI_RES_OK;
 
-
-    return SCPI_RES_OK;
 }
 
 const scpi_command_t scpi_commands[] = {
